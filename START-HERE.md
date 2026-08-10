@@ -45,10 +45,14 @@ CLIs/MCPs/APIs that automate the maximum, and the hard line of what stays human)
 - **The orchestrator is `challenge-lead`.** In Claude Code, launch it with the Task tool ("run the
   challenge-lead: it's day 1"). In Codex/Cursor, paste `.claude/agents/challenge-lead.md` as the
   system prompt. It runs the daily loop and delegates to the specialists.
-- **The challenge also runs ITSELF daily** once the founder sets the `CLAUDE_CODE_OAUTH_TOKEN` repo
-  secret: `.github/workflows/challenge-loop.yml` executes one challenge-lead loop at ~11:37am ET on
-  a GitHub runner (research, creative, analysis, ledger readout — never spending). See the autonomy
-  section of `agents/HQ.md`. A red-X email each morning means the secret isn't set yet.
+- **The challenge also runs ITSELF daily — but it ships DORMANT.** The daily workflow
+  (`.github/workflows/challenge-loop.yml`) is **disabled on purpose**: the founder's Lark seat built
+  this repo but does not run the challenge. ACTIVATION IS THIS SEAT'S FIRST JOB, two commands:
+  1. `gh workflow enable challenge-loop --repo Yuve21/ai-dropship-challenge`
+  2. `gh secret set CLAUDE_CODE_OAUTH_TOKEN --repo Yuve21/ai-dropship-challenge` (founder pastes the
+     token from `claude setup-token`)
+  Then it executes one challenge-lead loop daily at ~11:37am ET on a GitHub runner (research,
+  creative, analysis, ledger readout — never spending). See the autonomy section of `agents/HQ.md`.
 - **Everything is logged in `tracker/LEDGER.md`** — money in/out, every product tested, every
   kill/scale decision, running P&L. Update it every working session; it is the source of truth for
   where the challenge stands. A new seat reads it to know exactly where things are.

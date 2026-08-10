@@ -36,8 +36,10 @@ unverified.)
   (`.github/workflows/challenge-loop.yml`, 15:37 UTC) runs challenge-lead unattended: research,
   creative, analysis, ledger readout; never spends; HUMAN: steps accumulate here as a checklist.
   HQ reorganized by department; Canva MCP wired as the UGC/design connector; OpenClaw/Hermes
-  evaluated and rejected (rented infra + API-key billing). **Dormant until the founder sets the
-  `CLAUDE_CODE_OAUTH_TOKEN` repo secret** — until then the daily run fails loudly by design.
+  evaluated and rejected (rented infra + API-key billing). **Shipped DORMANT by decision
+  (2026-08-10): the workflow is disabled and the building seat (Lark) does not run this
+  challenge.** Activation belongs to the seat that takes it over: `gh workflow enable
+  challenge-loop` + set the `CLAUDE_CODE_OAUTH_TOKEN` repo secret (see START-HERE).
   Nothing spent; out-of-pocket still $0.00.
 
 - **Setup** — Repo, playbook, 30-day plan, budget rules, automation stack, and the 10-agent team
