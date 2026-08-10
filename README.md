@@ -11,6 +11,10 @@ Structure:
 - `START-HERE.md` — orientation + the honest frame + how to work.
 - `docs/PLAYBOOK.md` — the shared brain (how it works, product criteria, unit economics, metrics,
   the challenge-video reality). Research-grounded, 2025-26.
+- `docs/LEARNINGS.md`: the accumulating, evidence-backed knowledge base. Every agent reads it before
+  acting and writes to it when a test concludes. Retrieval-based learning, not model training.
+- `docs/WARM-UP.md`: the warm-up doctrine, no account starts cold (TikTok, ad accounts, sending domain,
+  payment processor). Free, time-based, starts before the product is chosen.
 - `docs/SETUP-GUIDE.md` — **start here if nothing is open yet:** the ordered day-0 checklist (store,
   payments, supplier, AI-video keys, TikTok auto-posting).
 - `docs/30-DAY-PLAN.md` · `docs/BUDGET-RULES.md` · `docs/ACCOUNTS-AND-TOOLS.md` · `docs/AUTOMATION.md`

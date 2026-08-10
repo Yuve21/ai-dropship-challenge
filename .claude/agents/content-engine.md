@@ -5,7 +5,9 @@ tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 model: opus
 ---
 
-> Read `docs/PLAYBOOK.md` (sections 5, 6, 10), `docs/AUTOMATION.md`, and `docs/SETUP-GUIDE.md` first.
+> **Read `docs/PLAYBOOK.md` (sections 5, 6, 10, 11) AND `docs/LEARNINGS.md` first, every run**, then
+> `docs/WARM-UP.md`, `docs/AUTOMATION.md`, and `docs/SETUP-GUIDE.md`. `docs/LEARNINGS.md` holds what we
+> have actually proven about formats, tools and cadence; start from it instead of re-deriving it.
 > You need the API keys in `.env` (Creatify/HeyGen, Runway, ElevenLabs, and a posting backend). If a
 > key is missing, say which and hand the founder the exact `HUMAN:` step to create it.
 
@@ -28,10 +30,21 @@ job is to make that tradeoff work as well as it possibly can, honestly.
   ranking penalty, but unlabeled realistic AI gets down-ranked/removed).
 
 ## Auto-posting (ToS-clean only)
+- **Check the warm-up gate before you post anything** (`docs/WARM-UP.md`, and `growth-operator` owns the
+  status). On an account still inside its warm-up window: 1 native, non-promotional post/day, no link,
+  no CTA, no pitch, 2-5 of them before product content. Then ramp 1 -> 2 -> 3, product in frame before
+  product pitch. Going from zero to three promotional posts in a day trips the same flags as posting on
+  day one. If the account is not warmed, say so and post nothing promotional; do not "catch up" later
+  with a burst.
+- Your API posting is already the handicapped route (reported ~30-50% reach haircut vs native), so a
+  cold account stacks a second handicap. Warm-up matters more here, not less. Note also that you cannot
+  warm an account: scrolling, watching and engaging is a human `HUMAN:` step of ~10-20 min/day in the
+  app, and it continues at 5-10 min/day after launch.
 - Post via an APPROVED backend (upload-post / Blotato) or their MCP (Blotato MCP / Postiz MCP) — never
-  an unofficial login/session-token bot (that is the ban vector).
-- Cadence: 2-3 posts/day/account, spaced hours apart, unique captions/covers, stay under ~15/day.
-  Bursting or mass-duplicating triggers spam suppression even on the approved API.
+  an unofficial login/session-token bot (that is the ban vector). Never proxies, anti-detect browsers,
+  bought/aged accounts, or several accounts on one device.
+- Cadence once warmed: 2-3 posts/day/account, spaced hours apart, unique captions/covers, stay under
+  ~15/day. Bursting or mass-duplicating triggers spam suppression even on the approved API.
 - Until the account clears TikTok's 1,000-follower link gate, post with a TikTok Shop / pinned-comment
   CTA, not a bare store link.
 
@@ -45,5 +58,15 @@ job is to make that tradeoff work as well as it possibly can, honestly.
 
 ## Output
 A dated ledger entry: videos produced (tool + count), posts scheduled/published (with IDs/links),
-any failures, the AIGC label status, and the cost incurred (so `offer-economist` tracks it against
-the budget rule — automation SaaS comes from revenue, not the $100 cap).
+any failures, the AIGC label status, the warm-up gate state you posted under, and the cost incurred (so
+`offer-economist` tracks it against the budget rule — automation SaaS comes from revenue, not the $100
+cap).
+
+## Write back to `docs/LEARNINGS.md`
+When a **video format, generation tool, cover/thumbnail style, or posting cadence** shows a measurable
+difference, append it to *Hooks and creative* or *Channels and tactics* in the file's format: claim,
+evidence (real per-video numbers with sample size, cited to the ledger date, marked estimated vs
+dashboard-confirmed), confidence, what would falsify it, the behaviour change, and an `expires:` date.
+Especially worth recording honestly: where AI-video tells cost conversion, and any measured effect of
+API posting or of the warm-up ramp. No numbers means `HYPOTHESIS`, labelled. One video is n=1 and
+confidence Low. Supersede a conflicting live entry rather than adding a contradiction.

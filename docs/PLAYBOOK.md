@@ -1,7 +1,9 @@
 # The Playbook — the shared brain
 
-Research-grounded (2025-26). Every agent reads this first. Thresholds are starting rules; recalibrate
-against real account data once it exists. Sources are listed at the bottom.
+Research-grounded (2025-26). Every agent reads this first, **then `docs/LEARNINGS.md`**. This file is
+outside research; that file is what WE have proven with our own numbers, and it wins where the two
+disagree. Thresholds here are starting rules; recalibrate against real account data once it exists.
+Sources are listed at the bottom.
 
 ## 1. How dropshipping actually works
 Customer buys on your store at retail and pays you immediately (Shopify Payments/Stripe/PayPal). You
@@ -53,6 +55,9 @@ The algorithm handles targeting; your video decides win/lose.
   (biggest swing). Aim for many hook variants per week.
 
 ## 6. Acquisition on a $50-100 budget: ORGANIC-FIRST
+- **Warm up before you market. See `docs/WARM-UP.md`, and read it before the first post, not after.**
+  A day-old account that opens with product-and-link content is the exact pattern spam has, and it gets
+  suppressed. Warm-up is free and time-based, so it starts in Phase 0a before the product is chosen.
 - $100 cannot properly test paid (TikTok wants ~$50/day + weeks; Meta needs volume to exit learning).
 - **Do this:** post **2-3 videos/day** from 1-3 TikTok accounts on the tested product, iterating
   hooks. Batch-film 5-10 videos per concept across 3-5 distinct angles; no reused clips across
@@ -114,6 +119,38 @@ The "$0/$1 to $1M" challenge genre is the single biggest source of distorted exp
   replicating the winning video. **What to discount:** every specific dollar figure and every
   "30 days to $10k" timeline. Our own ledger records what actually happened, never a projection.
 
+## 11. Warm-up: nothing starts cold (full detail in `docs/WARM-UP.md`)
+Four accounts this challenge depends on all perform worse when brand new, and all four warm up for
+free if the clock is started early enough:
+- **TikTok organic:** ~7 days minimum of human in-app behaviour (scroll, watch, light engagement) plus
+  2-5 native non-promotional posts BEFORE product content and CTAs. 10-14 days if the account will
+  later carry Spark Ads. The posting API does not warm the account; a human does, ~10-20 min/day. API
+  posting may already carry a reach handicap, so a cold account stacks a second one. No proxy farms, no
+  bought/aged accounts, no multi-account on one device: that is a ban vector, not a shortcut.
+- **Ad accounts:** a pixel with no conversion history learns slower and costs 20-40% more during
+  learning, and ~50 events in 7 days is what exits it. Install the pixel on day 1 so the organic phase
+  warms it for free; seed with a cheap objective; scale <=20% every 48-72h; freeze edits 72h.
+- **Sending domain:** SPF/DKIM/DMARC live and verified BEFORE the first send (DMARC `p=none` first),
+  domain aged 7-14 days, and no bulk mail in month one. A cold-domain launch blast lands in spam and
+  the damage is slow to reverse, on the same domain that carries your order confirmations.
+- **Processor:** a reserve is triggered by a spike measured against your own history, and a new store
+  has none, so its first good day IS the spike (section 1). Warm-up here means finishing verification
+  on day 1, looking like a real business before the money arrives, keeping disputes under 1%, and
+  letting revenue climb rather than jump.
+The trade-off is real: warm-up spends 7-10 of the 30 days. Starting the accounts a week before Day 1
+recovers it. A suppressed account costs more.
+
+## 12. The learning loop (`docs/LEARNINGS.md`)
+The ledger records what happened; `docs/LEARNINGS.md` records what we now believe, the evidence, the
+confidence, and what changes next time. **Every agent reads it before acting and writes to it when a
+test concludes.** Rules that make it worth reading: evidence or it is a labelled hypothesis; numbers
+from the ledger or a dashboard, marked estimated vs confirmed; every claim falsifiable; declared
+confidence with the sample size; contradictions resolved by SUPERSEDING an entry (dated, with the
+reason) rather than piling up; product-level learnings expire (~30 days, because winners rotate); and a
+day with no learning is recorded as a day with no learning instead of an invented one. This is
+retrieval-based learning, not model training: nothing updates model weights, the compounding is that
+each agent starts from validated lessons instead of a blank page.
+
 ## Sources
 trueprofit.io (success rate, income), peregrineship.com (cash flow), doba.com (break-even ROAS,
 TikTok Creative Center), dropified.com (product research), sellthetrend.com (research tools),
@@ -121,3 +158,6 @@ dropcommerce.com (organic TikTok), admanage.ai (TikTok ad cost), autods.com (sup
 directpaynet.com (payout reserves), ftc.gov (prompt-delivery rule), taxcloud.com (nexus),
 dodropshipping.com (platform bans). Success-rate figures are vendor estimates (directional, not
 audited); numeric benchmarks vary by niche — recalibrate on real data.
+Warm-up sources (section 11) are listed in `docs/WARM-UP.md`, with the documented-vs-anecdotal split
+called out there: most published warm-up schedules are vendor folklore, so the principle is sound and
+the specific day counts are not authoritative.
