@@ -32,6 +32,14 @@ things stand. Log what ACTUALLY happened, never a projection. Mark estimates vs 
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
 
-- **Setup** — Repo, playbook, 30-day plan, budget rules, automation stack, and the 9-agent team
+- **2026-08-10 — Autonomy layer added (ported from the Lark build).** Daily cloud loop
+  (`.github/workflows/challenge-loop.yml`, 15:37 UTC) runs challenge-lead unattended: research,
+  creative, analysis, ledger readout; never spends; HUMAN: steps accumulate here as a checklist.
+  HQ reorganized by department; Canva MCP wired as the UGC/design connector; OpenClaw/Hermes
+  evaluated and rejected (rented infra + API-key billing). **Dormant until the founder sets the
+  `CLAUDE_CODE_OAUTH_TOKEN` repo secret** — until then the daily run fails loudly by design.
+  Nothing spent; out-of-pocket still $0.00.
+
+- **Setup** — Repo, playbook, 30-day plan, budget rules, automation stack, and the 10-agent team
   built. Not started. First action for a fresh seat: run `challenge-lead` ("it's day 1"), which will
   send `product-scout` to build the first shortlist. Nothing spent yet.

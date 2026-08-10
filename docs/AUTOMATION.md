@@ -1,5 +1,12 @@
 # Automation — the maximum honest autopilot
 
+> **The always-on layer is `.github/workflows/challenge-loop.yml`** — a daily headless
+> challenge-lead loop on GitHub Actions (subscription-funded via the `CLAUDE_CODE_OAUTH_TOKEN` repo
+> secret, zero rented infrastructure). Third-party always-on harnesses (OpenClaw, Hermes) were
+> evaluated 2026-08-10 and rejected: both need a rented 24/7 machine AND API-key billing, since
+> Anthropic blocks consumer-subscription OAuth for third-party harnesses. Do not re-litigate this
+> without new facts.
+
 The goal: automate everything that can be, so the founder only does the irreducible human steps and
 otherwise watches the dashboards. **Full hands-off is not real** — money movement, identity/KYC,
 ad-spend launch, and organic posting stay human by design, not because of a tooling gap. Anyone
