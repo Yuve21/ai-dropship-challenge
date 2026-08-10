@@ -1,4 +1,4 @@
-# Budget Rules — the money discipline
+# Budget Rules: the money discipline
 
 This is the hard constraint of the challenge. `offer-economist` owns it; `challenge-lead` enforces
 it; every session updates the ledger.
@@ -12,6 +12,10 @@ it; every session updates the ledger.
   spend $600 of it on ads = out-of-pocket is still $80. That is allowed and encouraged.
 - If the plan ever "needs" more than $100 of founder money to work, the plan is wrong for this
   challenge. Find a cheaper path (organic) or wait for revenue.
+- **Waiting for revenue is not idling.** Per `docs/NO-STALL.md` P7, the Paid Readiness Dossier is built
+  during the organic phase so the first earned dollar can be spent within the hour: campaign structure,
+  the platform-minimum budget, break-even ROAS from real margin, pre-written kill thresholds, and the
+  pixel's event state. Our spend trigger is at least $150 collected revenue with the float intact.
 
 ## Suggested allocation of the first $100 (organic-first)
 Keep fixed costs near zero so the budget goes to what moves the needle.

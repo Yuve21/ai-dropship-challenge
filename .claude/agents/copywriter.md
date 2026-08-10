@@ -1,6 +1,6 @@
 ---
 name: copywriter
-description: Writes the store's words — product descriptions, the five policy pages, checkout/email copy — in an honest, high-converting voice. No claims the product can't back.
+description: Writes the store's words, product descriptions, the five policy pages, checkout/email copy, all in an honest, high-converting voice. No claims the product can't back.
 tools: Read, Write, Edit, Grep, Glob
 model: sonnet
 ---

@@ -1,6 +1,6 @@
 ---
 name: ops-support
-description: Runs fulfillment and customer service — supplier selection, order routing via DSers/CJ, honest shipping-time comms, support replies, and chargeback defense. Protects delivery, reviews, and payouts.
+description: Runs fulfillment and customer service: supplier selection, order routing via DSers/CJ, honest shipping-time comms, support replies, and chargeback defense. Protects delivery, reviews, and payouts.
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 model: sonnet
 ---

@@ -42,6 +42,197 @@ Warm-up is an area where operator folklore heavily outweighs documentation. Keep
 
 Where this file gives a number, it says which bucket it is in.
 
+**And then we commit anyway.** "No official formula exists" is a true research finding, not an excuse
+to leave the schedule open. Sections 1 to 6 below are the reasoning and the evidence; the thing we
+actually execute is the protocol immediately below, which we wrote ourselves, dated, labelled, and
+built to be proven wrong.
+
+---
+
+# The Challenge Warm-Up Protocol v1 (ours, to be validated)
+
+**Status: `HYPOTHESIS` in the `docs/LEARNINGS.md` sense.** Authored 2026-08-10. This is our own house
+protocol, not a vendor schedule and not a guarantee. It is engineering judgement built on top of the
+documented facts in the split above (platform budget floors, the learning-phase event threshold, the
+SPF lookup limit, the processor's own risk-evaluation page) plus stated inference about how a new
+account earns distribution. Every day count and every engagement count in it is inference. It exists
+so the team executes one specific thing consistently instead of re-deliberating every morning, and so
+that at the end of warm-up there is something falsifiable to check against real numbers.
+
+**Nothing in this protocol costs money, and nothing in it simulates a human.** It is "behave like a
+real new account, patiently." The hard no in section 1 stands unchanged: no proxies, no cloud phones,
+no anti-detect browsers, no bought followers, no engagement pods, no bought or aged or previously
+banned accounts, no several accounts on one device. `compliance-guard` hard-bans all of it. Those are
+terms-of-service violations, and on a $100 budget a ban is the end of the challenge.
+
+**Day numbering:** Day 1 is the first day of the 30-day challenge clock. Negative days run before it.
+If the clock has already started, run the protocol from today and accept that full product posting
+begins around day 8, which is what Phase 0a of `docs/30-DAY-PLAN.md` already says out loud.
+
+## Track A: the TikTok organic account
+
+Open **one** account per real device and real network. If there is genuinely a second device and a
+second real person, a second account is fine; otherwise one. Do not open three accounts on one phone
+to hit a number, that is the ban vector, and every extra account restarts this same clock anyway.
+
+| Day | Human, in the app (about 20 min) | Posting |
+|---|---|---|
+| **Day -7** | `HUMAN:` create the account on a real device with a real email (a mailbox on the store domain or a normal personal one) and a real phone number. Complete the profile fully in one sitting: photo, handle, display name, one-line bio, niche set. No link in the bio, nothing to click. Then scroll the For You feed for 20 min and search 3 niche terms, watching 5 videos each to completion. **Zero likes, zero follows, zero comments on day one.** | none |
+| **Day -6** | Scroll 20 to 30 min, mostly in-niche. Engage: **10 likes, 3 saves, 5 follows** of in-niche creators, **2 genuine comments** (real sentences, not emoji). Watch 10 in-niche videos to completion and replay 3. | none |
+| **Day -5** | Same as Day -6. Consume only. | none |
+| **Day -4** | Consume 15 min, same engagement volume. Then post **1 native, non-promotional video** in the niche: no product, no link, no CTA, no brand pitch. | 1 |
+| **Day -3** | Same. Post **1** more native video. Post inside the same 2-hour window as yesterday. | 1 |
+| **Day -2** | Same. Post **1** more native video (3 native posts total now). | 1 |
+| **Day -1** | Consume 15 min. Post **1** video with the product **incidentally in frame** and still no pitch, no CTA, no link. This is the last unpromotional post. | 1 |
+| **Day 1** | Consume 5 to 10 min, then continue this daily forever. Begin the real cadence: **2 posts/day**, product content and CTA now allowed (CTA goes to a TikTok Shop listing or a pinned comment until the follower link gate clears). | 2 |
+| **Day 4 onward** | Same daily consumption. Step to **3 posts/day** and hold. | 3 |
+
+That is **4 posts before Day 1** (3 native plus 1 product-in-frame), inside the 2 to 5 range section 1
+calls for, and 7 days of behavioural history before the first promotional post.
+
+**If the account will later carry Spark Ads or any paid promotion:** start at **Day -14** and run the
+Day -6 routine for the extra week, with 3 more native posts spread across Days -11, -9 and -7. Same
+ending, longer runway.
+
+**Hold conditions (do not push through these):**
+- An action block, a "you're doing too much" notice, or any warning: halve engagement volume for 48h
+  and post nothing new that day. Log it.
+- Three consecutive posts at effectively zero views: **hold cadence, do not raise it.** Keep consuming.
+  Do not "catch up" with a burst, and do not conclude shadowban from a flat week (section 1's
+  diagnosis trap).
+- Warm-up never ends. An account that publishes and never consumes looks like a bot. The test stays:
+  are we posting more than we are watching and engaging?
+
+## Track B: the ad account and pixel
+
+- **Day -7:** `HUMAN:` create or claim the ad account with real business details. `AGENT:` install the
+  pixel/CAPI on the store the same day, at **$0 spend**, and complete domain verification. Confirm in
+  the events manager that PageView, AddToCart, InitiateCheckout and Purchase all actually fire. An
+  installed-but-not-firing pixel accumulates nothing, which is the failure that hides for a week.
+- **Day -7 through Day 1 and beyond: spend stays $0.** The whole organic phase is free pixel warm-up.
+  Every organic visit, add-to-cart and first order becomes conversion history at no cost.
+- **Pre-spend target before the first dollar (inference):** at least **200 PageView, 20 AddToCart and
+  1 Purchase** recorded organically. If the pixel is below that when revenue arrives, seed with a
+  cheap **traffic or video-views** objective at the floor for 3 days first, and create it as a **new ad
+  group** rather than switching the optimisation event on an existing one, because changing the event
+  resets learning.
+- **First spend, funded from earned revenue only:** at the **platform minimum**, which on TikTok
+  self-serve is **$20/day at ad group level and $50/day at campaign level**, prepay balance topped up.
+  Structure: 1 campaign, 1 ad group, 3 to 5 creatives.
+- **Then do nothing for 72 hours.** No budget change, no targeting change, no creative swap, no bid
+  change. Every one of those resets the learning phase.
+- **After 72h, step at most +20% and no more often than every 48h.**
+- **Stated honestly in the ledger, every time:** a test at this budget cannot reach roughly 50
+  optimisation events in 7 days, so it never exits the learning phase. It reads creative, CTR, CPC and
+  CVR direction. It is not a CPA. Reporting the learning-phase CPA as "the" CPA would be a distorted
+  number presented as a result.
+
+## Track C: the sending domain
+
+- **Day -7:** buy the domain and publish authentication the **same day**, before any send exists to
+  authenticate. SPF with as few `include:` mechanisms as possible (the **10 DNS lookup limit** is hard
+  and fails silently past it), DKIM at 2048-bit with the public key in DNS, DMARC at **`p=none`** with
+  a `rua` address. Put a real landing page up and create the real contact mailbox on the domain.
+- **Day -6:** verify with an external checker, then wait 24h for propagation before testing anything.
+  Send 3 test messages to mailboxes you control at Gmail, Outlook and Yahoo, open the raw headers and
+  confirm `spf=pass dkim=pass dmarc=pass`. If any fails, fix it now, not after the store is live.
+- **Days -6 to -1:** no sends beyond your own tests. The domain ages for free while the store is built.
+- **Day 1 onward: transactional mail only** (order confirmation, shipping notification, one abandoned
+  cart note). Low volume, opened by real buyers, is the best warm-up available and it is what this
+  challenge sends anyway. **No bulk email in month one.**
+- **If bulk ever starts** (not in month one, and from a **subdomain**, never the domain carrying order
+  confirmations), the ramp is **10/day, then 25, then 50, then 100**, one full day at each step, most
+  engaged recipients first. **Check between every step:** bounce under **2%**, spam-complaint rate under
+  **0.1%**, and opens not collapsing. If a step fails the check, drop back to the previous volume for 3
+  days before retrying. Move DMARC to `p=quarantine` only after 2 to 3 weeks of clean aggregate reports.
+
+## Track D: the store and the payment processor
+
+- **Day -7:** create the store and **finish payments verification to 100% the same day**, bank account
+  linked, real business address, real phone, contact email on the domain. Documents left pending are
+  themselves a hold trigger per the processor's own risk page. Do not discover this during the first
+  video that pops.
+- **Days -7 to -1:** the five policy pages live with honest shipping windows, real branding, a real
+  product page. Run one order end to end through the store's **test mode** (free, no real card, no risk
+  signal) to prove checkout, confirmation email and fulfilment routing all work.
+- **Week 1 revenue smoothness rule (inference, and the one most likely to be violated by excitement):**
+  **one change at a time, at most one per 72h.** Do **not** pair a discount blast with a price change
+  and a new SKU in the same week. No sitewide discount above 20% in week 1. If a video pops and orders
+  spike, that spike is the only anomaly the processor gets to see that week: change nothing else.
+- **Protect the ratio:** chargebacks under 1%, disputes answered same day, refunds fast.
+- **Honest limit:** you cannot manufacture processor history without real sales. There is no schedule
+  to follow here. The levers are verification completeness, dispute discipline, and not spiking. If a
+  reserve lands anyway that is a documented possibility, not a failure, and the float exists for it.
+
+## Which parts rest on documented facts, and which are our inference
+
+**Documented by the platform or the provider (load-bearing, still worth re-verifying):**
+- Roughly **50 optimisation events in 7 days** exits Meta's learning phase; targeting, creative,
+  optimisation-event, bid and large budget changes reset it. (Track B's 72h freeze and +20% steps.)
+- TikTok self-serve floors of about **$50/day campaign and $20/day ad group**, and prepay billing that
+  stops campaigns when the balance empties. (Track B's "platform minimum".)
+- **SPF's 10 DNS lookup limit**, and that exceeding it fails silently. DKIM and DMARC being expected of
+  any real sender; `p=none` is monitor-only. Mailbox providers publishing a **0.1% spam-complaint**
+  target. (Track C.)
+- The processor's own risk-evaluation page: **custom payout schedules (5 or 20 business days)** and
+  **reserves on part or all of transactions**, and that **pending verification documents are themselves
+  a trigger**. (Track D's Day -7.)
+- TikTok's **AIGC label** requirement on realistic AI content, and that a bio link on a personal
+  account is gated at roughly **1,000 followers** (long-observed norm rather than published policy).
+
+**Our inference, unvalidated, the part that could simply be wrong:**
+- **Every day count.** The 7-day span, the 3 consume-only days, the 3 native posts, the single
+  product-in-frame post, the 14-day Spark Ads variant. Published schedules cluster between 3 and 14
+  days and all of them are vendor marketing. We picked 7 because it is the cheapest number that still
+  buys a week of history.
+- **Every engagement count.** 10 likes, 3 saves, 5 follows, 2 comments, 10 completions, 3 replays. These
+  are "plausibly like a real person's first week", nothing more.
+- **That consuming before posting improves distribution at all.** The mechanism (the algorithm has to
+  classify an account before it can distribute it) is a reasonable model of how recommendation works,
+  and it is not something TikTok documents.
+- **The 200/20/1 pre-spend pixel target** and the 3-day cheap-objective seed.
+- **The 10/25/50/100 email ramp** and the 2% bounce ceiling. Vendor ranges run 50 to 200/day in week 1;
+  ours is deliberately more conservative because our volume is tiny anyway.
+- **The whole week-1 store smoothness rule**, including the 72h spacing and the 20% discount ceiling.
+- **Any notion of an account "trust score"** that this protocol improves. Neither platform documents
+  one. We are not claiming it exists; the mitigations happen to cost nothing either way.
+
+## What we measure during warm-up (this is what turns the protocol into knowledge)
+
+Record these daily in the **Warm-up status** block of `tracker/LEDGER.md`. `growth-operator` owns the
+collection.
+
+- **Per post:** views at 1h, 24h and 72h; average watch time and completion rate; saves; shares;
+  comments (and specifically any buy-intent comments); profile taps.
+- **Account:** follower count daily, follower delta per post, and a daily yes/no on **"is the For You
+  feed serving the niche"** with a 1 to 5 note. That readiness signal matters more than the day count.
+- **Incidents:** any action block, warning, removal, AIGC flag, or reach collapse, with the date.
+- **Pixel:** date of first event, cumulative count by event type, and whether all four events fire.
+- **Email:** bounce rate, spam-complaint rate, header pass/fail for SPF, DKIM and DMARC, DMARC
+  aggregate report pass rate.
+- **Processor:** payout schedule shown in the admin, whether a reserve notice appeared and at what
+  revenue level, days to first payout, dispute count.
+
+## How this protocol corrects itself
+
+1. **On Day 1**, the day the real cadence starts, `challenge-lead` writes a dated entry to
+   `docs/LEARNINGS.md` that walks every element of this protocol and marks it **CONFIRMED**,
+   **ADJUSTED**, **REFUTED** or **UNTESTED**, each with the real number from the ledger, marked
+   estimated or dashboard-confirmed, with the sample size said out loud.
+2. **On Day 7**, repeat it with a week of post-warm-up data, because the thing the protocol claims to
+   buy (distribution on promotional content) is only visible after promotional content exists.
+3. **If any element is adjusted or refuted, the protocol is republished here in full as v2**, with
+   `SUPERSEDES v1 (YYYY-MM-DD): <reason>` at the top, and v1 is marked superseded in place rather than
+   deleted, per the superseding rule in `docs/LEARNINGS.md`. Two live versions of this protocol may
+   never exist at once.
+4. **The honest ceiling on what step 1 can prove:** with one account and no control group, "CONFIRMED"
+   means "we ran it and the outcome we wanted happened", not "the protocol caused it". n=1 is
+   confidence **Low**, permanently, until a second account or a deliberate variation tests one element
+   against another. Say that in the entry. Claiming the protocol worked because the account did fine
+   would be exactly the survivorship-bias reasoning this repo is built to refuse.
+5. **A warm-up that taught us nothing is recorded as teaching us nothing.** If the numbers are too thin
+   to conclude anything, the entry says so and every element stays `UNTESTED`.
+
 ---
 
 ## 1. TikTok organic accounts (the one that matters most here)
@@ -64,9 +255,12 @@ whole strategy failing quietly.
   get very low reach on the first 5-7 videos while the algorithm is still classifying them. Judge on a
   pattern over several days, not on one flat video.
 
-### The sequence (folklore-sourced numbers, principle is sound)
-Sources cluster between 3 and 14 days. Treat **7 days as the floor** and **10-14 days** if the account
-will later carry Spark Ads or paid promotion.
+### The sequence in the published guides (folklore-sourced numbers, principle is sound)
+**This table is the source material, not the instruction.** It records what the vendor guides
+collectively say, so the reasoning behind our own protocol is auditable. **Execute the Challenge Warm-Up
+Protocol v1 at the top of this file instead;** where the two differ, the protocol wins, because it is the
+version we committed to, dated, and measured. Sources cluster between 3 and 14 days, which is where our
+**7-day floor** and the **10-14 day** variant for an account that will carry Spark Ads came from.
 
 | Window | What the human does in the app (about 10-20 min/day) | Posting |
 |---|---|---|
@@ -237,9 +431,11 @@ account creation dates, warm-up day count per account, native posts made before 
 whether product content has started, pixel install date and whether it has organic events, domain
 registration date and whether SPF/DKIM/DMARC are verified, and processor verification status.
 
-`growth-operator` reports the warm-up state in its daily read. `challenge-lead` refuses to authorise
-product-content posting or any paid ramp while the relevant warm-up gate is unmet, and says plainly
-which gate is blocking.
+`growth-operator` reports the warm-up state in its daily read, naming the protocol track and day.
+`challenge-lead` refuses to authorise product-content posting or any paid ramp while the relevant warm-up
+gate is unmet, and says plainly which gate is blocking. **Naming the gate is not the end of the run:** per
+`docs/NO-STALL.md`, the gate stops the gated action only, and if warm-up has not started then starting it
+is the day's decisive move while the loop prepares everything that gate will consume the hour it clears.
 
 ## 6. The trade-off, stated plainly
 

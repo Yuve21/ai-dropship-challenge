@@ -1,4 +1,4 @@
-# The Playbook — the shared brain
+# The Playbook: the shared brain
 
 Research-grounded (2025-26). Every agent reads this first, **then `docs/LEARNINGS.md`**. This file is
 outside research; that file is what WE have proven with our own numbers, and it wins where the two
@@ -39,9 +39,9 @@ A product is a candidate only if it hits MOST of these:
   certs, CBD/THC, adult, weight-loss "cures", and anything trademarked/branded.
 
 ## 4. How to find + validate (before spending a cent)
-Free stack is enough — do NOT buy spy tools on a $100 budget:
+Free stack is enough, do NOT buy spy tools on a $100 budget:
 - **TikTok Creative Center** (Top Ads, Trends, Keyword Insights).
-- **Meta Ad Library** — find who's running an offer; re-check dates to see **how long an ad has
+- **Meta Ad Library**, find who's running an offer; re-check dates to see **how long an ad has
   stayed live = it's profitable**.
 - **#TikTokMadeMeBuyIt**, AliExpress "orders" sort, Amazon Movers & Shakers / Best Sellers.
 - Cross-check a candidate across 2-3 sources. Read comment sentiment. Order a sample before scaling.
@@ -81,11 +81,11 @@ The algorithm handles targeting; your video decides win/lose.
 - **Net per order = Sale − COGS − shipping − CPA − payment fee (~3%) − returns.**
 - **Healthy signals:** TikTok CTR > 1.5%, CPC ~$0.30-1.50, store CVR > 2%, ROAS > 2x (ecom avg
   ~2.87). TikTok in-feed CPM ~$9.
-- **KILL RULE (two different clocks — do not confuse them):**
+- **KILL RULE (two different clocks, do not confuse them):**
   - **Paid ads:** after ~$20-30 spend OR 100+ clicks OR 48-72h with **0 sales, CTR < 1%, or ROAS <
     1.0**, kill the ad/product. Leave a paid campaign untouched for the first 72h, then judge hard.
   - **Organic:** the clock is weeks, not hours. Judge the *creative* fast (a hook with poor
-    watch-time/no saves after a few posts, swap it) but judge the *product* slowly — only abandon
+    watch-time/no saves after a few posts, swap it) but judge the *product* slowly, only abandon
     after strong posting volume (~2 weeks, many hooks) with zero traction and zero buy-intent
     comments. Killing an organic product in 72h is the classic beginner mistake.
   - Scale winners slowly (<=20% budget bumps); scale a winning organic angle by making more of that
@@ -94,7 +94,7 @@ The algorithm handles targeting; your video decides win/lose.
 ## 8. Failure modes to avoid
 Bad/fake suppliers (order a sample under a plain name first); long shipping killing trust and
 triggering disputes; saturated products where ad cost > margin; chargebacks (double loss: refund +
-lost goods); counterfeit/trademarked goods (instant ban + legal liability — AliExpress is on the USTR
+lost goods); counterfeit/trademarked goods (instant ban + legal liability, AliExpress is on the USTR
 Notorious Markets list); and overpriced "guru" courses (the most consistent scam in the space).
 
 ## 9. Compliance floor (see compliance-guard for detail)
@@ -120,8 +120,11 @@ The "$0/$1 to $1M" challenge genre is the single biggest source of distorted exp
   "30 days to $10k" timeline. Our own ledger records what actually happened, never a projection.
 
 ## 11. Warm-up: nothing starts cold (full detail in `docs/WARM-UP.md`)
-Four accounts this challenge depends on all perform worse when brand new, and all four warm up for
-free if the clock is started early enough:
+**The executable schedule is the Challenge Warm-Up Protocol v1** in `docs/WARM-UP.md`: our own house
+protocol, labelled `HYPOTHESIS`, four tracks, day by day from Day -7 to Day 4, with the documented-fact
+versus our-inference split stated element by element and a Day 1 / Day 7 verdict written back to
+`docs/LEARNINGS.md`. Run it as written rather than re-deriving a schedule each morning. Why the four
+tracks exist:
 - **TikTok organic:** ~7 days minimum of human in-app behaviour (scroll, watch, light engagement) plus
   2-5 native non-promotional posts BEFORE product content and CTAs. 10-14 days if the account will
   later carry Spark Ads. The posting API does not warm the account; a human does, ~10-20 min/day. API
@@ -151,13 +154,28 @@ day with no learning is recorded as a day with no learning instead of an invente
 retrieval-based learning, not model training: nothing updates model weights, the compounding is that
 each agent starts from validated lessons instead of a blank page.
 
+## 13. No dead ends (`docs/NO-STALL.md`)
+A gate stops the gated action, never the run. Every run makes real forward progress on something and
+names the artifact it produced. The mechanisms: a **5-candidate ranked bench** so a killed product costs
+zero days (promote rank 1 and backfill rank 5 in the same run); a **Standing Work Queue** of twelve
+ordered fallbacks so "find something useful" is never improvised; **Prepared Action Cards** so every
+founder step arrives with the exact URL, steps, values, cost, minutes and what it unblocks; a
+**cost-of-delay ranking** at the top of every readout so the founder sees the one thing that matters
+(warm-up not started is the only 1.0 compounding, unrecoverable item); a **Widening Ladder** for a sweep
+that finds nothing; **incident runbooks** for flags, restrictions, stockouts, chargebacks and reserves;
+and a **reduced-mode ladder** so a missing browser, MCP, key or write permission is a declared mode
+rather than a stop. The fallbacks in that file are ours, authored 2026-08-10, labelled `HYPOTHESIS`, each
+with the measurement that would refute it. The irreducible boundary stays named and is never engineered
+around: identity and KYC, funding a card, approving real ad spend, and one-time OAuth grants need the
+founder.
+
 ## Sources
 trueprofit.io (success rate, income), peregrineship.com (cash flow), doba.com (break-even ROAS,
 TikTok Creative Center), dropified.com (product research), sellthetrend.com (research tools),
 dropcommerce.com (organic TikTok), admanage.ai (TikTok ad cost), autods.com (supplier costs),
 directpaynet.com (payout reserves), ftc.gov (prompt-delivery rule), taxcloud.com (nexus),
 dodropshipping.com (platform bans). Success-rate figures are vendor estimates (directional, not
-audited); numeric benchmarks vary by niche — recalibrate on real data.
+audited); numeric benchmarks vary by niche, recalibrate on real data.
 Warm-up sources (section 11) are listed in `docs/WARM-UP.md`, with the documented-vs-anecdotal split
 called out there: most published warm-up schedules are vendor folklore, so the principle is sound and
 the specific day counts are not authoritative.

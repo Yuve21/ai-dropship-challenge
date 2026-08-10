@@ -1,13 +1,13 @@
-# The autonomous challenge loop — runs daily even when the founder's laptop is off.
+# The autonomous challenge loop: runs daily even when the founder's laptop is off.
 #
 # One headless challenge-lead session per day on a GitHub runner: read the ledger, advance the
 # 30-day plan with the work that IS autonomous-safe (fresh product research via web search, creative
 # scripts + hook banks, content calendar, P&L/kill-scale analysis from the ledger, compliance
 # checks), commit the updated ledger/docs, and accumulate the founder's HUMAN: steps as a checklist.
 #
-# AUTH (founder one-time): the SAME subscription token used for the Lark loop —
+# AUTH (founder one-time): the SAME subscription token used for the Lark loop:
 #   gh secret set CLAUDE_CODE_OAUTH_TOKEN --repo Yuve21/ai-dropship-challenge
-# (or an ANTHROPIC_API_KEY secret). Fails loud until one exists — the red X is the daily reminder.
+# (or an ANTHROPIC_API_KEY secret). Fails loud until one exists, the red X is the daily reminder.
 #
 # OPTIONAL automation secrets (each unlocks a layer; all safe to omit): UPLOAD_POST_KEY,
 # CREATIFY_API_KEY, HEYGEN_API_KEY, RUNWAY_API_KEY, ELEVENLABS_API_KEY, APIFY_TOKEN. When present
@@ -18,7 +18,7 @@
 # out-of-pocket cap is absolute; SaaS stays on free tiers until revenue. The loop PREPARES spending
 # decisions, it never makes them.
 #
-# Schedule: 15:37 UTC (~11:37am ET summer) — off-minute to dodge GitHub's on-the-hour congestion,
+# Schedule: 15:37 UTC (~11:37am ET summer): off-minute to dodge GitHub's on-the-hour congestion,
 # and offset from the Lark company loop (15:07) so the two never compete for attention.
 
 name: challenge-loop
@@ -77,22 +77,30 @@ jobs:
         run: |
           claude -p "Run ONE autonomous daily loop of the AI dropshipping challenge as the
           challenge-lead. Read .claude/agents/challenge-lead.md and follow it exactly. Read
-          tracker/LEDGER.md first — it is the source of truth for where the challenge stands.
+          tracker/LEDGER.md first, it is the source of truth for where the challenge stands, then
+          docs/LEARNINGS.md (what we have proven, it outranks the playbook), docs/WARM-UP.md (execute
+          the Challenge Warm-Up Protocol v1 as written, do not re-deliberate a schedule) and
+          docs/NO-STALL.md (a gate stops the gated action, never the run).
 
           Do the work that is AUTONOMOUS-SAFE in this environment: fresh product research
-          (product-scout method, live web search — winners rotate weekly), unit-economics checks
-          (offer-economist), creative scripts + hook-bank additions (creative-director), the content
-          calendar, compliance sweeps (compliance-guard), and AI-video/posting via content-engine
-          ONLY for the API keys present in the environment — say plainly which layers were skipped
-          for missing keys, never fake an action.
+          (product-scout method, live web search, winners rotate weekly), bench maintenance to 5
+          ranked candidates, unit-economics checks (offer-economist), creative scripts + hook-bank
+          additions (creative-director), the content calendar, compliance sweeps (compliance-guard),
+          and AI-video/posting via content-engine ONLY for the API keys present in the environment.
+          Say plainly which layers were skipped for missing keys, and never fake an action.
 
           HARD LIMITS: never spend money or commit the founder to spending; the \$100 out-of-pocket
           cap is absolute; SaaS stays on free tiers until revenue funds upgrades; no trademarked
-          products; honest shipping claims. Accumulate every step only the founder can do as a
-          numbered HUMAN: checklist in the ledger.
+          products; honest shipping claims; nothing that violates a platform's terms of service.
+          Every step only the founder can do goes in the ledger as a Prepared Action Card (exact URL,
+          exact steps, exact values to paste, cost, minutes, what it unblocks, cost of delay).
 
-          A loop never returns empty: end with concrete new work (candidates, scripts, hooks,
-          analysis) ranked by leverage — but never a fabricated result; the ledger records what
-          actually happened. Append the dated entry to tracker/LEDGER.md, update the standing
-          tallies, commit, and push." \
+          A loop never returns empty and never fabricates. If a gate blocks the day's move, name the
+          gate and take the top unblocked item from the Standing Work Queue in docs/NO-STALL.md, then
+          name the artifact you produced. Close with the six required items: the founder's actions
+          ranked by cost of delay with the top one marked as today's one thing, work done with its
+          artifact, the bench state, which gates blocked and what was prepared against them, the
+          learnings step (write no new learning today if that is the truth), and the money line.
+          Append the dated entry to tracker/LEDGER.md, update the standing tallies, append to
+          docs/LEARNINGS.md, commit, and push." \
             --dangerously-skip-permissions

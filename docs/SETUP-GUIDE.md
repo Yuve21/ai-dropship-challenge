@@ -1,18 +1,18 @@
-# Day-0 Setup Guide — do these in order
+# Day-0 Setup Guide: do these in order
 
 You're starting from nothing open. This is the exact, ordered checklist to get the whole machine
 running. `HUMAN:` = you do it (identity/payment/OAuth). `AGENT:` = a tool-enabled seat can do it once
 the key exists. Costs noted; start everything on FREE tiers to protect the $100 cap (paid automation
-subscriptions come out of REVENUE later, not the $100 — see the budget note at the end).
+subscriptions come out of REVENUE later, not the $100; see the budget note at the end).
 
 Work top to bottom; don't skip the order (later steps need earlier keys).
 
 ## A. The store (Phase 0, ~$2-15 out of pocket)
-1. `HUMAN:` **Shopify** — sign up, take the **$1/mo for 3 months** promo. Pick the Basic plan.
+1. `HUMAN:` **Shopify**: sign up, take the **$1/mo for 3 months** promo. Pick the Basic plan.
    (~$1 now; $39/mo after month 3, by which point revenue should cover it.)
-2. `HUMAN:` **Domain** — buy one in Shopify or a registrar (~$10-12/yr). A real domain reduces payout
+2. `HUMAN:` **Domain**: buy one in Shopify or a registrar (~$10-12/yr). A real domain reduces payout
    holds and is required for TikTok `PULL_FROM_URL` posting later.
-3. `HUMAN:` **Shopify Payments** (turn on) **+ PayPal** (connect). This is the KYC/bank step — only
+3. `HUMAN:` **Shopify Payments** (turn on) **+ PayPal** (connect). This is the KYC/bank step, only
    you can do it. Expect a possible payout reserve on a new store; that's normal.
 4. `HUMAN:` **Business email** on your domain (real contact address; required for policies + trust).
 5. `HUMAN:` **Generate a Shopify Admin API token:** Settings -> Apps and sales channels -> Develop
@@ -29,7 +29,7 @@ Work top to bottom; don't skip the order (later steps need earlier keys).
 7. `HUMAN:` put a payment method on the supplier account (this funds order fulfillment; kept separate
    from the $100 test budget as the "float").
 
-## C. Content automation — AI video (start on free tiers/trials)
+## C. Content automation: AI video (start on free tiers/trials)
 8. `HUMAN:` create accounts + grab API keys for the AI-video stack, into `.env`:
    - **Creatify** (`CREATIFY_API_KEY`) or **HeyGen** (`HEYGEN_API_KEY`, has an official MCP) for
      avatar/UGC-style ad videos. Start on the cheapest tier / free credits.
@@ -40,13 +40,13 @@ Work top to bottom; don't skip the order (later steps need earlier keys).
 ## D. Auto-posting to TikTok (ToS-clean, start free)
 9. `HUMAN:` **TikTok account(s)** for the store (1-3).
 10. `HUMAN:` pick a posting backend and connect your TikTok via OAuth (one time):
-    - **upload-post.com** — free tier, no card, cheapest to start (`UPLOAD_POST_KEY`), OR
+    - **upload-post.com**: free tier, no card, cheapest to start (`UPLOAD_POST_KEY`), OR
     - **Blotato** (~$29/mo, flat, built for AI agents, has an MCP) once revenue justifies it.
     These carry TikTok's approved audit for you, so you post PUBLIC without doing your own API audit.
     -> `AGENT:` `content-engine` posts the videos on a schedule via the posting API/MCP.
 11. Wire the MCP in your seat (Claude Code/Cursor): **Blotato MCP** or **Postiz MCP** for posting,
     **HeyGen MCP** / **Runway MCP** / **ElevenLabs MCP** for video, and **Canva MCP**
-    (`https://mcp.canva.com/mcp`, official — already added user-scoped on the founder's machine and
+    (`https://mcp.canva.com/mcp`, official, already added user-scoped on the founder's machine and
     in `.cursor/mcp.json`) for UGC graphics: covers, thumbnails, carousels, product imagery.
     `HUMAN:` one-time browser OAuth for Canva; check current student/edu offers for free Pro.
     (See `docs/AUTOMATION.md`.)
@@ -62,7 +62,7 @@ Work top to bottom; don't skip the order (later steps need earlier keys).
     first product shortlist, then walks the 30-day plan.
 
 ## The critical budget note (read this)
-Full automation SaaS (Blotato, Creatify, Runway, ElevenLabs, Apify) can total ~$90-300/mo — which
+Full automation SaaS (Blotato, Creatify, Runway, ElevenLabs, Apify) can total ~$90-300/mo, which
 would blow the $100 out-of-pocket cap before a single sale. So the rule:
 - **Start every automation tool on its FREE tier / trial / free credits.** upload-post is free;
   HeyGen/Creatify/Runway/ElevenLabs have free credits; Apify is pay-per-use pennies.

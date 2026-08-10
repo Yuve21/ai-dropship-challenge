@@ -89,10 +89,15 @@ handled the same way, visibly.
 
 # Live knowledge
 
-**Status: empty. The challenge has not started (see `tracker/LEDGER.md`, out-of-pocket $0.00).**
-Every section below is deliberately blank. Do not seed it with plausible-sounding dropshipping wisdom
-from the internet; that belongs in `docs/PLAYBOOK.md` as research, clearly marked as such. This file
-only holds things **we** observed with **our own** numbers.
+**Status: no learnings yet. The challenge has not started (see `tracker/LEDGER.md`, out-of-pocket
+$0.00).** Every live section below is deliberately blank. Do not seed it with plausible-sounding
+dropshipping wisdom from the internet; that belongs in `docs/PLAYBOOK.md` as research, clearly marked as
+such. This file only holds things **we** observed with **our own** numbers.
+
+There are **2 entries in *Open hypotheses*** further down, both of them our own authored protocols
+(`docs/WARM-UP.md` Protocol v1, and the `docs/NO-STALL.md` procedures) filed correctly as untested
+hypotheses with the test that would settle each. That is what the section is for. They are not learnings
+and must not be cited as though they were.
 
 ## Winning products
 What won, and **why** it won: price band, landed cost and margin, hook style that carried it, audience
@@ -147,7 +152,52 @@ anything else; a bad feeling is a hypothesis.
 Labelled guesses waiting on evidence, each with the test that would settle it. Anything moved out of
 here into the live sections must arrive with numbers.
 
-*(no entries yet)*
+### [2026-08-10] HYPOTHESIS: the Challenge Warm-Up Protocol v1 buys distribution that a cold account would not get
+- **Claim:** running `docs/WARM-UP.md` -> Challenge Warm-Up Protocol v1 as written (7 days of human
+  in-app behaviour, 3 native non-promotional posts, 1 product-in-frame post, then 2 then 3 posts/day, with
+  the pixel warmed at $0 spend, the domain authenticated on purchase day, and processor verification
+  finished same-day) produces better distribution on the first promotional posts, and fewer platform
+  interventions, than opening an account and posting product content immediately.
+- **Evidence:** **none yet.** Zero posts exist and no account has been created (`tracker/LEDGER.md`,
+  out-of-pocket $0.00). The protocol's foundations are documented platform facts (roughly 50 optimisation
+  events in 7 days exits Meta's learning phase and edits reset it; TikTok floors of ~$50/day campaign and
+  ~$20/day ad group with prepay billing; SPF's hard 10 DNS lookup limit; the processor's published custom
+  payout schedules, reserves, and pending-documents trigger). **Every day count and every engagement count
+  in the protocol is our inference**, listed explicitly in the doc's documented-versus-inference split.
+- **Confidence:** none, it is untested. It will be **Low** even after warm-up, permanently, because with
+  one account there is no control group.
+- **Falsified by:** first promotional posts performing no better than a cold account's would, or a
+  platform intervention arriving anyway, or the FYP failing to serve the niche after 5 days of in-niche
+  engagement.
+- **The test that settles it:** the measurement list in the protocol's "What we measure during warm-up"
+  section, recorded daily in the ledger's Warm-up status block, then an element-by-element verdict on
+  protocol Day 1 and again on Day 7.
+- **So we now:** execute the protocol as written rather than re-deliberating a schedule each morning, and
+  publish v2 with `SUPERSEDES v1` if any element is adjusted or refuted.
+- **Expires:** no expiry (structural), but the Day 7 verdict replaces this entry.
+- **Written by:** challenge-lead (authored by the setup seat, 2026-08-10).
+
+### [2026-08-10] HYPOTHESIS: the no-stall procedures keep every run productive without inventing work
+- **Claim:** the ten procedures in `docs/NO-STALL.md` (5-candidate bench, kill-and-promote in the same
+  run, Prepared Action Cards, cost-of-delay ranking, the Widening Ladder, the CTA ladder, the Paid
+  Readiness Dossier with its $150 trigger, the five incident runbooks, the reduced-mode ladder, and the
+  twelve-item Standing Work Queue) mean every run produces a real named artifact, and that a blocked gate
+  or a failed product never costs a day.
+- **Evidence:** **none yet.** No run has happened. These are our inventions, authored 2026-08-10; the
+  documented parts (kill thresholds, platform budget floors, the learning-phase threshold, FTC
+  prompt-delivery, the 1% chargeback ceiling) are cited in the file and are not what is being tested here.
+- **Confidence:** none, untested.
+- **Falsified by:** any run that ends with only a blocker and no artifact; a kill that takes more than
+  one run to promote a replacement; founder action cards that are consistently skipped, which would mean
+  the cards or the day-rates are wrong; or a procedure that is never triggered at all, which proves
+  nothing either way and stays UNTESTED.
+- **The test that settles it:** at day 30, count the runs that produced a named artifact (target: all of
+  them), the days between each kill and its replacement's first asset (target: 0), and the share of
+  founder actions completed on the day they were first presented.
+- **So we now:** run the procedures as written and mark each one CONFIRMED / ADJUSTED / REFUTED /
+  UNTESTED once data exists, republishing as v2 on any change.
+- **Expires:** no expiry (structural).
+- **Written by:** challenge-lead (authored by the setup seat, 2026-08-10).
 
 ---
 

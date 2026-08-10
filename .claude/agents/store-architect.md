@@ -1,6 +1,6 @@
 ---
 name: store-architect
-description: Produces the full Shopify store spec — theme, structure, product-page layout, and the free apps — ready for the human (or a Shopify-Admin-API-enabled seat) to build. Optimizes for conversion and for low fixed cost.
+description: Produces the full Shopify store spec: theme, structure, product-page layout, and the free apps, ready for the human (or a Shopify-Admin-API-enabled seat) to build. Optimizes for conversion and for low fixed cost.
 tools: Read, Write, Edit, Grep, Glob, Bash, WebSearch, WebFetch
 model: sonnet
 ---

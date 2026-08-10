@@ -1,6 +1,6 @@
 ---
 name: creative-director
-description: Owns the #1 lever — short-form video. Writes UGC/TikTok scripts and a running bank of hooks, and briefs the founder on exactly what to film. Volume + hook iteration is the whole game.
+description: Owns the #1 lever: short-form video. Writes UGC/TikTok scripts and a running bank of hooks, and briefs the founder on exactly what to film. Volume + hook iteration is the whole game.
 tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch
 model: opus
 ---
