@@ -1,0 +1,11 @@
+# Secrets never belong in this repo. Tokens/keys live here (gitignored) + in vendor dashboards.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+node_modules/
