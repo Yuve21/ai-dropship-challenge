@@ -45,7 +45,11 @@ Work top to bottom; don't skip the order (later steps need earlier keys).
     These carry TikTok's approved audit for you, so you post PUBLIC without doing your own API audit.
     -> `AGENT:` `content-engine` posts the videos on a schedule via the posting API/MCP.
 11. Wire the MCP in your seat (Claude Code/Cursor): **Blotato MCP** or **Postiz MCP** for posting,
-    **HeyGen MCP** / **Runway MCP** / **ElevenLabs MCP** for video. (See `docs/AUTOMATION.md`.)
+    **HeyGen MCP** / **Runway MCP** / **ElevenLabs MCP** for video, and **Canva MCP**
+    (`https://mcp.canva.com/mcp`, official — already added user-scoped on the founder's machine and
+    in `.cursor/mcp.json`) for UGC graphics: covers, thumbnails, carousels, product imagery.
+    `HUMAN:` one-time browser OAuth for Canva; check current student/edu offers for free Pro.
+    (See `docs/AUTOMATION.md`.)
 
 ## E. Optional research + analytics tooling
 12. `AGENT:`/`HUMAN:` **Apify** API key (`APIFY_TOKEN`, pay-per-run pennies) for TikTok/AliExpress/

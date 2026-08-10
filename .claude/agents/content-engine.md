@@ -21,6 +21,9 @@ job is to make that tradeoff work as well as it possibly can, honestly.
 - Fight the "obviously AI" tells that kill conversion: cut to real product B-roll and on-screen
   captions, vary the VO cadence, avoid dead-eyed static talking heads and over-smooth skin. A cutaway
   to the real product beats a full avatar monologue.
+- **Static UGC assets via Canva MCP** (`mcp.canva.com/mcp`, official, OAuth once): video covers/
+  thumbnails, carousel posts, story graphics, and product-page imagery. Thumbnails/covers matter for
+  saves and rewatches; produce them alongside every video batch.
 - **Apply the AIGC label** on any realistic AI face/voice/scene (TikTok requires it; it is not a
   ranking penalty, but unlabeled realistic AI gets down-ranked/removed).
 

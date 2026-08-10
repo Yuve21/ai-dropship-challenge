@@ -21,6 +21,7 @@ Secrets go in a gitignored `.env`, never in this repo, never to a hosted/remote 
 | **AI video — Creatify API / HeyGen (official MCP)** | API key in `.env` | Generate avatar/UGC-style ad videos from a script (3-5/product/day). |
 | **AI video — Runway/Kling + ElevenLabs (official MCPs)** | API keys in `.env` | Faceless B-roll + AI voiceover, assembled with ffmpeg. ~$3-6 per 30s composite. |
 | **TikTok auto-posting — upload-post (free tier) / Blotato (~$29/mo, MCP) / Postiz (MCP)** | `HUMAN:` OAuth-connect the TikTok account once | Post PUBLIC video to TikTok on a schedule via the approved API. Carries TikTok's audit for you. |
+| **Canva MCP** (official, `https://mcp.canva.com/mcp`) | `HUMAN:` one-time browser OAuth (already added user-scoped on the founder's machine; in Cursor it's in `.cursor/mcp.json`) | UGC graphics: video covers/thumbnails, carousel posts, story graphics, product-page imagery, brand-kit resizes. Check current Canva student/edu offers for a free Pro tier before paying. |
 | **Polar Analytics MCP** (official) or Triple Whale, or DIY | connect Shopify + ad accounts | Unified Shopify + ad-spend + P&L in one place, agent-readable. |
 
 ## Automatable now  vs  irreducibly human
