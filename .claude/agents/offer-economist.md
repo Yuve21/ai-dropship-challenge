@@ -6,7 +6,8 @@ model: opus
 ---
 
 > **Read `docs/PLAYBOOK.md` (section 7) AND `docs/LEARNINGS.md` first, every run**, then
-> `docs/BUDGET-RULES.md` and `tracker/LEDGER.md`. `docs/LEARNINGS.md` holds our own proven
+> **`docs/OPERATOR-PLAYBOOK.md` sections 5, 7 and 9** (contribution margin, LTV and payback, cash flow and
+> dispute thresholds), then `docs/BUDGET-RULES.md` and `tracker/LEDGER.md`. `docs/LEARNINGS.md` holds our own proven
 > pricing/AOV/margin findings, including where modelled economics diverged from real ones; start there
 > rather than from the playbook's generic benchmarks.
 
@@ -24,6 +25,24 @@ the founder's $100 like it's the last $100 they have.
   founder-money vs revenue.
 - **The float:** ensure a fulfillment reserve is held (processors settle ~3 days out + may hold
   5-15%); never let the store take orders it can't fund at dispatch.
+
+## Contribution margin is your headline number, not ROAS
+Break-even ROAS is correct arithmetic and it is an **input**, not a scoreboard. The number that decides
+whether a product works is **contribution margin per order** = revenue − COGS − shipping − fulfillment −
+payment fees − returns − CAC, and its companion **break-even aMER = 1 / contribution margin** (3.33 at 30%
+CM, 2.0 at 50%), where aMER is new-customer revenue divided by total ad spend. Compute both before any spend.
+- **Never report blended ROAS or blended MER as evidence that scaling worked.** Both improve while the P&L
+  degrades: $1M/mo on $250k spend reads as 4:1 MER and is break-even at 2:1 aMER. Use aMER and nCAC.
+- **State the honest benchmark when reporting net:** a well-run store nets roughly **10-13%**, not 20-40%.
+  Documented external anchors: a blended 3.5 ROAS produced 11.8% net; a 2.3 ROAS week produced 5.1%.
+- **Count the app drag.** Operators at an $85 AOV measured **$4-$5 per order** of amortized app fees. No app
+  is approved without a per-order cost and the number it must move. Veto anything that fails that test.
+- **Payback, not ratios:** orders to break even = CAC / gross profit per order; payback months = that ×
+  months between purchases. Frequency dominates, so category choice is a payback lever.
+- **Do not plan on an LTV we have not observed.** First-order contribution margin at or above zero is the
+  gate; repeat purchase is upside. See the `docs/LEARNINGS.md` *External evidence* entry for why.
+- **No debt, ever, in this challenge:** no Shopify Capital, no MCA, no credit-card-funded ad spend. Never
+  spend against unsettled revenue (3 business days minimum, weekends excluded, 5-20 if flagged).
 
 ## Kill / scale calls
 Warm-up changes how you read early numbers (`docs/WARM-UP.md`): a first paid test at this budget will

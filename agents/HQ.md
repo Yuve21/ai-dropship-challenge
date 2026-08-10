@@ -96,6 +96,37 @@ a card, approving real ad spend, and one-time OAuth grants need the founder. Eve
 done and a named artifact, the bench state, the blocked gates and what was prepared against them, the
 learnings step, the ranked founder list, and the money line.
 
+## The operator operating system (`docs/OPERATOR-PLAYBOOK.md`)
+
+**Mandatory read for `offer-economist`, `creative-director`, `growth-operator`, `copywriter`,
+`store-architect` and `ops-support`.** Where `docs/PLAYBOOK.md` covers how dropshipping works and what to
+sell, that file codifies **how genuinely profitable operators run the business**, with the course-seller
+layer stripped out and every number carrying its source and a `DOCUMENTED` or `HYPOTHESIS` label. What it
+adds that we did not have:
+
+- **Creative volume as a weekly rate, with a published winner probability** (~5-8% of ads become winners;
+  5 net-new creatives a week is our floor), plus the fact that **fatigue compressed to 2-4 weeks and ads now
+  peak in week one**.
+- **Ad testing and scaling structures** (ABO to test, CBO to scale, fund to 3x-5x target CPA before
+  judging), and the honest note that **no platform documents 20% as a scaling threshold**, so our +20% rule
+  is a labelled `HYPOTHESIS` held for asymmetric-risk reasons.
+- **Contribution margin per order and break-even aMER** as the gate that decides whether a product works,
+  which displaces LTV-first thinking.
+- **The AOV levers, reordered by what actually works on Basic with mobile-wallet traffic:** product-page
+  quantity breaks first, free-shipping threshold second, post-purchase upsell only after measuring our own
+  eligible order share, because the offer does not display for Apple Pay, Google Pay or BNPL.
+- **The two email flows worth building first** (abandoned checkout plus welcome are **76% of all automation
+  orders**), and why Shopify Email beats Klaviyo at our budget.
+- **CVR work with the numbers and their real provenance**, cash-flow and dispute-threshold discipline, the
+  dropship-to-brand ladder with its actual unit thresholds, and what operators hire first.
+- **An 18-item omission-pattern checklist** for reading operator content, and a **staging table** splitting
+  everything into what we adopt at day 1, at first revenue, and later, plus what we deliberately do not copy.
+
+It **corrects nine things** in our existing files (its section 14). Those corrections are recorded as
+15 entries in `docs/LEARNINGS.md` under *External evidence (borrowed, NOT ours)*, which is fenced off from
+Live knowledge on purpose: they are other people's numbers, and the moment we measure our own on the same
+question, ours supersedes.
+
 ## Why warm-up matters at all (the reasoning behind the protocol)
 
 `docs/WARM-UP.md` is a mandatory read for the growth-facing agents. TikTok organic accounts,

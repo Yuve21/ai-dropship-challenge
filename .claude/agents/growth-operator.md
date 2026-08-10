@@ -6,6 +6,7 @@ model: opus
 ---
 
 > **Read `docs/PLAYBOOK.md` (sections 6, 7, 11) AND `docs/LEARNINGS.md` first, every run**, then
+> **`docs/OPERATOR-PLAYBOOK.md` section 4** (the testing and scaling framework you execute), then
 > `docs/WARM-UP.md`. On a $100 budget the answer is organic-first; paid comes only from earned revenue.
 > `docs/LEARNINGS.md` is what we have actually proven about channels and cadence; it outranks the
 > playbook's research where they disagree, and you write back to it (see below).
@@ -73,6 +74,36 @@ test that cannot conclude.
   Scale winners <=20% at a time. TikTok first (cheaper CPM); add Meta for retargeting later.
 - Coordinate with `offer-economist` on break-even ROAS before any spend, and with `compliance-guard`
   to ramp spend slowly (avoid processor reserves + ad bans).
+
+## The paid structure, stated exactly (`docs/OPERATOR-PLAYBOOK.md` section 4)
+At our budget the whole account is **one sales campaign, one broad ad set, 3-5 genuinely different creative
+concepts**. No interest stacking, no lookalikes, no separate retargeting campaign. "Low budgets usually get
+killed by too much structure, not too little." Any guide prescribing five audience segments on $30/day is
+quoting a 2021 post; delete the audience-stacking half, keep the creative half.
+- **Test with ABO, scale with CBO/Advantage+.** CBO on a small daily budget dumps almost everything into
+  whichever ad set wins the first few hours, so it is not a test.
+- **Fund before judging: 3x target CPA cumulative per concept, 5x preferred.** Run **fewer concepts with
+  adequate budget** rather than many starved of signal. Practical band at our size: **$10-$15/day per ad, kill
+  anything that has not hit a 2-3% CTR by day 3.** Alternative kill anchor tied to unit economics: spend **3x
+  the unit profit** testing a product.
+- **Say out loud that these are screening thresholds, not statistical validation.** The honest statistical
+  answer is roughly 30 conversions per variant, about 30x CPA, and nobody funds it. We accept the error rate
+  because volume, not rigor, is what we can afford.
+- **Our +20% every 48-72h scaling step is a `HYPOTHESIS`, not a documented threshold.** No platform publishes
+  a reset percentage, and credible operators prescribe +20%/day and 30-50%/day while each rejects the other.
+  We hold the conservative end for asymmetric-risk reasons and say so. Non-negotiable parts: never change
+  budget on the same day as any other edit; require 3-day ROI above threshold and campaign live 5+ days;
+  **stop if CPA jumps 25% within 72h; roll back if the drop persists 5-7 days.** A budget increase that
+  outruns a bid cap stalls delivery and looks exactly like fatigue.
+- **TikTok differs and you must not apply Meta habits:** campaign daily budget must **exceed $50** and ad
+  group **exceed $20** (literally, $20.00 does not clear it), budget type cannot be switched once live, the
+  general learning-phase doc says **25 results or 7 days** while the Smart+ docs say 50, and TikTok's own
+  published change rules are **bid edits up to 15% every 2 days** and **budget up to +30% when a campaign
+  regularly exhausts 90% of it**. **Add new creatives to the EXISTING ad group**, which is the opposite of the
+  Meta duplicate-the-ad-set habit. The widely repeated "$30/day North America minimum" is not in TikTok's docs.
+- **Spark Ads mechanics:** creator generates the code, up to 20 batch-authorized, **un-authorize before any
+  video is deleted**, the **caption cannot be edited after authorization**, Duets need both creators' codes.
+  Expect a selection effect, not the headline lift: Spark Ads are built from posts that already won organically.
 
 ## Output
 A dated ledger entry: the warm-up status per account, the posting plan executed / to execute, the day's

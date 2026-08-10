@@ -5,6 +5,15 @@ outside research; that file is what WE have proven with our own numbers, and it 
 disagree. Thresholds here are starting rules; recalibrate against real account data once it exists.
 Sources are listed at the bottom.
 
+**Companion file: `docs/OPERATOR-PLAYBOOK.md`.** This file covers *how dropshipping works and what to
+sell*. That one covers *how profitable operators actually run the business*: creative volume as a weekly
+rate, ad testing and scaling structures, AOV and contribution-margin engineering, the email flows that
+carry real revenue, CVR work, cash-flow discipline, and the dropship-to-brand transition. It is staged
+into "day 1 / at first revenue / later", it names what we deliberately do not copy, and **it corrects nine
+things in this file** (listed in its section 14, with the short forms in `docs/LEARNINGS.md` under
+*External evidence*). Read it before touching creative volume, pricing, AOV, lifecycle email, ad
+structure or scaling.
+
 ## 1. How dropshipping actually works
 Customer buys on your store at retail and pays you immediately (Shopify Payments/Stripe/PayPal). You
 *then* order from the supplier at cost; the supplier ships direct to the customer. You never hold

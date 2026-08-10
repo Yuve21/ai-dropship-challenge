@@ -20,6 +20,11 @@ Structure:
 - `BOOTSTRAP.md` · `AGENTS.md`, run it from any LLM seat; the hard rules in one page.
 - `docs/PLAYBOOK.md`: the shared brain (how it works, product criteria, unit economics, metrics,
   the challenge-video reality). Research-grounded, 2025-26.
+- `docs/OPERATOR-PLAYBOOK.md` — **how genuinely profitable operators actually run the business**, with the
+  course-seller layer stripped out: creative volume as a weekly rate, ad testing and scaling structures, AOV
+  and contribution-margin engineering, the email flows that carry real revenue, CVR work, cash-flow
+  discipline, and the dropship-to-brand ladder. Every number labelled `DOCUMENTED` or `HYPOTHESIS`, staged
+  into day 1 / at first revenue / later, with what we deliberately do not copy.
 - `docs/LEARNINGS.md`: the accumulating, evidence-backed knowledge base. Every agent reads it before
   acting and writes to it when a test concludes. Retrieval-based learning, not model training.
 - `docs/WARM-UP.md`: the warm-up doctrine (no account starts cold: TikTok, ad accounts, sending domain,

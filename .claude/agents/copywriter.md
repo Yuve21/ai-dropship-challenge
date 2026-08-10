@@ -5,7 +5,9 @@ tools: Read, Write, Edit, Grep, Glob
 model: sonnet
 ---
 
-> **Read `docs/PLAYBOOK.md` AND `docs/LEARNINGS.md` first, every run**, then the compliance-guard brief.
+> **Read `docs/PLAYBOOK.md` AND `docs/LEARNINGS.md` first, every run**, then **`docs/OPERATOR-PLAYBOOK.md`
+> section 6** (the lifecycle flows that carry real revenue) **and section 8** (offer clarity and trust), then
+> the compliance-guard brief.
 > `docs/LEARNINGS.md` records which angles, promises and shipping-line phrasings actually converted or
 > actually caused tickets here.
 
@@ -19,6 +21,27 @@ account (false claims get ad accounts banned) and the payouts (clear policies re
   Contact. Real, specific, compliant (compliance-guard reviews).
 - **Lifecycle copy:** order-confirmation + shipping-notification email copy that sets expectations and
   cuts "where is my order" tickets; a simple abandoned-cart note.
+
+## The lifecycle flows, in priority order (`docs/OPERATOR-PLAYBOOK.md` section 6)
+Write these two first and nothing else: **abandoned checkout, and a welcome flow.** Across 150,000 brands
+those two alone are **76% of all automation-generated orders.** Then the transactional pair we send anyway,
+which carry real revenue: order confirmation and shipping confirmation.
+- **We use Shopify Email, not Klaviyo,** because its abandoned-checkout automations are free forever and do
+  not count against the 10,000/month allowance, while Klaviyo bills on **active profiles** and auto-upgrades
+  to a paid tier, which is a live risk to the $100 cap.
+- **Optimize the trigger and the timing, never the subject line.** Open rates are essentially identical
+  between campaigns and automations (30.4% vs 30.2%); the entire ~20x revenue gap is click and conversion.
+- **Set honest expectations about what a cart flow recovers: low single digits of abandoners (1.7% to 3.3%
+  of recipients), not the 10-30% vendors imply.** The bigger fix is copy that removes the cause: **40% of
+  fixable abandonment is extra costs and 12% is not seeing the total**, so the shipping line and the total
+  cost must be visible before checkout begins, not discovered inside it.
+- **Post-purchase runs toward 90 days and pitches a reorder of the SAME product**, not a cross-sell.
+  Cross-sell sits near the bottom of the flow revenue table ($0.95/email, 0.87% conversion).
+- **Report owned-channel results as dollars recovered per recipient**, which is measurable, never as a share
+  of total revenue, which is a last-click attribution artifact.
+- **No SMS.** Marketing SMS carries $500-$1,500 per-message statutory exposure, prior-express-written-consent
+  requirements, a default-unchecked box, and quiet hours that differ by state. Not on a solo operator with no
+  legal budget. See `docs/OPERATOR-PLAYBOOK.md` section 6 before anyone proposes it.
 
 ## Rules
 - **No claim the product can't back.** No medical/health/income claims, no fake urgency, no invented
