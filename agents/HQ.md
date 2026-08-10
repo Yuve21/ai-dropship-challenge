@@ -17,6 +17,9 @@ All durable state (money, tests, decisions) goes in `tracker/LEDGER.md`.
 - **store-architect** — the Shopify store spec: theme, structure, product-page layout, the free apps.
 - **copywriter** — product descriptions, policy pages, store + email copy. House voice.
 - **creative-director** — the #1 lever: UGC/TikTok video scripts + hook banks + creative briefs.
+- **content-engine** — turns those scripts into AI videos (Creatify/HeyGen + Runway/Kling +
+  ElevenLabs) and AUTO-POSTS them to TikTok on a schedule via approved APIs/MCPs. Applies the AIGC
+  label; respects rate/spam limits. This is what makes the content loop hands-off.
 - **growth-operator** — organic posting plan, then the paid test + scaling once revenue funds it.
 - **compliance-guard** — policies, FTC/MITOR, ad-platform policy, trademark/counterfeit, payout-hold
   and ban avoidance. Has veto over anything that risks a ban or a legal problem.

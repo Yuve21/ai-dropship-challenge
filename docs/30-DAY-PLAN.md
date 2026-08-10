@@ -21,7 +21,9 @@ Goal: a live store and 3-5 validated product candidates, near-zero spend.
 Goal: find a product that pulls organically. $0 acquisition.
 - `creative-director`: 3-5 UGC video scripts per candidate (Hook/Problem/Demo/Benefit/Proof/CTA), a
   running bank of hook variants.
-- `HUMAN:` film + post **2-3 videos/day** per account on the lead product; reshoot the best hooks.
+- `content-engine`: turn those scripts into 3-5 AI videos/day and **auto-post 2-3/day** to TikTok via
+  the approved API/MCP (AIGC label applied, posts spaced). This is automated once the keys + OAuth are
+  set (see SETUP-GUIDE). `HUMAN:` only funds the API keys and connects the account once.
 - `growth-operator`: daily read of which videos/hooks are pulling (views, watch-time, comments,
   profile taps, link clicks); tells the founder what to post more of.
 - **Commit, don't churn.** Because organic validation realistically takes weeks (not days), pick the

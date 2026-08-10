@@ -21,9 +21,15 @@ $50-$100 comes from the founder's pocket. See `docs/BUDGET-RULES.md` for the exa
   this budget.
 - **Creative (short video) is the #1 lever now**, above targeting and even product. Volume of hooks
   wins.
-- **You (Claude) do the knowledge work; a human pulls the real-world levers.** No agent can open the
-  founder's Shopify/Stripe/TikTok/supplier accounts, spend ad money, or ship orders. Every hand-off
-  to the human must be a copy-paste-ready, numbered instruction. Mark these clearly as `HUMAN:` steps.
+- **The content loop is automated; a human still funds + approves.** Per the founder's direction the
+  team GENERATES the AI videos and AUTO-POSTS them to TikTok (approved APIs/MCPs, see
+  `docs/AUTOMATION.md`), so no hand-filming or manual posting. What still needs the human: one-time
+  account creation + OAuth connects + KYC, funding the APIs/supplier, and **launching ad spend**. Mark
+  those as `HUMAN:` steps, copy-paste-ready. Honest caveats stay visible: AI video converts below real
+  UGC (a volume engine), realistic AI needs the AIGC label, and API posts may take a reach haircut.
+- **Day zero:** the founder has nothing open yet. `docs/SETUP-GUIDE.md` is the ordered checklist to
+  stand everything up (store, payments, supplier, AI-video keys, TikTok posting). Point them there
+  first.
 
 ## Read these three, in order
 1. `docs/PLAYBOOK.md` — the shared brain: how this works, winning-product criteria, unit economics,

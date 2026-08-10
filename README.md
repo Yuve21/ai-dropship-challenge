@@ -11,9 +11,12 @@ Structure:
 - `START-HERE.md` — orientation + the honest frame + how to work.
 - `docs/PLAYBOOK.md` — the shared brain (how it works, product criteria, unit economics, metrics,
   the challenge-video reality). Research-grounded, 2025-26.
+- `docs/SETUP-GUIDE.md` — **start here if nothing is open yet:** the ordered day-0 checklist (store,
+  payments, supplier, AI-video keys, TikTok auto-posting).
 - `docs/30-DAY-PLAN.md` · `docs/BUDGET-RULES.md` · `docs/ACCOUNTS-AND-TOOLS.md` · `docs/AUTOMATION.md`
-- `agents/HQ.md` + `.claude/agents/*.md` — the sub-agent team (Claude Code auto-loads; Codex/Cursor
-  paste the brief as a system prompt).
+  (the CLIs/MCPs/APIs that automate the content loop — AI video + auto-posting — and what stays human).
+- `agents/HQ.md` + `.claude/agents/*.md` — the 10-agent team (Claude Code auto-loads; Codex/Cursor
+  paste the brief as a system prompt). Includes `content-engine` (AI video + auto-post).
 - `tracker/LEDGER.md` — the running source of truth: money, product tests, decisions, P&L.
 
 This repo holds the playbook and the team. It never holds secrets (API tokens, passwords) — those

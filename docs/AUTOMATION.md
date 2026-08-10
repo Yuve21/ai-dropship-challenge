@@ -18,7 +18,9 @@ Secrets go in a gitignored `.env`, never in this repo, never to a hosted/remote 
 | **Playwright MCP** | add the browser MCP | Pull pages with no API (TikTok Creative Center, Meta Ad Library, competitor stores) + screenshot creative. |
 | **Meta Ads MCP + CLI** (official, Apr 2026) | wire with the ad account | DRAFT campaigns/adsets/ads/creatives. Everything lands **PAUSED** — the human unpauses. Third-party Meta Ads MCPs exist too. |
 | **TikTok Marketing API v1.3** (official REST) | `HUMAN:` app + OAuth | Draft campaigns programmatically (separate portal). Spend stays human-gated. |
-| **Runway API** (official, paid) | API key in `.env` | Generate images (~$0.08 each) and B-roll video. Use for assets/B-roll only. |
+| **AI video — Creatify API / HeyGen (official MCP)** | API key in `.env` | Generate avatar/UGC-style ad videos from a script (3-5/product/day). |
+| **AI video — Runway/Kling + ElevenLabs (official MCPs)** | API keys in `.env` | Faceless B-roll + AI voiceover, assembled with ffmpeg. ~$3-6 per 30s composite. |
+| **TikTok auto-posting — upload-post (free tier) / Blotato (~$29/mo, MCP) / Postiz (MCP)** | `HUMAN:` OAuth-connect the TikTok account once | Post PUBLIC video to TikTok on a schedule via the approved API. Carries TikTok's audit for you. |
 | **Polar Analytics MCP** (official) or Triple Whale, or DIY | connect Shopify + ad accounts | Unified Shopify + ad-spend + P&L in one place, agent-readable. |
 
 ## Automatable now  vs  irreducibly human
@@ -30,25 +32,41 @@ Secrets go in a gitignored `.env`, never in this repo, never to a hosted/remote 
 | Auto-placing supplier orders (CJ API / DSers / Zendrop) | Funding the supplier wallet + approving the spend |
 | Product + ad research (Apify MCP, Playwright) | Passing TikTok's Content Posting audit |
 | Drafting ad campaigns (Meta MCP/CLI, TikTok Marketing API) | **Unpausing / launching ad spend** (real money, no undo) |
-| AI copy, images, B-roll video (agents + Runway) | Filming authentic UGC (the #1 lever, still beats AI video) |
-| Unified metrics + P&L (Polar MCP / Triple Whale) | Final creative + budget judgment, refunds/disputes |
+| AI ad videos, incl. avatar UGC (Creatify/HeyGen + Runway/Kling + ElevenLabs) | (was "filming UGC" — now automated; see caveat below) |
+| **Public TikTok posting on a schedule** (upload-post/Blotato/Postiz + MCP) | The one-time OAuth connect of the TikTok account |
+| Unified metrics + P&L (Polar MCP / Triple Whale) | Final budget judgment, refunds/disputes |
 
-## Why these stay human (not fixable with more tooling)
+## What genuinely stays human (and why)
 - **KYC / payments:** processors legally require identity + bank verification; automating account
   creation trips fraud detection and gets you banned.
-- **Ad spend:** Meta's own MCP lands everything PAUSED on purpose — launching burns real money with
-  no undo. The agent drafts; a human presses go.
-- **Organic TikTok posting:** the Content Posting API publishes SELF_ONLY (private) until you pass
-  TikTok's app audit, caps 6 posts/min, and auto-posting risks reach throttling + bans. Post by hand.
-- **Authentic UGC:** AI video is improving but real phone UGC still converts better for DR; filming
-  is a human edge, not a chore to eliminate.
+- **Funding:** the ad account, the supplier wallet, and the automation SaaS keys all need a real
+  payment method loaded. An agent spends against them; it can't fund them.
+- **Ad spend launch:** Meta's own MCP lands everything PAUSED on purpose — launching burns real money
+  with no undo. The agent drafts; a human presses go.
+- **One-time OAuth connects:** linking your TikTok to the posting service and your accounts to the
+  MCPs is a one-time human grant. After that, posting runs unattended.
+
+## What IS now automated (per the founder's direction) — with honest caveats
+The founder chose full automation of the content loop over the higher conversion of hand-filmed UGC.
+So `content-engine` generates AI videos and posts them to TikTok on a schedule, unattended. Keep
+these caveats visible, they are real:
+- **AI video converts below authentic human UGC.** Use it as a volume/testing engine; a scaled winner
+  is worth re-shooting with a real person later. Fight the "obviously AI" tells (dead eyes, stiff
+  hands, monotone VO) with product B-roll cutaways + captions.
+- **AIGC label is mandatory** on realistic AI faces/voices/scenes (TikTok auto-detects via C2PA;
+  unlabeled realistic AI gets down-ranked/removed). The label is NOT a ranking penalty. content-engine
+  applies it.
+- **API posting may take a ~30-50% reach haircut** vs native app posting (anecdotal but consistently
+  measured). Mitigate: space posts, unique captions/covers, stay under ~15/day, never mass-duplicate.
+- **ToS line:** only approved-partner APIs (upload-post/Blotato/Postiz over the sanctioned API).
+  Never unofficial login/session-token bots — that is the ban vector.
 
 ## The realistic "you barely touch it" setup
-With the stack above wired: the agents research products, build and fill the store, generate copy +
-policies + creative scripts, draft ad campaigns, auto-route fulfillment, and keep a live P&L. **Your
-recurring human job shrinks to:** film the videos, post them, approve/unpause ad spend, keep the
-supplier funded, handle the occasional refund, and watch the dashboards. That is the honest maximum,
-and it is a lot of leverage, just not zero.
+With the stack wired: the agents research products, build and fill the store, generate the AI videos,
+post them to TikTok on schedule, draft ad campaigns, auto-route fulfillment, and keep a live P&L.
+**Your recurring human job shrinks to:** approve/unpause ad spend, keep the supplier + API keys
+funded, handle the occasional refund/dispute, and watch the dashboards. That is genuinely close to
+hands-off for the content loop — the leverage you asked for, with the caveats named, not hidden.
 
 ## Security (same rule as the Lark build)
 Tokens and keys live in a gitignored `.env` and in the vendor dashboards. Never commit them, never
