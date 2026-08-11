@@ -573,6 +573,38 @@ Things **proven** not to work here, with the evidence. This section is the most 
 because it stops repeated spending of attention. An anti-pattern needs the same evidence standard as
 anything else; a bad feeling is a hypothesis.
 
+### [2026-08-11] TikTok-virality-first product research finds things after they're already at big-box retail
+- **Claim:** searching for products via "what's trending/viral on TikTok" and then checking mainstream-
+  retail availability systematically surfaces items that have already been commoditized by Walmart,
+  Target, Best Buy, Costco, Amazon Basics, Chewy or Petco, because virality and retail buyer attention
+  move on similar or faster timescales than this research process can catch. Switching the discovery
+  order (supplier/AliExpress-first, checking retail availability only after finding a candidate) did not
+  fix this on the one night it was tried here.
+- **Evidence:** two full research sweeps, 2026-08-11, `tracker/LEDGER.md` session note. Sweep 1
+  (TikTok-trend-first, tech/wellness/comfort niche): ~28 candidates checked, 0 cleared a mainstream-retail
+  screen. Sweep 2 (AliExpress/supplier-first, pet/home-kitchen niche): ~20 candidates checked, 0 cleared.
+  Combined n=~48 candidates, 0 survivors, across two different niches and two different discovery
+  methods, in a single research session. Estimated, not dashboard-confirmed (this is WebSearch-mediated
+  secondary evidence, not a live TikTok Ad Library or Meta Ad Library pull — those remain unreachable by
+  direct fetch, see the 2026-08-10 entry above).
+- **Confidence:** Low. n=1 session, one night, one seat's tooling (unauthenticated WebSearch/WebFetch,
+  with AliExpress bot-blocking automated requests after roughly 2 attempts per sweep). Could differ with
+  a human logged into a real browser session, which was specifically NOT tried yet — Founder Action Card
+  in the ledger asks for exactly this as the next test.
+- **Falsified by:** a future sweep, especially one run by a human with real logged-in browser access to
+  TikTok Creative Center, Meta Ad Library and AliExpress, finding a genuinely clean candidate (no
+  mainstream-retail presence, real supplier quote, real demand evidence) in a reasonable amount of time.
+- **So we now:** do not keep re-running the same unauthenticated-fetch research method expecting a
+  different result once it has failed twice on two different methods in one session — that is a
+  diminishing-returns signal, not a reason to try a third automated sweep the same way. The next test of
+  this claim should route through a real browser session (human-assisted), not another agent-only sweep.
+  Also: do not force-fill the product bench with a candidate that fails this screen just to hit a target
+  count — the bench stayed at 3 confirmed candidates rather than 5 padded ones as a direct consequence of
+  this finding, a founder decision recorded in the 2026-08-11 ledger entry.
+- **Expires:** re-check quarterly (research-tooling/market-timing finding, not structural — retail
+  buying cycles and what's bot-blocked both change).
+- **Written by:** challenge-lead, from two product-scout runs, 2026-08-11.
+
 ### [2026-08-10] Direct WebFetch against TikTok Creative Center, Meta Ad Library and Amazon Movers & Shakers returns no usable data
 - **Claim:** an agent calling WebFetch directly against these three research sources does not get real
   data back: TikTok Creative Center returns a client-rendered SPA shell with "No search results found,"

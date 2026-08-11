@@ -57,10 +57,8 @@ owns it: re-score the whole bench weekly, promote rank 1 in the same run a produ
 rank 5 from that run's sweep, drop any candidate that has sat here 30 days without fresh evidence. Only
 one product is live at a time.
 
-**Status: 3 of 5 CONFIRMED (ranks 1-3, all through `offer-economist`'s worst-case gate). Rank 4 is OPEN**
-(the prior occupant, the grooming vacuum, was killed tonight, see below). **Rank 5 has one unvetted
-candidate pending economics + compliance review, not yet seated as confirmed** — see "Pending candidate"
-below. Backfill/vetting owed next `product-scout` + `offer-economist` run (`docs/NO-STALL.md` P10 item 2).
+**Status: 3 of 5 CONFIRMED (ranks 1-3, all through `offer-economist`'s worst-case gate). Ranks 4-5 are
+OPEN by decision, not by default** — see "2026-08-11, ranks 4-5 left open on purpose" below for why.
 Worst-case = using the high end of the stated landed-cost range, per `offer-economist`'s gate check (a
 product that only clears 30%/3x at best-case cost is not qualified).
 
@@ -72,19 +70,36 @@ product that only clears 30%/3x at best-case cost is not qualified).
 | 4 | **OPEN** | - | - | - | - | - |
 | 5 | **OPEN** | - | - | - | - | - |
 
-**Pending candidate (found 2026-08-11, NOT yet a confirmed bench slot):** generic 4-in-1 automatic
-interactive cat toy (laser + feather + rolling ball, motion-sensor). Estimated $5-9 landed, $32.99-34.99
-suggested retail, scout's own math ~3.7x-6.6x markup / comfortably >30% margin — **not yet run through
-`offer-economist`'s worst-case gate or through `compliance-guard`**, both owed next session before this
-can be seated. Real risk already flagged by the scout: this category is now sold at Walmart, Chewy and
-Petco (Potaroma brand and others), which fails the "not easily bought locally" trait outright — kept as a
-candidate rather than screened out because it isn't priced to commodity-aisle levels ($20-35 comparable
-listings, near our band) and the demand signal is a genuine multi-year, multi-brand category rather than a
-one-off fad, but this is a real, disclosed weakness, not a clean pass. **Worth noting as a pattern, not
-just about this candidate:** the scout flagged that nearly every well-known viral pet gadget from the last
-two years it checked tonight (bubble backpack carrier, spin scrubber, treat-dispensing ball, pet stroller)
-has since migrated onto mainstream pet-retailer shelves — a standing sourcing difficulty for this niche
-worth keeping in mind on the next sweep, not a one-off finding.
+**REJECTED (not seated, checked against both gates tonight):** generic 4-in-1 automatic interactive cat
+toy (laser + feather + rolling ball, motion-sensor). `offer-economist` passed it **conditionally**
+(3.67x markup / 68.9% margin at the worst tested combination, $9 landed / $32.99 retail — but the $5-9
+landed-cost range itself was never a real supplier quote, only reasoned by analogy to similar
+electronics, so the pass is contingent on an unverified number, unlike ranks 1-3 which all rest on real
+quotes). `compliance-guard` also passed it conditionally (checked specifically against Cheerble's actual
+product line and cleared it — Cheerble sells robotic balls and a separate wearable laser collar, not
+this dome/laser/feather/ball form factor, so the trademark-proximity risk is to Potaroma/Ficuswin instead,
+same generic-sourcing rule as elsewhere on the bench; flagged one new open item, FDA 21 CFR 1040.11 laser
+power/labeling requirements, unconfirmed on this specific unit). **Rejected anyway, by founder decision
+2026-08-11**, because neither conditional pass fixes the one weakness that matters most: it's already
+sold at Walmart, Chewy and Petco under multiple brands (Potaroma and others), which fails the
+"not easily bought locally" trait outright. Full detail in `compliance/bench-review-2026-08-11.md`.
+
+**2026-08-11, ranks 4-5 left open on purpose.** Two full sweeps tonight aimed deliberately high (find
+candidates with *zero* disclosed weakness, not just a passing one), using two different discovery methods
+specifically to avoid re-finding the same commoditized items: TikTok-trend-first for tech/wellness (~28
+candidates checked), then AliExpress/supplier-first for pet/home-kitchen (~20 more, after a first attempt
+at this category was cut short by a session limit). **Every single candidate with real, verifiable
+demand in both sweeps was already confirmed sold at Walmart, Target, Best Buy, Costco, Amazon Basics,
+Chewy, or Petco** — full checked-and-ruled-out lists are in the 2026-08-11 session note below, not
+reproduced here to keep this table short. The pattern held across both discovery methods, which the
+research agents read as a real, structural finding for this window in time (mid-2026 gadget
+dropshipping in well-searched consumer categories), not a fluke of search phrasing — flagged as worth
+re-testing with a human logged into a real browser session (AliExpress bot-blocked automated fetches
+after roughly 2 requests per sweep tonight) rather than assumed permanent. **Decision: do not force-fill
+ranks 4-5 with a candidate that has a disclosed hard weakness just to hit a count of 5.** The three
+confirmed candidates (ranks 1-3) are real and solid; diluting focus across padded picks would cost more
+than it protects, and this project's own doctrine already says the bench is depth, not five parallel
+bets, with only one product live at a time regardless.
 
 **Screened out entirely (not on the bench, with reason):** posture correctors, LED strips, generic phone
 cases (all hard-banned categories per the playbook). Wearable neck fans and mini blenders (now sold at
@@ -109,11 +124,11 @@ priced too low, $10-20, dead for paid ads per the price-band floor).
   remembering as a lesson: strong demand evidence does not override a failed unit-economics gate. Reopen
   only if a real supplier quote comes back meaningfully below $25 landed.
 
-**Compliance:** ranks 1-4 (fountain, eye mask, lens kit, and the now-killed vacuum) all passed
-`compliance-guard`'s review as conditional PASSes, no hard blocks — full detail in
+**Compliance:** ranks 1-4 (fountain, eye mask, lens kit, and the now-killed vacuum), plus the rejected
+cat toy, have all been through `compliance-guard`'s review — full detail in
 `compliance/bench-review-2026-08-11.md`, including the specific ad-copy line to hold for the eye mask
 ("comfort, not medical") and the sourcing-stage brand-comparison check owed for the lens kit before
-ordering a sample. The pending cat-toy candidate has **not** been through this review yet.
+ordering a sample.
 
 ## Founder actions outstanding, ranked by cost of delay (update in place; `docs/NO-STALL.md` P2/P3)
 This block goes at the top of every daily readout. Each item is a Prepared Action Card: exact URL, exact
@@ -155,11 +170,48 @@ the CLI, not a numbered card here, since it changes what it asks for every day.
 | 2026-08-11 | Bench rank 3 (phone lens clip kit) confirmed KEEP | offer-economist | 71.1% margin / 4.00x markup at worst-case $7.50 landed cost, real cushion at both extremes |
 | 2026-08-11 | Bench rank 4 (pet grooming vacuum) killed, removed from the table | offer-economist | 2.40x markup at worst-case $25 landed cost against $59.99 retail (band ceiling); would need $75 retail to clear 3x, outside the allowed band |
 | 2026-08-11 | Full store build spec, 6 pages of store copy, 5 warm-up/Day-1 video scripts, a supplier sourcing dossier, and a compliance review of the whole bench all built ahead of need, none of it requiring the founder | store-architect, copywriter, creative-director, ops-support, compliance-guard (all via challenge-lead) | n/a — preparation, not a numbers call; see the 2026-08-11 "getting ready before setup" session note for the full file list |
+| 2026-08-11 | 4-in-1 interactive cat toy rejected (founder decision, after both gates passed it conditionally) | founder, informed by offer-economist + compliance-guard | Both passes were conditional on an unverified $5-9 landed-cost estimate; rejected regardless because it's already sold at Walmart/Chewy/Petco, which no economics or compliance pass fixes |
+| 2026-08-11 | Ranks 4-5 left open rather than force-filled; two full sweeps (~48 candidates combined) found zero clean candidates in tech/wellness or pet/home-kitchen | product-scout (two runs) | Every candidate with verifiable demand in both sweeps was already at Walmart, Target, Best Buy, Costco, Amazon Basics, Chewy, or Petco — full lists in the session note below |
 | - | Repo + team scaffolded; challenge not yet started | setup | - |
 
 ## Session notes
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
+
+- **2026-08-11, part 3: the founder set the real goal, two more research sweeps came back empty, and the
+  bench is settled at 3.** The founder stated the challenge's actual target plainly: aim for a fully
+  operating, profitable store by day 30, with $1,000/day as the ambitious direction to aim at, understood
+  as a stretch goal rather than an expected outcome — logged here so future sessions read the founder's
+  own framing rather than only the playbook's more conservative baseline (10-13% net margin on a mature
+  store, most profitability arcs running 3-6 months, per `docs/LEARNINGS.md`). Both frames are true at
+  once: aim high, report only what the ledger actually shows.
+  Asked for the cat-toy candidate to be checked at a genuinely rigorous "zero disclosed weakness" bar
+  before spending anything on it. Ran `offer-economist` and `compliance-guard` on it: both passed it
+  **conditionally** (economics: 3.67x/68.9% at the worst tested combination, but resting on an unverified
+  $5-9 landed-cost estimate, not a real supplier quote like ranks 1-3; compliance: cleared specifically
+  against Cheerble's actual product line, which turned out not to be a real trademark risk, but surfaced
+  a new open item, FDA laser labeling requirements, unconfirmed on this unit). **Neither pass fixes the
+  one weakness that actually matters: it's already sold at Walmart, Chewy and Petco.** Told the founder
+  this directly rather than rounding a conditional pass up to a clean one. **Founder rejected it**, which
+  was the right call given their own bar.
+  Then ran two more research sweeps aimed at finding 5 total clean candidates: tech/wellness (~28
+  candidates) and pet/home-kitchen (~20 candidates, using a deliberately different discovery method,
+  supplier-side/AliExpress-first, specifically to avoid re-finding the same commoditized items a
+  TikTok-trend-first search would surface). **Both came back with zero qualifying picks.** Every candidate
+  with real, checkable demand in both sweeps was already sold at Walmart, Target, Best Buy, Costco, Amazon
+  Basics, Chewy, or Petco: heated massage cushions, hand warmers, sleep masks, scalp massagers,
+  content-creator kits, massage guns, acupressure mats, heated mouse pads/gloves/insoles, mug warmers,
+  mini vacuums, foot hammocks, wobble stools, mini printers/label makers, heated neck wraps, star
+  projectors, phone mounts, weighted sleep masks, teleprompters, steam pet-grooming brushes, dog car
+  booster seats, vibrating pet massage brushes, smart pet ID tags, and portable blackout curtains (the
+  last one turned out to literally be an Amazon Basics SKU). AliExpress bot-blocked automated fetches
+  after roughly 2 requests per sweep, so this method has a real ceiling that a human logged into a real
+  browser session doesn't share — noted as worth re-testing that way, not treated as a permanent wall.
+  **Founder decision: do not force-fill ranks 4-5 with a candidate carrying a disclosed hard weakness
+  just to hit a count of 5. The bench stays at 3 confirmed candidates, ranks 4-5 explicitly open rather
+  than padded.** This matches the project's own standing rule that the bench is depth, not five parallel
+  bets, and only one product is ever live at once regardless of how many ranks are filled.
+  **No money moved. No product ordered. Out-of-pocket still $0.00 / $100.00.**
 
 - **2026-08-11, part 2: getting ready before setup, so setup is a paste job.** The founder had just
   finished the daily-loop token setup, it was late, and asked for the Standing Work Queue to run rather

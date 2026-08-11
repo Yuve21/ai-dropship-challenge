@@ -177,3 +177,81 @@ No item on the bench is a hard block. All four fail-safe on the trademark questi
 sourcing/supplier-selection step, not at the "is this category okay" step, so the fix in every case is
 procedural (check before you buy the sample, check before the ad copy ships) rather than a reason to drop
 the product.
+
+---
+
+## 2026-08-11, later session: Pending candidate (not yet seated as Rank 5) — Generic 4-in-1 automatic interactive cat toy (laser + feather + rolling ball, motion-sensor), $32.99-34.99
+
+Reviewed per the founder's request, ahead of `offer-economist`'s worst-case gate. `tracker/LEDGER.md`
+already logs this as a pending candidate with a disclosed demand weakness (Walmart/Chewy/Petco
+saturation) — this section is the compliance-only pass, not a product-fit endorsement. See the closing
+note below for why those are different questions.
+
+**Verdict: PASS, conditional.**
+
+- **Trademark/counterfeit — Cheerble specifically, checked, not hedged.** Cheerble's actual recognizable
+  product line, per its own site and current Amazon/Chewy listings, is built around a **spherical
+  self-propelled robotic ball** (Wicked Ball, Ball M1, Ice Cream, etc. — fur-covered or hard-shell balls
+  with LEDs and obstacle-reversal sensors) plus a separate wearable laser product (the KiTiDOT collar).
+  Cheerble does not currently sell a dome/UFO-shaped combo unit with a laser turret, a popping/rotating
+  feather wand, and a detachable rolling ball as one device. That specific "UFO base + laser + feather
+  wand + rolling ball" form factor belongs to a different, already-genericized design lineage —
+  Potaroma and Ficuswin (both confirmed via their own current listings) sell visually near-identical
+  dome-shaped units to each other, and neither's design traces back to a Cheerble product. **Answer, not
+  a hedge: sourcing a generic 4-in-1 laser/feather/ball unit is not knockoff-adjacent to Cheerble.** It's
+  a different product family entirely; the two aren't visually or functionally converging. The real
+  proximity risk sits where it does for ranks 3 and 4: against Potaroma and Ficuswin, the two named
+  sellers actually producing this exact form factor. **Fix before sourcing:** same three-point check as
+  ranks 3/4 — no "Potaroma" or "Ficuswin" (or their sub-brand names) anywhere in the supplier listing, no
+  branding/logos on the unit or its packaging, and a visual side-by-side against current Potaroma/Ficuswin
+  product photos before ordering a sample. **One added condition specific to this item:** if the sourced
+  unit or ad copy ever grows an "app-connected" or "smart control" feature, re-run the Cheerble check at
+  that point — app connectivity is the one dimension where Cheerble's IP claim would become relevant, and
+  a bare motion-sensor/button unit sourced now doesn't have that feature, so it clears today.
+- **Category — the laser is a real regulatory item, not a maybe.** The toy itself (pet toy) is not a
+  restricted category. But it contains a laser diode, and that puts it under FDA jurisdiction as a
+  consumer laser product regardless of the fact that it's marketed for a cat, not a person, because the
+  beam is still emitted into a space a human can be exposed to. Under 21 CFR 1040.11, consumer laser
+  products sold in the US are capped at Class IIIa / IEC Class 3R, 5 mW maximum visible output, and must
+  carry FDA-required labeling (hazard class, power output, and a compliance/warning statement).
+  (<https://www.fda.gov/radiation-emitting-products/alerts-and-notices/illuminating-facts-about-laser-pointers>,
+  <https://www.ecfr.gov/current/title-21/chapter-I/subchapter-J/part-1040/section-1040.11>). This is
+  flagged as a real, checkable pre-sourcing item, not asserted as fine and not asserted as a problem: I
+  have not seen this specific supplier's laser module spec sheet, so **I'm not clearing it, I'm flagging
+  it.** **Fix before sourcing:** get the actual output power (mW) and labeling for the specific laser
+  module the supplier ships, confirm it's ≤5 mW and carries the required class/warning label, and reject
+  any supplier who can't produce that spec. Cheap dropship laser toys are exactly the kind of item that
+  sometimes ships with an unlabeled or over-powered module to save cost, so treat "the supplier didn't
+  volunteer a spec sheet" as a no, not a maybe.
+- **Honest shipping.** Small electronics unit, standard honest window is achievable same as the rest of
+  the bench. It's USB-rechargeable, meaning the same lithium-battery (UN3480/UN3481) declared-shipping
+  question flagged for ranks 2 and 4 applies here too. **Fix:** confirm with the supplier how the battery
+  is declared/shipped before setting the promised delivery window, same fix as those two items.
+- **Ad policy.** "Keeps your cat entertained for hours while you're at work" reads as a legitimate,
+  standard benefit claim in this category — enrichment-while-away is the actual, accepted use case for
+  every automatic pet toy on the market, this isn't a claim unique to this item. It does not itself cross
+  into guilt-bait. **Where it does cross the line:** anything that names or implies a clinical condition
+  ("cures separation anxiety," "prevents destructive behavior from loneliness") or that explicitly leans
+  on owner guilt ("so you don't have to feel bad about leaving your cat home alone") — the first is an
+  unsupported pet-health/behavioral claim, the second is the implied-neglect pattern the brief specifically
+  asked about. **Fine:** "entertained while you're out," "burns off energy," "reduces boredom," "cats love
+  the hunt." **Also fine to avoid overclaiming in the other direction:** don't market the laser as
+  "100% safe for cats' eyes" — a categorical safety claim is a separate FTC deceptive-claims risk if it's
+  not literally substantiated; "low-power laser" or naming the actual class (once confirmed above) is the
+  honest version of that claim.
+
+**The saturation problem, stated plainly, per the brief's ask.** This item is already sold at Walmart,
+Chewy, and Petco under Potaroma and other brands — `tracker/LEDGER.md` already flags this as a real,
+disclosed weakness against the "not easily bought locally" trait, and that's correct. **That is not a
+compliance question and this review does not resolve it.** A compliance PASS here means: legally and
+ad-policy safe to source and market, contingent on the sourcing-stage brand check and the laser spec
+check above. It does **not** mean this is a strong product pick — the mainstream-retail-shelf presence is
+a demand/differentiation problem for `product-scout` and `offer-economist` to weigh, not something a
+trademark or ad-policy check can clear. Don't let a clean compliance pass read as a green light on the
+part of this candidate that's actually still weak.
+
+**Updated summary row:**
+
+| Candidate | Verdict | Sharpest open risk |
+|---|---|---|
+| 4-in-1 cat toy (laser+feather+ball), pending Rank 5 | PASS, conditional | Laser module must be verified ≤5mW with FDA-required labeling before sourcing (not yet confirmed); sourcing-stage brand check against Potaroma/Ficuswin (not Cheerble — different design lineage); compliance pass does not offset the already-disclosed Walmart/Chewy/Petco saturation problem |
