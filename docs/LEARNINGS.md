@@ -510,11 +510,15 @@ off from Live knowledge on purpose**:
 
 # Live knowledge
 
-**Status: no learnings yet. The challenge has not started (see `tracker/LEDGER.md`, out-of-pocket
-$0.00).** Every live section below is deliberately blank. Do not seed it with plausible-sounding
-dropshipping wisdom from the internet; that belongs in `docs/PLAYBOOK.md` (or `docs/OPERATOR-PLAYBOOK.md`)
-as research, clearly marked as such, and its short form belongs in *External evidence* above, never here.
-This file's live sections only hold things **we** observed with **our own** numbers.
+**Status: 1 learning as of 2026-08-10 (an operational research-tooling note, see *Anti-patterns*). The
+challenge itself has not started (see `tracker/LEDGER.md`, out-of-pocket $0.00, no product live, no
+posts, no sales).** Every other live section below is still deliberately blank. Do not seed it with
+plausible-sounding dropshipping wisdom from the internet; that belongs in `docs/PLAYBOOK.md` (or
+`docs/OPERATOR-PLAYBOOK.md`) as research, clearly marked as such, and its short form belongs in *External
+evidence* above, never here. This file's live sections only hold things **we** observed with **our own**
+numbers. Today's product-bench picks and their modelled margins are NOT learnings yet, on purpose: no
+product has shipped or sold, so there is nothing to conclude from real numbers. They live in
+`tracker/LEDGER.md`'s Product bench block, not here, until a test actually concludes.
 
 There are **17 entries in *External evidence* above**, which are other people's sourced numbers, several of
 them corrections to our own playbook. They are not learnings and must never be cited as our results; the
@@ -569,7 +573,28 @@ Things **proven** not to work here, with the evidence. This section is the most 
 because it stops repeated spending of attention. An anti-pattern needs the same evidence standard as
 anything else; a bad feeling is a hypothesis.
 
-*(no entries yet)*
+### [2026-08-10] Direct WebFetch against TikTok Creative Center, Meta Ad Library and Amazon Movers & Shakers returns no usable data
+- **Claim:** an agent calling WebFetch directly against these three research sources does not get real
+  data back: TikTok Creative Center returns a client-rendered SPA shell with "No search results found,"
+  Meta Ad Library fails outright (socket hang-up), and Amazon (root, category, and best-seller URLs)
+  returned HTTP 503 on every attempt. Only WebSearch-mediated secondary results (indexed pages, press
+  coverage, individual TikTok posts) came back usable, plus exactly one AliExpress category page that
+  rendered live data on direct fetch.
+- **Evidence:** `tracker/LEDGER.md`, 2026-08-10 session note. n=1 research run, one agent, one session:
+  every attempt logged in that entry. Estimated, not dashboard-confirmed (there is no dashboard for
+  "did the fetch work"), but it is a direct first-hand observation, not a guess.
+- **Confidence:** Low. n=1, one seat's tooling, one day. Could differ with a different fetch mechanism
+  (e.g. an actual browser-rendering tool) or if the sites change their bot-detection tomorrow.
+- **Falsified by:** a future run where direct WebFetch against any of these three sources returns real,
+  parseable data.
+- **So we now:** default to WebSearch-mediated secondary sources for these three rather than spending
+  budget on direct fetch attempts, and treat live ad-longevity data (Meta/TikTok Ad Library specifically)
+  as something that needs a human logged into a real browser session when it matters for a real spend
+  decision — see Founder Action Card #9 in `tracker/LEDGER.md`, which exists because of this gap.
+- **Expires:** re-check quarterly (platform/tooling behaviour, not a product or trend).
+- **Written by:** challenge-lead, from the 2026-08-10 product-scout run.
+
+*(one entry above; no others yet)*
 
 ---
 

@@ -41,7 +41,7 @@ content or a paid ramp while a gate here is unmet, but a blocked gate never ends
   themselves a payout-hold trigger, so finish it the same day the store exists. Reserve notice: none.
   Payout schedule: n/a. Disputes: 0.
 - **Protocol v1 verdict written to `docs/LEARNINGS.md`: not due yet (due on protocol Day 1 and Day 7).**
-- **Learnings logged in `docs/LEARNINGS.md`: 2 entries (0 learnings, 2 open hypotheses: Warm-Up Protocol
+- **Learnings logged in `docs/LEARNINGS.md`: 3 entries (1 learning, 2 open hypotheses: Warm-Up Protocol
   v1, and the no-stall procedures).**
 
 ## Product bench (update in place; see `docs/NO-STALL.md` P1, and `docs/PLAYBOOK.md` section 3)
@@ -50,13 +50,31 @@ owns it: re-score the whole bench weekly, promote rank 1 in the same run a produ
 rank 5 from that run's sweep, drop any candidate that has sat here 30 days without fresh evidence. Only
 one product is live at a time.
 
-| Rank | Candidate | Landed cost | Retail | Net margin | Demand evidence (and which ladder rung it entered at) | Scored on |
+**Status: 4 of 5 filled from today's first-ever research sweep (2026-08-10). Rank 5 is OPEN, backfill
+owed next `product-scout` run (`docs/NO-STALL.md` P10 item 2).** Worst-case = using the high end of the
+stated landed-cost range, per `offer-economist`'s gate check (a product that only clears 30%/3x at
+best-case cost is not qualified).
+
+| Rank | Candidate | Landed cost | Retail | Net margin (worst case / best case) | Demand evidence (and which ladder rung it entered at) | Scored on |
 |---|---|---|---|---|---|---|
-| 1 | (empty, no research run yet) | - | - | - | - | - |
-| 2 | (empty) | - | - | - | - | - |
-| 3 | (empty) | - | - | - | - | - |
-| 4 | (empty) | - | - | - | - | - |
-| 5 | (empty) | - | - | - | - | - |
+| 1 | Cat water fountain (ABS/plastic pump, quiet) | $8-11 | $34.99 | 64.8% / 73.4%, markup 3.18x-4.37x | Established competitors (PETLIBRO, Catit, Pioneer Pet) = validated per playbook (multiple competitors is not a red flag). Ad-longevity claim (1,263 TikTok ad-library entries) is **unverified**, from a third-party ad-spy teaser page, not a live Meta/TikTok pull. Entered at rung 0 (clean sweep, not widened). | 2026-08-10 |
+| 2 | Rechargeable heated eye mask (USB warm-compress) | $6.50-9.50 | $28.99, **repriced to $29.99 recommended** | 63.3% / 73.7% at $28.99 (3.05x worst-case markup, a $0.16 cushion — fragile pass); 64.4% / 74.4% at $29.99 (3.16x, real cushion) | **Weakest of the 4**: one specific TikTok video found had 774 likes / 38 comments, under this challenge's own 1,000+ bar. Kept on margin quality + category fit, not demand strength. Needs a real ad-longevity check before any spend. Entered at rung 3 (2 of 3 demand signals, logged as required). | 2026-08-10 |
+| 3 | Modular magnetic phone lens clip kit (generic, macro/wide/fisheye) | $5-7.50 | $29.99 | Not yet run through `offer-economist`; scout's own math ~74% net, best margin of the sweep | Competing branded kits (KEYWING, MIAO LAB) actively marketed as viral — validates the category, but our sourcing must be fully generic to avoid the trademark proximity that got the branded names excluded. No hard comment/share numbers found. Entered at rung 3. | 2026-08-10 |
+| 4 | Mini handheld pet deshedding/grooming vacuum (generic) | $18-25 (high — busts the $5-12 target band) | $59.99 (top of band, to hit 3x) | Not yet run through `offer-economist`; scout's own math ~60% net at $59.99, but markup cushion is thin because retail is already at the ceiling | Best organic-signal evidence of the sweep (multiple real TikTok Shop listings + specific viral videos found), but every real example is a named branded product (Geoorood, Airbot, LMVVC, Neakasa, oneisall) — only generic sourcing is acceptable and its real cost is unverified. Heavier item = higher shipping/damage risk. Entered at rung 3, flagged fragile. | 2026-08-10 |
+| 5 | **OPEN — backfill owed next sweep** | - | - | - | - | - |
+
+**Screened out entirely (not on the bench, with reason):** posture correctors, LED strips, generic phone
+cases (all hard-banned categories per the playbook). Wearable neck fans and mini blenders (now sold at
+Target/Five Below at commodity prices — fails price-band and not-in-local-stores). GPS dog collars
+(entrenched branded hardware, AliExpress copies judged trademark-adjacent, excluded rather than flagged
+per the borderline-trademark rule).
+
+**KILLED pre-bench (never made the ranked table):** Hands-free electric jar/can opener. $9-12 landed,
+$32.99 retail, 59.8%-68.9% net margin (clears the margin floor easily) but **markup fails at worst case:
+2.75x at $12 landed, under the 3x floor.** Margin alone is not the gate; the rule is 3x AND 30%, and this
+fails the first leg once sourcing lands in the top half of its own quoted cost range. Not a permanent
+ban: reopen only if a supplier quote comes back at or below $10.99 landed, or retail is renegotiated to
+roughly $36+ to restore the multiple.
 
 ## Founder actions outstanding, ranked by cost of delay (update in place; `docs/NO-STALL.md` P2/P3)
 This block goes at the top of every daily readout. Each item is a Prepared Action Card: exact URL, exact
@@ -72,6 +90,7 @@ steps, exact values to paste, cost, minutes, what it unblocks. The founder does 
 | 6 | Create the free upload-post account and OAuth-connect TikTok once | 0.7 | $0 | ~10 min | Auto-posting; until then posting is a copy-paste human step |
 | 7 | Create the DSers/CJ account and put a payment method on it | 0.2 until the first order | $0 now | ~15 min | Fulfilment (critical the moment an order exists) |
 | 8 | Paste AI-video / research API keys into `.env` (free tiers) | 0.3 | $0 | ~5 min each | Rendered video and scraped research; scripts ship regardless |
+| 9 | Spend 10 min logged into Meta Ad Library + TikTok Creative Center, search "cat water fountain," screenshot what you find | 0.2, de-risks the #1 bench candidate before more effort goes into it | $0 | ~10 min | Confirms or kills the one unverified leg of bench rank 1's demand evidence (today's agent research could not reach these sites directly: bot-blocking / client-rendered pages, see 2026-08-10 ledger note) |
 
 ## Money log (line items)
 | Date | In/Out | Founder or Revenue | Amount | What | Running out-of-pocket |
@@ -86,11 +105,48 @@ steps, exact values to paste, cost, minutes, what it unblocks. The founder does 
 ## Decision log
 | Date | Decision | Made by (agent) | The number behind it |
 |---|---|---|---|
+| 2026-08-10 | First product-research sweep run; bench filled to 4/5. Cat water fountain promoted to rank 1, heated eye mask to rank 2 (contingent on repricing to $29.99), phone lens kit to rank 3, pet grooming vacuum to rank 4 (flagged, thin margin cushion). Rank 5 left open. | product-scout, then offer-economist | Fountain 3.18x markup / 64.8% margin at worst-case landed cost; eye mask 3.16x / 64.4% at $29.99 |
+| 2026-08-10 | Hands-free electric can opener killed pre-bench, never promoted | offer-economist | 2.75x markup at $12 worst-case landed cost, under the 3x floor (margin was 59.8%, fine, but the gate is AND not OR) |
 | - | Repo + team scaffolded; challenge not yet started | setup | - |
 
 ## Session notes
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
+
+- **2026-08-10, first daily loop run: the product bench went from empty to 4/5 filled, with real
+  unit-economics gating applied.** `challenge-lead` picked up the challenge, read the full doctrine, and
+  ran the day's one agent-doable decisive move (warm-up Action Card #1 is still a `HUMAN:` step, so this
+  is the top item from the Standing Work Queue, P10 item 2: bench build).
+  **`product-scout`** ran a live research sweep across the free stack. Honest result: TikTok Creative
+  Center, Meta Ad Library and Amazon Movers & Shakers were all functionally unreachable by direct
+  fetch today (client-rendered SPA shells, a socket hang-up, and HTTP 503s respectively) — only one
+  AliExpress category page returned genuine live data. Everything else in the findings is WebSearch-
+  mediated secondary reporting (real, but not a raw platform pull), clearly flagged per item rather than
+  presented as verified. Five candidates came back scored: cat water fountain, hands-free electric can
+  opener, rechargeable heated eye mask, modular phone lens clip kit, and a pet deshedding vacuum. Six more
+  were explicitly screened out with reasons (posture correctors, LED strips, phone cases — hard bans;
+  neck fans and mini blenders — now commodity-priced at Target/Five Below, fails the not-in-local-stores
+  rule; GPS collars — judged trademark-adjacent to entrenched branded hardware, excluded rather than
+  flagged).
+  **`offer-economist`** then re-ran the top 3 candidates' economics independently rather than trusting the
+  scout's rounded numbers, using the real Shopify/Stripe fee structure (2.9% + $0.30, not a flat 3%) and
+  checking the gate (3x markup AND >30% net margin) at worst-case landed cost, not best-case. Result: the
+  **cat fountain and the eye mask both clear the gate with real cushion at worst-case cost** (fountain
+  3.18x/64.8%, eye mask 3.16x/64.4% once repriced from $28.99 to $29.99). The **can opener fails the 3x
+  leg at worst-case sourcing cost** (2.75x at $12 landed) even though its margin alone looked fine
+  (59.8%) — margin and markup are an AND, not an OR, and this is exactly the kind of thing that gate
+  exists to catch. It was killed pre-bench rather than promoted; not a permanent ban, reopens if a
+  supplier quote comes in at $10.99 or below.
+  **Bench state:** rank 1 fountain, rank 2 eye mask (contingent on the reprice), rank 3 lens kit, rank 4
+  grooming vacuum (flagged: landed cost busts the $5-12 target band, retail sits at the $60 ceiling to
+  compensate). **Rank 5 is open**, owed on the next `product-scout` run. Neither rank 3 nor rank 4 has
+  been through `offer-economist` yet.
+  **What's still unverified and matters:** the fountain's strongest demand signal (ad-longevity) came
+  from a third-party ad-spy teaser page, not a live Meta/TikTok Ad Library pull — Founder Action Card #9
+  above asks for a 10-minute logged-in check to close that gap before more work goes into this candidate.
+  **No product went live. No sample was ordered. No money moved.** Out-of-pocket still $0.00. Warm-up
+  still not started on any track; that remains the single highest-cost-of-delay item on the board and
+  this run does not change that ranking, it just means the bench is ready the moment warm-up clears.
 
 - **2026-08-10, we stopped hedging: an executable protocol, a no-stall doctrine, and portability to any
   seat.** Three things shipped, all documentation.
