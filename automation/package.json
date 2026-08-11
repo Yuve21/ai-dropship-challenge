@@ -1,0 +1,13 @@
+{
+  "name": "ai-dropship-challenge-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local CLI for the parts of the AI-dropshipping challenge that are legitimately automatable: the warm-up day tracker/reminder, and posting through the approved upload-post.com TikTok API. Does not and will not automate scrolling/liking/following/watching on the real TikTok account - that stays human, see docs/WARM-UP.md.",
+  "bin": {
+    "challenge": "./cli.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}

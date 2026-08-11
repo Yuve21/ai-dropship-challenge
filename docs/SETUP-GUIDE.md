@@ -40,7 +40,10 @@ Work top to bottom; don't skip the order (later steps need earlier keys).
 ## D. Auto-posting to TikTok (ToS-clean, start free)
 9. `HUMAN:` **TikTok account(s)** for the store (1-3).
 10. `HUMAN:` pick a posting backend and connect your TikTok via OAuth (one time):
-    - **upload-post.com**: free tier, no card, cheapest to start (`UPLOAD_POST_KEY`), OR
+    - **upload-post.com**: has a free tier, but **TikTok specifically is Basic-tier-and-up only,
+      $24/mo minimum** (verified live 2026-08-10, corrected from what this line used to say — the
+      free tier covers other platforms, not TikTok). Cheapest to start on `--dry-run` in
+      `automation/`, but don't pay for it until Track A is close to Day 1 (`UPLOAD_POST_KEY`), OR
     - **Blotato** (~$29/mo, flat, built for AI agents, has an MCP) once revenue justifies it.
     These carry TikTok's approved audit for you, so you post PUBLIC without doing your own API audit.
     -> `AGENT:` `content-engine` posts the videos on a schedule via the posting API/MCP.
@@ -64,7 +67,10 @@ Work top to bottom; don't skip the order (later steps need earlier keys).
 ## The critical budget note (read this)
 Full automation SaaS (Blotato, Creatify, Runway, ElevenLabs, Apify) can total ~$90-300/mo, which
 would blow the $100 out-of-pocket cap before a single sale. So the rule:
-- **Start every automation tool on its FREE tier / trial / free credits.** upload-post is free;
+- **Start every automation tool on its FREE tier / trial / free credits.** upload-post's TikTok
+  posting is the one exception — it needs their Basic plan, $24/mo minimum, verified 2026-08-10 —
+  so build and test against it with `automation/`'s `--dry-run` first and don't subscribe until
+  Track A is close to Day 1, since nothing is postable before then anyway.
   HeyGen/Creatify/Runway/ElevenLabs have free credits; Apify is pay-per-use pennies.
 - **Only upgrade to paid automation tiers from REVENUE**, once the flywheel is turning. Reinvested
   revenue doesn't count against the $100 (see `BUDGET-RULES.md`).

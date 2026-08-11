@@ -107,11 +107,49 @@ steps, exact values to paste, cost, minutes, what it unblocks. The founder does 
 |---|---|---|---|
 | 2026-08-10 | First product-research sweep run; bench filled to 4/5. Cat water fountain promoted to rank 1, heated eye mask to rank 2 (contingent on repricing to $29.99), phone lens kit to rank 3, pet grooming vacuum to rank 4 (flagged, thin margin cushion). Rank 5 left open. | product-scout, then offer-economist | Fountain 3.18x markup / 64.8% margin at worst-case landed cost; eye mask 3.16x / 64.4% at $29.99 |
 | 2026-08-10 | Hands-free electric can opener killed pre-bench, never promoted | offer-economist | 2.75x markup at $12 worst-case landed cost, under the 3x floor (margin was 59.8%, fine, but the gate is AND not OR) |
+| 2026-08-10 | Built `automation/` CLI (warm-up day tracker + gated upload-post.com poster). Declined the founder's literal ask ("run my whole TikTok") to automate scrolling/liking/following/watching — no legitimate API exists for that, it's the session-token-bot ban vector `docs/WARM-UP.md` and `compliance-guard` already hard-ban, and it would defeat warm-up's own purpose | challenge-lead | n/a (a compliance/ToS line, not a numbers call) |
+| 2026-08-10 | Corrected `docs/SETUP-GUIDE.md` and `docs/AUTOMATION.md`: upload-post.com's TikTok posting requires their paid Basic plan, not the free tier as those docs previously said | challenge-lead | $24/mo minimum, verified live against docs.upload-post.com and upload-post.com/llms-full.txt, 2026-08-10 |
 | - | Repo + team scaffolded; challenge not yet started | setup | - |
 
 ## Session notes
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
+
+- **2026-08-10, part 2: an `automation/` CLI, and one request declined.** The founder asked for a
+  "personal CLI that connects to TikTok and runs my whole TikTok." Built the automatable half,
+  declined the rest, and said which is which rather than quietly doing a smaller thing.
+  **Declined:** automating the scrolling/liking/following/watching itself. There is no legitimate
+  API for that; the only way to build it is session-token login automation against the consumer
+  app, which is the exact ban vector `docs/WARM-UP.md` and `compliance-guard` already call a hard
+  no, and it would defeat warm-up's whole purpose (proving to TikTok's classifier that this is a
+  real human before it distributes anything). That stays a real ~20 min/day human job during
+  warm-up, 5-10 min/day after. Not a tooling gap, a deliberate line, same one this repo already drew
+  on day zero.
+  **Built:** `automation/` (Node, zero npm installs, uses Node 24's built-in `fetch`/`FormData`).
+  Two commands: `warmup today` prints the current Challenge Warm-Up Protocol v1 day, the human
+  routine, and how many posts (if any) are authorized; `post` wraps upload-post.com's approved
+  TikTok Content Posting API and **refuses in code** to post a type the current protocol day doesn't
+  allow, refuses past today's post cap, and refuses during an active hold — the gate is enforced by
+  the tool, not just documented. `warmup hold` freezes posting on an action block or a flat run of
+  posts, per the protocol's own hold conditions. State lives in
+  `automation/state/warmup-state.json`, committed to git like the ledger. Tested end to end
+  (start/today/hold/post --dry-run, including deliberately wrong post-type attempts to confirm the
+  refusal actually fires) before handing it over; found and fixed one real bug in the process
+  (`--dry-run` was checking for an API key it shouldn't have needed).
+  **A real correction surfaced doing this:** upload-post.com's TikTok posting requires their paid
+  Basic plan, **$24/mo minimum**, not the free tier `docs/SETUP-GUIDE.md` and `docs/AUTOMATION.md`
+  previously said. Verified live against their own docs and llms-full.txt, 2026-08-10. Both files
+  corrected in place. Recommendation logged: don't subscribe until Track A is close to Day 1 -
+  paying today would just be $24 of the $100 cap sitting idle for a week with nothing postable yet.
+  **What's still genuinely human, restated because the founder asked for full autonomy minus
+  warm-up specifically:** identity/KYC (Shopify Payments verification), funding any account (ad
+  account, supplier wallet, upload-post's subscription), approving real ad spend, and every one-time
+  OAuth grant (TikTok<->upload-post, Canva). These are the same four items `docs/NO-STALL.md` already
+  names as the irreducible boundary - not new restrictions, just restated against a request that
+  implied they might not apply. Everything else (research, economics, store spec, scripts, video
+  generation once keyed, posting once connected, the GitHub Actions daily loop) can genuinely run
+  unattended.
+  **No money moved, no post sent (only `--dry-run` was exercised), out-of-pocket still $0.00.**
 
 - **2026-08-10, first daily loop run: the product bench went from empty to 4/5 filled, with real
   unit-economics gating applied.** `challenge-lead` picked up the challenge, read the full doctrine, and
