@@ -473,3 +473,23 @@ directpaynet.com, witscode.com, eightx.co, disputifier.com (merchant-reported fi
 
 Researched 2026-08-10. Platform rules change; re-verify anything load-bearing before acting on it, and
 write what actually happened to `docs/LEARNINGS.md`.
+
+## Track E: Meta and Google ad accounts (prepare during warm-up, spend gated on revenue)
+
+Full-channel rule: budget gates a channel's LAUNCH, never its PREPARATION. Both paid platforms are
+stood up in parallel with Track A so they can launch the hour the spend trigger fires.
+
+- Day -7: create Meta Business Manager + ad account AND the Google Ads account. $0 spend on both.
+  The Meta pixel is already installed (Track B); add the Google tag beside it and verify BOTH fire
+  PageView/ViewContent/AddToCart on the test order.
+- Day -7 to Day 1: build the Paid Readiness Dossier for BOTH platforms (docs/NO-STALL.md P7).
+  Meta: 1 campaign, 1 broad ad set, 3 to 5 creatives, everything PAUSED. Google: Merchant Center
+  product feed drafted plus a Shopping / Performance Max campaign, PAUSED. Nothing spends.
+- New ad accounts have no history: first spend at platform minimum, no edits for 72h, then +20%
+  steps no more often than 48h. HYPOTHESIS, same provenance and review cadence as Track B.
+- Spend trigger unchanged from BUDGET-RULES: at least $150 collected revenue with the float intact.
+  Launch order at trigger: whichever platform's pixel/tag has accumulated more events; a tie goes
+  to Meta (broad targeting needs less signal than Search).
+
+Provenance: account creation at $0 is DOCUMENTED free on both platforms; the ramp numbers and the
+launch-order rule are OURS (inference), reviewed on protocol Day 1 and Day 7 like Tracks A-D.

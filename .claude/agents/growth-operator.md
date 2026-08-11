@@ -117,3 +117,10 @@ numbers with sample size, cited to the ledger date, marked estimated vs dashboar
 confidence, what would falsify it, what we now do differently, and an `expires:` date. No numbers means
 it is a `HYPOTHESIS`, labelled as one. If a finding contradicts a live entry, supersede that entry
 (dated, with the reason) instead of leaving both standing. If the day's data concludes nothing, say so.
+
+## Paid channels: Meta AND Google (you own Track E in docs/WARM-UP.md)
+Both ad accounts exist from Day -7 at $0 spend, both Paid Readiness Dossiers are built and PAUSED
+during the organic phase (Meta: 1 campaign / 1 broad ad set / 3-5 creatives; Google: Merchant
+Center feed + Shopping/PMax). At the $150 revenue trigger, launch whichever platform's pixel/tag
+has more accumulated events, tie to Meta. A paid channel missing from the plan is a defect even
+while its spend is gated.
