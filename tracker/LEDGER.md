@@ -57,31 +57,63 @@ owns it: re-score the whole bench weekly, promote rank 1 in the same run a produ
 rank 5 from that run's sweep, drop any candidate that has sat here 30 days without fresh evidence. Only
 one product is live at a time.
 
-**Status: 4 of 5 filled from today's first-ever research sweep (2026-08-10). Rank 5 is OPEN, backfill
-owed next `product-scout` run (`docs/NO-STALL.md` P10 item 2).** Worst-case = using the high end of the
-stated landed-cost range, per `offer-economist`'s gate check (a product that only clears 30%/3x at
-best-case cost is not qualified).
+**Status: 3 of 5 CONFIRMED (ranks 1-3, all through `offer-economist`'s worst-case gate). Rank 4 is OPEN**
+(the prior occupant, the grooming vacuum, was killed tonight, see below). **Rank 5 has one unvetted
+candidate pending economics + compliance review, not yet seated as confirmed** — see "Pending candidate"
+below. Backfill/vetting owed next `product-scout` + `offer-economist` run (`docs/NO-STALL.md` P10 item 2).
+Worst-case = using the high end of the stated landed-cost range, per `offer-economist`'s gate check (a
+product that only clears 30%/3x at best-case cost is not qualified).
 
 | Rank | Candidate | Landed cost | Retail | Net margin (worst case / best case) | Demand evidence (and which ladder rung it entered at) | Scored on |
 |---|---|---|---|---|---|---|
-| 1 | Cat water fountain (ABS/plastic pump, quiet) | $8-11 | $34.99 | 64.8% / 73.4%, markup 3.18x-4.37x | Established competitors (PETLIBRO, Catit, Pioneer Pet) = validated per playbook (multiple competitors is not a red flag). Ad-longevity claim (1,263 TikTok ad-library entries) is **unverified**, from a third-party ad-spy teaser page, not a live Meta/TikTok pull. Entered at rung 0 (clean sweep, not widened). | 2026-08-10 |
-| 2 | Rechargeable heated eye mask (USB warm-compress) | $6.50-9.50 | $28.99, **repriced to $29.99 recommended** | 63.3% / 73.7% at $28.99 (3.05x worst-case markup, a $0.16 cushion — fragile pass); 64.4% / 74.4% at $29.99 (3.16x, real cushion) | **Weakest of the 4**: one specific TikTok video found had 774 likes / 38 comments, under this challenge's own 1,000+ bar. Kept on margin quality + category fit, not demand strength. Needs a real ad-longevity check before any spend. Entered at rung 3 (2 of 3 demand signals, logged as required). | 2026-08-10 |
-| 3 | Modular magnetic phone lens clip kit (generic, macro/wide/fisheye) | $5-7.50 | $29.99 | Not yet run through `offer-economist`; scout's own math ~74% net, best margin of the sweep | Competing branded kits (KEYWING, MIAO LAB) actively marketed as viral — validates the category, but our sourcing must be fully generic to avoid the trademark proximity that got the branded names excluded. No hard comment/share numbers found. Entered at rung 3. | 2026-08-10 |
-| 4 | Mini handheld pet deshedding/grooming vacuum (generic) | $18-25 (high — busts the $5-12 target band) | $59.99 (top of band, to hit 3x) | Not yet run through `offer-economist`; scout's own math ~60% net at $59.99, but markup cushion is thin because retail is already at the ceiling | Best organic-signal evidence of the sweep (multiple real TikTok Shop listings + specific viral videos found), but every real example is a named branded product (Geoorood, Airbot, LMVVC, Neakasa, oneisall) — only generic sourcing is acceptable and its real cost is unverified. Heavier item = higher shipping/damage risk. Entered at rung 3, flagged fragile. | 2026-08-10 |
-| 5 | **OPEN — backfill owed next sweep** | - | - | - | - | - |
+| 1 | Cat water fountain (ABS/plastic pump, quiet) | $8-11 | $34.99 | 64.8% / 73.4%, markup 3.18x-4.37x | Established competitors (PETLIBRO, Catit, Pioneer Pet) = validated per playbook (multiple competitors is not a red flag). Ad-longevity claim (1,263 TikTok ad-library entries) is **unverified**, from a third-party ad-spy teaser page, not a live Meta/TikTok pull. Entered at rung 0 (clean sweep, not widened). Real supplier picks + honest 7-20 business day shipping window now in `ops/sourcing-dossier.md`. | 2026-08-10 |
+| 2 | Rechargeable heated eye mask (USB warm-compress) | $6.50-9.50 | $28.99, **repriced to $29.99 recommended** | 63.3% / 73.7% at $28.99 (3.05x worst-case markup, a $0.16 cushion — fragile pass); 64.4% / 74.4% at $29.99 (3.16x, real cushion) | **Weakest demand evidence of ranks 1-3**: one specific TikTok video found had 774 likes / 38 comments, under this challenge's own 1,000+ bar. Kept on margin quality + category fit, not demand strength. Needs a real ad-longevity check before any spend. Entered at rung 3 (2 of 3 demand signals, logged as required). | 2026-08-10 |
+| 3 | Modular magnetic phone lens clip kit (generic, macro/wide/fisheye) | $5-7.50 | $29.99 | **CONFIRMED 2026-08-11: 71.1% / 79.4%, markup 4.00x-6.00x.** No fragility — clears both gates with real room at worst case, unlike ranks 2 and (formerly) 4. | Competing branded kits (KEYWING, MIAO LAB) actively marketed as viral — validates the category, but our sourcing must be fully generic to avoid the trademark proximity that got the branded names excluded. No hard comment/share numbers found; weakest demand evidence on the confirmed bench, but cleanest economics. Entered at rung 3. | 2026-08-10, economics confirmed 2026-08-11 |
+| 4 | **OPEN** | - | - | - | - | - |
+| 5 | **OPEN** | - | - | - | - | - |
+
+**Pending candidate (found 2026-08-11, NOT yet a confirmed bench slot):** generic 4-in-1 automatic
+interactive cat toy (laser + feather + rolling ball, motion-sensor). Estimated $5-9 landed, $32.99-34.99
+suggested retail, scout's own math ~3.7x-6.6x markup / comfortably >30% margin — **not yet run through
+`offer-economist`'s worst-case gate or through `compliance-guard`**, both owed next session before this
+can be seated. Real risk already flagged by the scout: this category is now sold at Walmart, Chewy and
+Petco (Potaroma brand and others), which fails the "not easily bought locally" trait outright — kept as a
+candidate rather than screened out because it isn't priced to commodity-aisle levels ($20-35 comparable
+listings, near our band) and the demand signal is a genuine multi-year, multi-brand category rather than a
+one-off fad, but this is a real, disclosed weakness, not a clean pass. **Worth noting as a pattern, not
+just about this candidate:** the scout flagged that nearly every well-known viral pet gadget from the last
+two years it checked tonight (bubble backpack carrier, spin scrubber, treat-dispensing ball, pet stroller)
+has since migrated onto mainstream pet-retailer shelves — a standing sourcing difficulty for this niche
+worth keeping in mind on the next sweep, not a one-off finding.
 
 **Screened out entirely (not on the bench, with reason):** posture correctors, LED strips, generic phone
 cases (all hard-banned categories per the playbook). Wearable neck fans and mini blenders (now sold at
-Target/Five Below at commodity prices — fails price-band and not-in-local-stores). GPS dog collars
-(entrenched branded hardware, AliExpress copies judged trademark-adjacent, excluded rather than flagged
-per the borderline-trademark rule).
+Target/Five Below at commodity prices — fails price-band and not-in-local-stores). GPS dog collars and a
+dog treat-dispensing ball (both judged trademark-adjacent to entrenched branded hardware/products,
+excluded rather than flagged per the borderline-trademark rule). Cat bubble backpack carrier and an
+electric spin scrubber (both confirmed sold at multiple mainstream retailers under several house brands —
+fails not-in-local-stores). Dog car hammock and a pet nail grinder/grooming glove (both real candidates,
+priced too low, $10-20, dead for paid ads per the price-band floor).
 
-**KILLED pre-bench (never made the ranked table):** Hands-free electric jar/can opener. $9-12 landed,
-$32.99 retail, 59.8%-68.9% net margin (clears the margin floor easily) but **markup fails at worst case:
-2.75x at $12 landed, under the 3x floor.** Margin alone is not the gate; the rule is 3x AND 30%, and this
-fails the first leg once sourcing lands in the top half of its own quoted cost range. Not a permanent
-ban: reopen only if a supplier quote comes back at or below $10.99 landed, or retail is renegotiated to
-roughly $36+ to restore the multiple.
+**KILLED (removed from the ranked table, not a permanent ban):**
+- **Hands-free electric jar/can opener** (2026-08-10, never made the table). $9-12 landed, $32.99 retail,
+  59.8%-68.9% net margin (clears the margin floor easily) but **markup fails at worst case: 2.75x at $12
+  landed, under the 3x floor.** Reopen only if a supplier quote comes back at or below $10.99 landed, or
+  retail is renegotiated to roughly $36+ to restore the multiple.
+- **Mini handheld pet deshedding/grooming vacuum** (2026-08-11, killed off rank 4). $18-25 landed, $59.99
+  retail (already at the band ceiling) — margin was fine (54.9% worst case) but **markup fails at worst
+  case: 2.40x at $25 landed, under the 3x floor.** To clear 3x at that landed cost would need $75 retail,
+  $15 above the top of the $30-60 band — not a rounding-error miss, a structural one; there is no retail
+  price inside the allowed band that fixes it. Had the strongest demand evidence on the whole bench
+  (multiple real TikTok Shop listings + specific viral videos), which is exactly why this one is worth
+  remembering as a lesson: strong demand evidence does not override a failed unit-economics gate. Reopen
+  only if a real supplier quote comes back meaningfully below $25 landed.
+
+**Compliance:** ranks 1-4 (fountain, eye mask, lens kit, and the now-killed vacuum) all passed
+`compliance-guard`'s review as conditional PASSes, no hard blocks — full detail in
+`compliance/bench-review-2026-08-11.md`, including the specific ad-copy line to hold for the eye mask
+("comfort, not medical") and the sourcing-stage brand-comparison check owed for the lens kit before
+ordering a sample. The pending cat-toy candidate has **not** been through this review yet.
 
 ## Founder actions outstanding, ranked by cost of delay (update in place; `docs/NO-STALL.md` P2/P3)
 This block goes at the top of every daily readout. Each item is a Prepared Action Card: exact URL, exact
@@ -120,11 +152,66 @@ the CLI, not a numbered card here, since it changes what it asks for every day.
 | 2026-08-10 | Hands-free electric can opener killed pre-bench, never promoted | offer-economist | 2.75x markup at $12 worst-case landed cost, under the 3x floor (margin was 59.8%, fine, but the gate is AND not OR) |
 | 2026-08-10 | Built `automation/` CLI (warm-up day tracker + gated upload-post.com poster). Declined the founder's literal ask ("run my whole TikTok") to automate scrolling/liking/following/watching — no legitimate API exists for that, it's the session-token-bot ban vector `docs/WARM-UP.md` and `compliance-guard` already hard-ban, and it would defeat warm-up's own purpose | challenge-lead | n/a (a compliance/ToS line, not a numbers call) |
 | 2026-08-10 | Corrected `docs/SETUP-GUIDE.md` and `docs/AUTOMATION.md`: upload-post.com's TikTok posting requires their paid Basic plan, not the free tier as those docs previously said | challenge-lead | $24/mo minimum, verified live against docs.upload-post.com and upload-post.com/llms-full.txt, 2026-08-10 |
+| 2026-08-11 | Bench rank 3 (phone lens clip kit) confirmed KEEP | offer-economist | 71.1% margin / 4.00x markup at worst-case $7.50 landed cost, real cushion at both extremes |
+| 2026-08-11 | Bench rank 4 (pet grooming vacuum) killed, removed from the table | offer-economist | 2.40x markup at worst-case $25 landed cost against $59.99 retail (band ceiling); would need $75 retail to clear 3x, outside the allowed band |
+| 2026-08-11 | Full store build spec, 6 pages of store copy, 5 warm-up/Day-1 video scripts, a supplier sourcing dossier, and a compliance review of the whole bench all built ahead of need, none of it requiring the founder | store-architect, copywriter, creative-director, ops-support, compliance-guard (all via challenge-lead) | n/a — preparation, not a numbers call; see the 2026-08-11 "getting ready before setup" session note for the full file list |
 | - | Repo + team scaffolded; challenge not yet started | setup | - |
 
 ## Session notes
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
+
+- **2026-08-11, part 2: getting ready before setup, so setup is a paste job.** The founder had just
+  finished the daily-loop token setup, it was late, and asked for the Standing Work Queue to run rather
+  than starting anything new that needed them. Six specialists ran in parallel, matching real ledger data
+  where it existed rather than each starting cold:
+  **`product-scout`** found one rank-5 candidate (a generic 4-in-1 interactive cat toy) but flagged real
+  weaknesses in it rather than presenting a clean pick — see the Product bench section above for the
+  full reasoning and the pattern it noticed (viral pet gadgets keep migrating to mainstream retail
+  shelves within about two years, worth remembering on future sweeps). Left unseated pending economics
+  and compliance review.
+  **`offer-economist`** ran the worst-case gate on ranks 3 and 4. Lens kit confirmed (71.1%/4.00x, real
+  cushion). Grooming vacuum **killed** (2.40x markup at worst case, would need $75 retail to fix, outside
+  the band) despite having the strongest demand evidence on the whole bench — logged explicitly as the
+  lesson that demand strength does not override a failed economics gate.
+  **`compliance-guard`** reviewed the whole confirmed bench: all conditional passes, no hard blocks, full
+  detail in `compliance/bench-review-2026-08-11.md`.
+  **`store-architect`** wrote a complete, paste-ready Shopify build spec to `store/BUILD-SPEC.md` (418
+  lines): theme settings, a quantity-break table with real numbers, a free-shipping threshold, the free
+  app list (verified live, not assumed), the full CVR checklist with exact setting paths, and a single
+  ordered build sequence merging it with `docs/SETUP-GUIDE.md`.
+  **`copywriter`** wrote the fountain's product page and all 5 policy pages to `store/copy/`, with
+  explicit `[PLACEHOLDER]` markers everywhere real business info is needed rather than inventing a
+  business name, address, email, or any reviews.
+  **`creative-director`** wrote 5 scripts to `creative/scripts/`: the three Day -4/-3/-2 native posts (each
+  a genuinely different, zero-product-mention concept — a lap-trapped moment, an entryway tip, a kneading
+  fact), the Day -1 product-in-frame script (fountain visible, unstaged, never mentioned), and a Day 1
+  hook bank (8 hook variants + 2 full scripts with timed shot lists) for the fountain, all recommending
+  real phone-filmed UGC over AI video since the beats depend on authentic cat behavior.
+  **`ops-support`** built a real sourcing dossier at `ops/sourcing-dossier.md` — and tonight, unlike the
+  first research run, direct AliExpress category-page fetches actually worked: real prices, ratings and
+  sold-counts for the fountain (a $6.82, 4.9-star, 4,000+-sold pick as primary). The eye mask's data is
+  weaker (one confirmed price, one estimate, flagged as such). Recommended shipping-policy language:
+  "7-20 business days" for both, since neither pick has a confirmed US-warehouse SKU. Combined sample
+  cost for one of each: **~$16-19.50**, inside the $15-30 budget-rules allowance, not yet spent.
+  **Everything above is preparation, not action.** No store exists, no supplier account is funded, no
+  sample was ordered, no video was filmed or generated, nothing was posted. All of it is now sitting
+  ready so that the moment the founder creates the Shopify store and the supplier account, filling them
+  in is copy-paste rather than a cold start. **No money moved. Out-of-pocket still $0.00 / $100.00.**
+
+- **2026-08-11, the daily-loop secret is set (dead end zero cleared, workflow still OFF).** Pushed the 3
+  pending local commits to `origin/main` first, so the loop (whenever enabled) sees current state rather
+  than 2-day-stale repo content — **from now on, every commit in this repo gets pushed immediately after,
+  per the founder's explicit instruction**, not batched. The founder generated a `claude setup-token` and
+  ran `gh secret set CLAUDE_CODE_OAUTH_TOKEN`, but pasted the live token value directly into the chat
+  first rather than only into the terminal prompt as recommended. Flagged this plainly as the token now
+  being exposed outside the terminal and recommended rotating it; the founder chose to proceed with the
+  already-pasted value anyway, which is their call on their own credential. Set via
+  `gh secret set ... --body '<token>'` and confirmed present via `gh secret list` (name + timestamp only,
+  value never readable back, by GitHub's own design). **The workflow itself (`gh workflow enable`) was
+  deliberately NOT run** — per this repo's own rule, that switch is the founder's to flip, and they asked
+  to hold it until they say so. Confirmed via `gh workflow list`: still `disabled_manually`. No money
+  moved.
 
 - **2026-08-11, Track A Day -7: the TikTok account is real.** `@dailypawfinds` ("Paw Finds") created by
   the founder on a real device/network, profile completed (bio: "pet + home finds, one at a time," no
