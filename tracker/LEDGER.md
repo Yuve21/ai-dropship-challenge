@@ -23,12 +23,19 @@ Warm-up is time-based and free, so this block starts moving before a product is 
 owns it and reports the protocol track and day by name; `challenge-lead` will not authorise product
 content or a paid ramp while a gate here is unmet, but a blocked gate never ends the run
 (`docs/NO-STALL.md`).
-- **Track A (TikTok): not started. Protocol day: not yet at Day -7.** Accounts created: none. Created on:
-  n/a. One account per real device and real network.
-- **In-app human routine (~20 min/day during warm-up, 5-10 min/day forever after): not started.** The
+- **Track A (TikTok): STARTED. Protocol day: Day -7.** Account: `@dailypawfinds` ("Paw Finds"), created
+  2026-08-11, on a real device/network per the founder. Bio: "pet + home finds, one at a time," no link.
+  Profile picture: a designed paw-print mark (warm coral background, cream icon), not a real photo or a
+  fabricated face — see reasoning in the 2026-08-11 session note. Tracked going forward with
+  `automation/` (`node cli.js warmup today`), state in `automation/state/warmup-state.json`. One account,
+  one real device/network, as required.
+- **In-app human routine (~20 min/day during warm-up, 5-10 min/day forever after): started 2026-08-11.**
+  Day -7 routine (profile setup + ~20 min scroll, zero engagement) is the founder's task today. The
   posting API cannot do this; only a human can.
-- **Native non-promotional posts made: 0 of 3 (Days -4 to -2). Product-in-frame post: 0 of 1 (Day -1).**
-- **Product/CTA content started: NO (gated until Track A reaches Day 1).**
+- **Native non-promotional posts made: 0 of 3 (Days -4 to -2, not due yet). Product-in-frame post: 0 of 1
+  (Day -1, not due yet).**
+- **Product/CTA content started: NO (gated until Track A reaches Day 1, ~2026-08-18 if the cadence holds
+  exactly as scheduled).**
 - **Per-post measurements being collected (views at 1h/24h/72h, watch time and completion, saves, shares,
   comments, profile taps, follower delta, "is the FYP serving the niche" y/n, any action block or
   warning): none yet, no posts exist.**
@@ -80,17 +87,21 @@ roughly $36+ to restore the multiple.
 This block goes at the top of every daily readout. Each item is a Prepared Action Card: exact URL, exact
 steps, exact values to paste, cost, minutes, what it unblocks. The founder does one action and no research.
 
+**Track A Day -7 is DONE as of 2026-08-11** (`@dailypawfinds`, "Paw Finds") — removed from this table.
+**Today's one thing now, and every day going forward: run `node automation/cli.js warmup today`** and do
+whatever it says (today: ~20 min scrolling, zero engagement). That recurring daily task is tracked by
+the CLI, not a numbered card here, since it changes what it asks for every day.
+
 | Rank | Action | Cost of delay per day | Cost | Time | Unblocks |
 |---|---|---|---|---|---|
-| 1 | **Today's one thing:** start Warm-Up Protocol v1 Track A Day -7 (create the TikTok account on a real device, complete the profile, 20 min in the app, zero engagement day one) | **1.0, compounding and unrecoverable** | $0 | ~30 min | The entire organic strategy; every day of delay moves the whole calendar by a day |
-| 2 | Buy the domain and publish SPF + DKIM + DMARC `p=none` the same day (Track C Day -7) | 1.0 until bought | ~$10-12 | ~15 min | Sending domain, real contact email, domain verification |
-| 3 | Enable the daily loop: `gh workflow enable challenge-loop` then `gh secret set CLAUDE_CODE_OAUTH_TOKEN` (dead end zero) | 1.0 while a seat is not being opened daily | $0 | ~3 min | Unattended daily progress. Until then an open seat is the loop |
-| 4 | Create the Shopify store ($1/mo promo, Basic) | 0.6 | ~$1 | ~10 min | Store build, pixel install, policy pages, checkout |
-| 5 | Finish payments verification to 100%, bank linked (Track D Day -7) | 0.9 once a store exists | $0 | ~20 min | Taking any money at all |
-| 6 | Create the free upload-post account and OAuth-connect TikTok once | 0.7 | $0 | ~10 min | Auto-posting; until then posting is a copy-paste human step |
-| 7 | Create the DSers/CJ account and put a payment method on it | 0.2 until the first order | $0 now | ~15 min | Fulfilment (critical the moment an order exists) |
-| 8 | Paste AI-video / research API keys into `.env` (free tiers) | 0.3 | $0 | ~5 min each | Rendered video and scraped research; scripts ship regardless |
-| 9 | Spend 10 min logged into Meta Ad Library + TikTok Creative Center, search "cat water fountain," screenshot what you find | 0.2, de-risks the #1 bench candidate before more effort goes into it | $0 | ~10 min | Confirms or kills the one unverified leg of bench rank 1's demand evidence (today's agent research could not reach these sites directly: bot-blocking / client-rendered pages, see 2026-08-10 ledger note) |
+| 1 | Buy the domain and publish SPF + DKIM + DMARC `p=none` the same day (Track C Day -7) | **1.0, compounding and unrecoverable** | ~$10-12 | ~15 min | Sending domain, real contact email, domain verification |
+| 2 | Enable the daily loop: `gh workflow enable challenge-loop` then `gh secret set CLAUDE_CODE_OAUTH_TOKEN` (dead end zero) | 1.0 while a seat is not being opened daily | $0 | ~3 min | Unattended daily progress. Until then an open seat is the loop |
+| 3 | Create the Shopify store ($1/mo promo, Basic) | 0.6 | ~$1 | ~10 min | Store build, pixel install, policy pages, checkout |
+| 4 | Finish payments verification to 100%, bank linked (Track D Day -7) | 0.9 once a store exists | $0 | ~20 min | Taking any money at all |
+| 5 | Create the free upload-post account (dashboard sign-up only; do NOT subscribe to the paid Basic tier yet, see automation/README.md) | 0.4, grows as Day 1 (~2026-08-18) approaches | $0 now, $24/mo when you do subscribe (closer to Day 1) | ~10 min | Lets `automation/`'s `post` command actually send once the paid tier + video assets both exist |
+| 6 | Create the DSers/CJ account and put a payment method on it | 0.2 until the first order | $0 now | ~15 min | Fulfilment (critical the moment an order exists) |
+| 7 | Paste AI-video / research API keys into `.env` (free tiers) | 0.3 | $0 | ~5 min each | Rendered video and scraped research; scripts ship regardless |
+| 8 | Spend 10 min logged into Meta Ad Library + TikTok Creative Center, search "cat water fountain," screenshot what you find | 0.2, de-risks the #1 bench candidate before more effort goes into it | $0 | ~10 min | Confirms or kills the one unverified leg of bench rank 1's demand evidence (today's agent research could not reach these sites directly: bot-blocking / client-rendered pages, see 2026-08-10 ledger note) |
 
 ## Money log (line items)
 | Date | In/Out | Founder or Revenue | Amount | What | Running out-of-pocket |
@@ -114,6 +125,28 @@ steps, exact values to paste, cost, minutes, what it unblocks. The founder does 
 ## Session notes
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
+
+- **2026-08-11, Track A Day -7: the TikTok account is real.** `@dailypawfinds` ("Paw Finds") created by
+  the founder on a real device/network, profile completed (bio: "pet + home finds, one at a time," no
+  link), matching the values handed over in the prior session. This is the actual start of the 30-day
+  clock's warm-up runway. Ran `node automation/cli.js warmup start --handle @dailypawfinds` for real
+  (previous runs of that command were test data on a fake handle/date, cleared before handoff) — the
+  tracker now correctly reports Day -7 and the Day -7 routine (create + complete profile, ~20 min
+  scroll, zero engagement).
+  **Built the profile picture.** No image-generation model is available in this seat, so designed it as
+  SVG and rasterized it with headless Chrome (already present on this machine, no install needed): a
+  simple paw-print mark, warm coral background, cream icon. Chose this over a real or fabricated face
+  after a quick research check (`docs/PLAYBOOK.md`-style caveat applies: mostly vendor-blog consensus,
+  not platform-documented, so directional not authoritative) — the actionable, well-supported parts were
+  simple/high-contrast/legible at tiny circle-crop size, and a warm image reading more "native" than a
+  corporate logo for a personal-feeling account. A real face would fit that better, but there isn't one
+  to use honestly, and inventing one crosses into the same fabrication line this repo won't cross
+  elsewhere. Source file `assets/tiktok-profile/pawfinds-avatar.html`, rendered PNG alongside it and
+  delivered to the founder to set in-app.
+  **Founder actions table updated:** Track A Day -7 removed (done); the recurring daily warm-up task is
+  now owned by `node automation/cli.js warmup today` rather than a static numbered card, since what it
+  asks for changes every day. Domain purchase is now the single highest-cost-of-delay open item.
+  **No money moved. Out-of-pocket still $0.00 / $100.00.**
 
 - **2026-08-10, part 2: an `automation/` CLI, and one request declined.** The founder asked for a
   "personal CLI that connects to TikTok and runs my whole TikTok." Built the automatable half,
