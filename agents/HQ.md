@@ -126,6 +126,11 @@ It corrects nine things in our existing files (its section 14), recorded as entr
 under *External evidence (borrowed, NOT ours)*, fenced off from Live knowledge on purpose: they are other
 people's numbers, and the moment we measure our own on the same question, ours supersedes.
 
+- **hook-writer** (Content): owns the first 3 seconds. 10 new hooks/product/run against the hook bank; hook is the only variable per test; kills on hook rate under 20%.
+- **cash-flow-modeller** (Finance): models cash, not profit. Owns the payout-lag gap, the float, and reserve exposure. Vetoes a scale step the P&L supports but the cash cannot.
+- **metrics-dashboard** (Finance): the one view. Spend, revenue, CM, net, gap to $1,000/day, and which lever is furthest from target. Reconciles platform numbers against Shopify and the ledger.
+- **seo-brief-writer** (Growth): free search demand. Owns the Merchant Center feed that Shopping and PMax depend on, plus product-page SEO.
+
 ## The autonomy layer
 
 - **The daily loop, CLOUD.** `.github/workflows/challenge-loop.yml` runs one headless challenge-lead loop
