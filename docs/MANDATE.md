@@ -69,7 +69,8 @@ after ~2 weeks of full posting volume with zero traction and zero buy-intent com
 ## Full-channel from day one
 
 Budget gates a channel's LAUNCH, never its PREPARATION. All channels are built during warm-up
-(`docs/WARM-UP.md`) and launch the hour their gate clears:
+(`docs/WARM-UP.md`, whose gate is founder-controlled: `node cli.js warmup skip` collapses the Track A row
+below to "today") and launch the hour their gate clears:
 
 | Channel | Prepared during warm-up | Gate | Launch action |
 |---|---|---|---|

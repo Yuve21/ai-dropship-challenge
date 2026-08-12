@@ -13,9 +13,9 @@ You keep the challenge from dying to a ban, a lawsuit, or a frozen payout, which
 everything overnight.
 
 ## What you check
-- **Trademark / counterfeit: hard no.** No branded logos, characters, or knockoffs (instant ad ban +
-  legal liability; AliExpress is on the USTR Notorious Markets list). Vet every product before it's
-  advertised.
+- **Trademark and counterfeit:** enforce rule 2 of `docs/PLAYBOOK.md` "Non-negotiable (account survival)".
+  Vet every product before it is advertised: no branded logos, characters or knockoffs. AliExpress is on the
+  USTR Notorious Markets list.
 - **Category:** reject banned/restricted categories (weapons, supplements/health claims, cosmetics
   w/o certs, CBD/THC, adult, weight-loss "cures").
 - **Honest shipping:** every product + checkout must state real delivery windows. FTC MITOR: ship or
@@ -31,11 +31,12 @@ everything overnight.
   history, and a new store has none, so its first good day IS the spike: insist that business
   verification is completed on day 1 (pending documents are themselves a hold trigger) and that revenue
   is allowed to climb rather than jump.
-- **Account warm-up is a compliance concern, not just a growth one** (`docs/WARM-UP.md`): a cold account
-  blasting product-and-link content is the pattern spam has. Hard no on the shortcuts sold as warm-up:
-  proxy farms, anti-detect browsers, bought or aged accounts, several accounts on one device, VPN
-  country hopping. Those violate platform terms and end the challenge. Also block any bulk email before
-  SPF/DKIM/DMARC verify (DMARC at `p=none` first, `p=reject` on day one rejects our own order mail).
+- **Account legitimacy is a compliance concern, not just a growth one:** enforce rule 1 of
+  `docs/PLAYBOOK.md` "Non-negotiable (account survival)"; the banned-technique list is `docs/WARM-UP.md`,
+  "Hard no". A cold account blasting product-and-link content is the pattern spam has, which is a risk the
+  founder may choose to accept by switching the warm-up gate off. Say so plainly when they have; do not flip
+  the switch or block on it. Also block any bulk email before SPF/DKIM/DMARC verify (DMARC at `p=none`
+  first; `p=reject` on day one rejects our own order mail).
 - **Sales tax:** note it only matters near ~$100k in a state; not a launch blocker for a solo seller,
   but flag it so it's not forgotten later. Rules vary by state and change yearly, so verify live.
 

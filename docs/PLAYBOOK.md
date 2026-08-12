@@ -1,190 +1,171 @@
 # The Playbook: the shared brain
 
-Research-grounded (2025-26). Every agent reads this first, **then `docs/LEARNINGS.md`**. This file is
-outside research; that file is what WE have proven with our own numbers, and it wins where the two
-disagree. Thresholds here are starting rules; recalibrate against real account data once it exists.
-Sources are listed at the bottom.
+Read order: `docs/MANDATE.md` (the target every run is measured against), this file, then
+`docs/LEARNINGS.md`, which outranks this file wherever the two disagree. Thresholds here are starting
+rules; recalibrate on real account data once it exists. Sources at the bottom.
 
-**Companion file: `docs/OPERATOR-PLAYBOOK.md`.** This file covers *how dropshipping works and what to
-sell*. That one covers *how profitable operators actually run the business*: creative volume as a weekly
-rate, ad testing and scaling structures, AOV and contribution-margin engineering, the email flows that
-carry real revenue, CVR work, cash-flow discipline, and the dropship-to-brand transition. It is staged
-into "day 1 / at first revenue / later", it names what we deliberately do not copy, and **it corrects nine
-things in this file** (listed in its section 14, with the short forms in `docs/LEARNINGS.md` under
-*External evidence*). Read it before touching creative volume, pricing, AOV, lifecycle email, ad
-structure or scaling.
+**Companion: `docs/OPERATOR-PLAYBOOK.md`.** This file covers how dropshipping works and what to sell.
+That one covers how profitable operators run the business: creative volume as a rate, ad testing and
+scaling structures, contribution margin, AOV engineering, the email flows that carry revenue, CVR work,
+cash-flow discipline, the dropship-to-brand ladder. It is staged into day 1 / at first revenue / later,
+names what we deliberately do not copy, and corrects nine things in this file (its section 14, short
+forms in `docs/LEARNINGS.md` under *External evidence*). Read it before touching creative volume,
+pricing, AOV, lifecycle email, ad structure or scaling.
 
-## 1. How dropshipping actually works
-Customer buys on your store at retail and pays you immediately (Shopify Payments/Stripe/PayPal). You
-*then* order from the supplier at cost; the supplier ships direct to the customer. You never hold
-inventory. The structural edge is cash-flow: you collect at checkout but pay the supplier at
-dispatch. The structural TRAP: processors settle to you on a lag (~3 business days) and new
-"high-risk" stores often face **rolling reserves (5-15% held 30-180 days)**. So you frequently front
-ad spend and supplier payouts before payouts land. Keep a cash float (see budget rules).
+## Non-negotiable (account survival)
 
-## 2. The honest odds (internalize this)
-- ~80-90% of stores fail/are abandoned; ~10-20% reach consistent profit; ~1.5% clear $50k/mo.
-- First sale: usually 2-6 weeks (faster with a viral organic video). Beginner month-one income is
-  commonly $0-$500, often a small loss. Real profitability is usually a 3-6 month arc.
-- "$X in 30 days off $100" is real for a minority; treat "I made $X" content as marketing, not data
-  (survivorship bias). Our 30-day goal is ambitious-but-honest: validate a winner and get the
-  reinvestment flywheel turning, with real profit as the stretch outcome.
+Four rules. They are stated here and nowhere else; every other file cross-references this section.
+
+- **Platform-legitimate accounts only** (banned techniques listed in `docs/WARM-UP.md`, "Hard no"). A
+  banned account earns zero.
+- **No trademarked or counterfeit products.** Store termination, rightsholder liability.
+- **The ledger records measured reality.** False data scales losers.
+- **No spend without founder approval.** The $100 out-of-pocket cap stands. Founder money never returns.
+
+## 1. How dropshipping works
+The customer buys at retail and pays you immediately (Shopify Payments/Stripe/PayPal). You then order
+from the supplier at cost; the supplier ships direct. You never hold inventory. The structural edge is
+cash flow: you collect at checkout, you pay the supplier at dispatch. The structural trap: processors
+settle on a lag (~3 business days) and new "high-risk" stores often face **rolling reserves (5-15% held
+30-180 days)**, so you front ad spend and supplier payouts before payouts land. Keep a cash float
+(`docs/BUDGET-RULES.md`).
+
+## 2. Base rates and source credibility
+- Vendor-estimated base rates, directional only: ~80-90% of stores fail or are abandoned; ~10-20% reach
+  consistent profit; ~1.5% clear $50k/mo. First sale usually 2-6 weeks, faster on a viral organic video.
+- **Treat every "$X in 30 days" figure as marketing, never as data.** The only adversarially tested data
+  on dropshipping-education outcomes is FTC litigation (`docs/OPERATOR-PLAYBOOK.md` section 1). Discount
+  every dollar figure and every timeline from anyone selling education; copy the mechanics only.
+- **Mechanics worth copying from that genre:** product-selection filters, result-first 2-second hooks,
+  batch-filming multiple angles across concepts, multi-account posting, replicating the winning video.
+- **Advantages the genre does not disclose:** an existing audience seeding the "new" store, undisclosed
+  ad budgets (one "organic challenge" spent $800), prior failed attempts, professional editing.
+- Full credibility tiers and the 18-item omission checklist: `docs/OPERATOR-PLAYBOOK.md` sections 0-2.
 
 ## 3. Winning-product criteria
-A product is a candidate only if it hits MOST of these:
-- **Margin:** sells at **3x+ landed cost**, leaving **>30% net margin** after COGS + shipping + ad
-  cost + ~3% payment fee. Sub-30% margin is structurally hard to make work on paid.
-- **Price band:** target **$30-60 retail** on a $5-12 cost. Sub-$15 products are dead for paid (CPMs
-  too high to recoup). Higher AOV = more ad headroom.
-- **Traits:** solves a visible problem OR has a demo-able "wow" factor; **not available in local
-  stores**; lightweight/small (cheap shipping, fewer returns); not fragile; hard to return-dispute.
-  Consumables add repeat purchase.
-- **Demand, validated:** an ad that has run **3-6+ months** (or keeps reappearing) beats a one-off
-  viral spike; 1,000+ comments/shares; comments asking "where do I buy this?"; **multiple
-  competitors = validated demand, not a red flag.**
+A candidate must hit most of these:
+- **Margin:** sells at **3x+ landed cost**, leaving **>30% net margin** after COGS + shipping + ad cost +
+  ~3% payment fee. Under 30% does not work on paid.
+- **Price band:** **$30-60 retail** on a $5-12 cost. Sub-$15 is dead for paid (CPMs too high to recoup).
+- **Traits:** solves a visible problem or has a demo-able wow; not in local stores; light, small, not
+  fragile; hard to return-dispute. Consumables add repeat purchase.
+- **Demand, validated:** an ad live **3-6+ months** (or reappearing) beats a one-off viral spike; 1,000+
+  comments/shares; comments asking "where do I buy this?"; **multiple competitors = validated demand.**
 - **Hot categories:** functional wellness gadgets, comfort/home gadgets, pet, tech accessories.
-  **Saturated (avoid):** generic phone cases, posture correctors, LED strips, anything already
-  flooding your FYP. **Banned/ban-risk:** weapons, supplements/health claims, cosmetics without
-  certs, CBD/THC, adult, weight-loss "cures", and anything trademarked/branded.
+  **Saturated, avoid:** generic phone cases, posture correctors, LED strips, anything already flooding
+  the FYP. **Banned or ban-risk:** weapons, supplements/health claims, cosmetics without certs, CBD/THC,
+  adult, weight-loss "cures", anything branded.
 
-## 4. How to find + validate (before spending a cent)
-Free stack is enough, do NOT buy spy tools on a $100 budget:
+## 4. How to find and validate (before spending a cent)
+The free stack is enough. Do not buy spy tools on a $100 budget.
 - **TikTok Creative Center** (Top Ads, Trends, Keyword Insights).
-- **Meta Ad Library**, find who's running an offer; re-check dates to see **how long an ad has
-  stayed live = it's profitable**.
+- **Meta Ad Library:** re-check dates. How long an ad has stayed live is the profitability signal.
 - **#TikTokMadeMeBuyIt**, AliExpress "orders" sort, Amazon Movers & Shakers / Best Sellers.
-- Cross-check a candidate across 2-3 sources. Read comment sentiment. Order a sample before scaling.
+- Cross-check every candidate across 2-3 sources. Read comment sentiment. Order a sample before scaling.
+
+**The one paid tool worth touching pre-revenue, on its free trial only.** Dropship.io (Instagram
+`@dropship`) is a $39-99/mo product-research SaaS with a **7-day free trial**, not an operator: its own
+content is vendor marketing, weighted per the credibility rules above. Its **Sales Tracker** reports
+measured per-product revenue for tracked Shopify and TikTok Shop stores, which is stronger evidence than
+our inferred-demand signals (ad longevity, comment counts).
+- Time **ONE** trial to the week the bench is finalised. Pull measured revenue for every bench candidate
+  and its top competitors. Record each number in the bench table with its date and source. Cancel before
+  day 7. Cost $0.
+- A trial pull is a point-in-time snapshot: date it and treat it as **expiring evidence**, not a standing
+  fact. The no-paid-spy-tools rule above is unchanged; this is its single named exception.
+- Their free profit and ROAS calculators are a cross-check for `offer-economist`, never a source of truth.
 
 ## 5. Creative is the #1 lever
-The algorithm handles targeting; your video decides win/lose.
-- **Format:** native UGC, 9-15s, filmed on a phone, unpolished > polished.
+The algorithm handles targeting; the video decides win or lose.
+- **Format:** native UGC, 9-15s, filmed on a phone. Unpolished beats polished.
 - **Structure:** Hook (first 3s) -> Problem -> Demo -> Benefit -> Proof -> CTA. Loop-friendly earns
   rewatches.
-- **Volume:** minimum 3-5 creatives per product; winners are a numbers game. Iterate the HOOK fastest
-  (biggest swing). Aim for many hook variants per week.
+- **Volume: 3 net-new creatives per DAY is the floor, 5 the target,** tracked as a rate and reported by
+  `creative-director` every run. Launch minimum stays 3-5 per product. Arithmetic and the winner-rate
+  evidence behind the daily figure: `docs/MANDATE.md`. Iterate the HOOK fastest, it is the biggest swing.
 
-## 6. Acquisition on a $50-100 budget: ORGANIC-FIRST
-- **Warm up before you market. See `docs/WARM-UP.md`, and read it before the first post, not after.**
-  A day-old account that opens with product-and-link content is the exact pattern spam has, and it gets
-  suppressed. Warm-up is free and time-based, so it starts in Phase 0a before the product is chosen.
-- $100 cannot properly test paid (TikTok wants ~$50/day + weeks; Meta needs volume to exit learning).
-- **Do this:** post **2-3 videos/day** from 1-3 TikTok accounts on the tested product, iterating
-  hooks. Batch-film 5-10 videos per concept across 3-5 distinct angles; no reused clips across
-  accounts (some run one account per region). A single organic hit validates demand.
-- **Timeline truth (critical):** organic is a **volume-and-patience** game. Credible challenge
-  breakdowns show **most beginners make zero sales in week 1** and it takes **30-60 days of
-  consistent posting** before a product is fairly judged. First sales come from 1-2 videos catching,
-  not steady growth. **So within a 30-day window you do NOT churn products weekly.** You PRE-VALIDATE
-  hard up front (competitor ad longevity, comment demand) and **commit to one product**, posting
-  daily and replicating the exact format of any video that pops. Only abandon a product if strong
-  volume (many hooks, ~2 weeks) produces truly zero signal.
-- **The 1,000-follower link gate:** TikTok won't let you put a bio link until ~1,000 followers, so
-  early on you drive to a TikTok Shop listing or a pinned/comment CTA, not a bare store link.
-- **Then, only with earned revenue:** Spark-Ad the proven-organic winner. Minimal paid: 1 campaign,
-  1 ad group, 3-5 creatives, an affordable daily budget, **don't touch it for 72h** (edits reset
-  learning), don't judge before **100+ clicks**.
+## 6. Acquisition on a $50-100 budget: organic-first
+- **Warm up before marketing** (`docs/WARM-UP.md`), unless the founder has set the warm-up flag to
+  disabled, in which case product content and CTAs start immediately and the ledger records the decision.
+- $100 cannot properly test paid (TikTok wants ~$50/day and weeks; Meta needs volume to exit learning).
+- **Post 2-3 videos/day** from 1-3 accounts on the tested product, iterating hooks. Batch-film 5-10
+  videos per concept across 3-5 distinct angles; no reused clips across accounts. One organic hit
+  validates demand.
+- **Do not churn products weekly.** Organic is volume and patience: most beginners make zero sales in
+  week 1, and 30-60 days of consistent posting is the fair window to judge a product. So pre-validate
+  hard up front (competitor ad longevity, comment demand), commit to one product, post daily, and
+  replicate the exact format of anything that pops. Abandon a product only after ~2 weeks of strong
+  volume across many hooks yields zero signal.
+- **The 1,000-follower link gate:** no bio link until ~1,000 followers, so drive to a TikTok Shop listing
+  or a pinned/comment CTA, never a bare store link (`docs/NO-STALL.md` P6).
+- **Then, only on earned revenue:** Spark-Ad the proven-organic winner. 1 campaign, 1 ad group, 3-5
+  creatives; do not touch it for 72h (edits reset learning); do not judge before 100+ clicks.
 
 ## 7. The numbers (know these before launching anything)
-- **Break-even ROAS = 1 / net-margin.** 40% margin -> 2.5x; 30% -> ~3.3x; 25% -> ~4.0x. Aim to run
-  ~20-30% above break-even for a buffer.
-- **Net per order = Sale − COGS − shipping − CPA − payment fee (~3%) − returns.**
-- **Healthy signals:** TikTok CTR > 1.5%, CPC ~$0.30-1.50, store CVR > 2%, ROAS > 2x (ecom avg
-  ~2.87). TikTok in-feed CPM ~$9.
-- **KILL RULE (two different clocks, do not confuse them):**
-  - **Paid ads:** after ~$20-30 spend OR 100+ clicks OR 48-72h with **0 sales, CTR < 1%, or ROAS <
-    1.0**, kill the ad/product. Leave a paid campaign untouched for the first 72h, then judge hard.
-  - **Organic:** the clock is weeks, not hours. Judge the *creative* fast (a hook with poor
-    watch-time/no saves after a few posts, swap it) but judge the *product* slowly, only abandon
-    after strong posting volume (~2 weeks, many hooks) with zero traction and zero buy-intent
-    comments. Killing an organic product in 72h is the classic beginner mistake.
-  - Scale winners slowly (<=20% budget bumps); scale a winning organic angle by making more of that
-    exact format, not by jumping to new products.
+- **Break-even ROAS = 1 / net margin.** 40% -> 2.5x; 30% -> ~3.3x; 25% -> ~4.0x. Run 20-30% above it.
+  Contribution margin per order and break-even aMER are the real gate: `docs/OPERATOR-PLAYBOOK.md`
+  section 5, target aMER math in `docs/MANDATE.md`.
+- **Net per order = sale - COGS - shipping - CPA - payment fee (~3%) - returns.**
+- **Healthy signals:** TikTok CTR > 1.5%, CPC ~$0.30-1.50, store CVR > 2%, ROAS > 2x (ecom avg ~2.87).
+  TikTok in-feed CPM ~$9.
+- **Two kill clocks, never confuse them:**
+  - **Paid:** at ~$20-30 spend or 100+ clicks or 48-72h with 0 sales, CTR < 1%, or ROAS < 1.0, kill.
+    Leave a new campaign untouched 72h, then judge hard. Faster per-creative clocks: `docs/MANDATE.md`.
+  - **Organic:** weeks, not hours. Judge the creative fast (poor watch-time or no saves after a few
+    posts, swap the hook), judge the product slowly (~2 weeks, many hooks, zero traction and zero
+    buy-intent comments). Killing an organic product in 72h is the classic beginner mistake.
+  - Scale winners <=20% per step. Scale a winning organic angle by making more of that exact format.
 
-## 8. Failure modes to avoid
-Bad/fake suppliers (order a sample under a plain name first); long shipping killing trust and
-triggering disputes; saturated products where ad cost > margin; chargebacks (double loss: refund +
-lost goods); counterfeit/trademarked goods (instant ban + legal liability, AliExpress is on the USTR
-Notorious Markets list); and overpriced "guru" courses (the most consistent scam in the space).
+## 8. Failure modes
+Fake suppliers (order a sample under a plain name first); long shipping killing trust and triggering
+disputes; saturated products where ad cost exceeds margin; chargebacks (refund plus lost goods);
+counterfeit or trademarked goods (AliExpress is on the USTR Notorious Markets list); guru courses.
 
-## 9. Compliance floor (see compliance-guard for detail)
+## 9. Compliance floor (detail in the `compliance-guard` brief)
 Five policy pages live (Refund/Returns, Shipping with **honest** ETAs, Privacy, Terms, Contact with a
-real email); ship or notify within the promised window or 30 days (FTC MITOR); TikTok requires
-product-origin + shipping-time disclosure; no trademarked products; slow ad ramp + low chargeback
-ratio to avoid payout holds; watch state sales-tax nexus only once near ~$100k in a state (not a
-launch concern for a solo seller).
+real email); ship or notify inside the promised window or 30 days (FTC MITOR); TikTok requires
+product-origin and shipping-time disclosure; slow ad ramp and low chargeback ratio to avoid payout
+holds; state sales-tax nexus only matters near ~$100k in a state.
 
-## 10. Challenge-video reality (read before trusting any "$X in 30 days" video)
-The "$0/$1 to $1M" challenge genre is the single biggest source of distorted expectations.
-- **DESIRICHKID (Manjeet Singh Sangha) sells a ~$6,000 course and has no free, documented
-  step-by-step method** to copy. Treat him and similar creators as *marketing brands*, not sources.
-- **Survivorship bias is the whole genre.** The headline "$16k / $54k in 30 days" numbers come from
-  people selling courses; independent beginner replications in the same articles made **$0 in 30
-  days**.
-- **Hidden advantages a beginner does NOT have:** an existing YouTube/TikTok audience that seeds free
-  traffic to the "new" store (the challenge video itself sells the product), **undisclosed ad
-  budgets** (one "organic challenge" quietly spent $800), prior failed attempts, and pro editing.
-- **What IS repeatable (copy this):** product-selection filters, result-first 2-second hooks,
-  batch-filming multiple angles, multi-account posting, the 30-60 day patience window, and
-  replicating the winning video. **What to discount:** every specific dollar figure and every
-  "30 days to $10k" timeline. Our own ledger records what actually happened, never a projection.
-
-## 11. Warm-up: nothing starts cold (full detail in `docs/WARM-UP.md`)
-**The executable schedule is the Challenge Warm-Up Protocol v1** in `docs/WARM-UP.md`: our own house
-protocol, labelled `HYPOTHESIS`, four tracks, day by day from Day -7 to Day 4, with the documented-fact
-versus our-inference split stated element by element and a Day 1 / Day 7 verdict written back to
-`docs/LEARNINGS.md`. Run it as written rather than re-deriving a schedule each morning. Why the four
+## 10. Warm-up (`docs/WARM-UP.md`)
+Execute **the Challenge Warm-Up Protocol v1** as written: four tracks, Day -7 to Day 4, exact counts,
+labelled `HYPOTHESIS`, with a Day 1 and Day 7 verdict written back to `docs/LEARNINGS.md`. The gate is
+**founder-controlled**: `node cli.js warmup skip` disables it, `warmup enable` restores it. Why the four
 tracks exist:
-- **TikTok organic:** ~7 days minimum of human in-app behaviour (scroll, watch, light engagement) plus
-  2-5 native non-promotional posts BEFORE product content and CTAs. 10-14 days if the account will
-  later carry Spark Ads. The posting API does not warm the account; a human does, ~10-20 min/day. API
-  posting may already carry a reach handicap, so a cold account stacks a second one. No proxy farms, no
-  bought/aged accounts, no multi-account on one device: that is a ban vector, not a shortcut.
-- **Ad accounts:** a pixel with no conversion history learns slower and costs 20-40% more during
-  learning, and ~50 events in 7 days is what exits it. Install the pixel on day 1 so the organic phase
-  warms it for free; seed with a cheap objective; scale <=20% every 48-72h; freeze edits 72h.
-- **Sending domain:** SPF/DKIM/DMARC live and verified BEFORE the first send (DMARC `p=none` first),
-  domain aged 7-14 days, and no bulk mail in month one. A cold-domain launch blast lands in spam and
-  the damage is slow to reverse, on the same domain that carries your order confirmations.
-- **Processor:** a reserve is triggered by a spike measured against your own history, and a new store
-  has none, so its first good day IS the spike (section 1). Warm-up here means finishing verification
-  on day 1, looking like a real business before the money arrives, keeping disputes under 1%, and
-  letting revenue climb rather than jump.
-The trade-off is real: warm-up spends 7-10 of the 30 days. Starting the accounts a week before Day 1
-recovers it. A suppressed account costs more.
+- **TikTok organic:** ~7 days of human in-app behaviour plus 2-5 native non-promotional posts before
+  product content (10-14 days if the account will carry Spark Ads). The posting API does not warm an
+  account; a human does, ~10-20 min/day, then 5-10 min/day forever.
+- **Ad accounts:** a pixel with no conversion history costs 20-40% more during learning, and ~50 events
+  in 7 days exits it. Install the pixel day 1, seed with a cheap objective, step <=20% every 48-72h,
+  freeze edits 72h.
+- **Sending domain:** SPF/DKIM/DMARC live and verified before the first send (DMARC `p=none` first),
+  domain aged 7-14 days, no bulk mail in month one.
+- **Processor:** a reserve is triggered by a spike against your own history, and a new store has none, so
+  its first good day IS the spike. Finish verification day 1, keep disputes under 1%, let revenue climb.
 
-## 12. The learning loop (`docs/LEARNINGS.md`)
-The ledger records what happened; `docs/LEARNINGS.md` records what we now believe, the evidence, the
-confidence, and what changes next time. **Every agent reads it before acting and writes to it when a
-test concludes.** Rules that make it worth reading: evidence or it is a labelled hypothesis; numbers
-from the ledger or a dashboard, marked estimated vs confirmed; every claim falsifiable; declared
-confidence with the sample size; contradictions resolved by SUPERSEDING an entry (dated, with the
-reason) rather than piling up; product-level learnings expire (~30 days, because winners rotate); and a
-day with no learning is recorded as a day with no learning instead of an invented one. This is
-retrieval-based learning, not model training: nothing updates model weights, the compounding is that
-each agent starts from validated lessons instead of a blank page.
+## 11. The learning loop (`docs/LEARNINGS.md`)
+The ledger records what happened; `docs/LEARNINGS.md` records what we believe, the evidence, the
+confidence, and what changes next. **Every agent reads it before acting and writes to it when a test
+concludes.** The rules that make it worth reading: evidence or a labelled `HYPOTHESIS`; numbers from the
+ledger or a dashboard, marked estimated vs confirmed; every claim falsifiable; confidence declared with
+the sample size; contradictions resolved by superseding a dated entry, never by stacking; product-level
+learnings expire in ~30 days; a day with no learning is recorded as a day with no learning.
 
-## 13. No dead ends (`docs/NO-STALL.md`)
-A gate stops the gated action, never the run. Every run makes real forward progress on something and
-names the artifact it produced. The mechanisms: a **5-candidate ranked bench** so a killed product costs
-zero days (promote rank 1 and backfill rank 5 in the same run); a **Standing Work Queue** of twelve
-ordered fallbacks so "find something useful" is never improvised; **Prepared Action Cards** so every
-founder step arrives with the exact URL, steps, values, cost, minutes and what it unblocks; a
-**cost-of-delay ranking** at the top of every readout so the founder sees the one thing that matters
-(warm-up not started is the only 1.0 compounding, unrecoverable item); a **Widening Ladder** for a sweep
-that finds nothing; **incident runbooks** for flags, restrictions, stockouts, chargebacks and reserves;
-and a **reduced-mode ladder** so a missing browser, MCP, key or write permission is a declared mode
-rather than a stop. The fallbacks in that file are ours, authored 2026-08-10, labelled `HYPOTHESIS`, each
-with the measurement that would refute it. The irreducible boundary stays named and is never engineered
-around: identity and KYC, funding a card, approving real ad spend, and one-time OAuth grants need the
-founder.
+## 12. No dead ends (`docs/NO-STALL.md`)
+A gate stops the gated action, never the run. Every run names the artifact it produced. The mechanisms: a
+**5-candidate ranked bench** (promote rank 1 and backfill rank 5 in the same run a product is killed); a
+**Standing Work Queue** of twelve ordered fallbacks; **Prepared Action Cards** carrying the exact URL,
+steps, values, cost, minutes and what they unblock; **cost-of-delay ranking** at the top of every readout;
+a **Widening Ladder** for an empty sweep; **incident runbooks**; a **reduced-mode ladder** so a missing
+browser, MCP, key or write permission is a declared mode, not a stop. Those procedures are ours, authored
+2026-08-10, labelled `HYPOTHESIS`, each with the measurement that would refute it. The irreducible
+boundary is never engineered around: identity and KYC, funding a card, approving real ad spend, and
+one-time OAuth grants need the founder.
 
 ## Sources
-trueprofit.io (success rate, income), peregrineship.com (cash flow), doba.com (break-even ROAS,
-TikTok Creative Center), dropified.com (product research), sellthetrend.com (research tools),
-dropcommerce.com (organic TikTok), admanage.ai (TikTok ad cost), autods.com (supplier costs),
-directpaynet.com (payout reserves), ftc.gov (prompt-delivery rule), taxcloud.com (nexus),
-dodropshipping.com (platform bans). Success-rate figures are vendor estimates (directional, not
-audited); numeric benchmarks vary by niche, recalibrate on real data.
-Warm-up sources (section 11) are listed in `docs/WARM-UP.md`, with the documented-vs-anecdotal split
-called out there: most published warm-up schedules are vendor folklore, so the principle is sound and
-the specific day counts are not authoritative.
+trueprofit.io (success rate, income), peregrineship.com (cash flow), doba.com (break-even ROAS, TikTok
+Creative Center), dropified.com and sellthetrend.com (product research), dropcommerce.com (organic
+TikTok), admanage.ai (TikTok ad cost), autods.com (supplier costs), directpaynet.com (payout reserves),
+ftc.gov (prompt-delivery rule), taxcloud.com (nexus), dodropshipping.com (platform bans). Success-rate
+figures are vendor estimates, not audited. Warm-up sources are in `docs/WARM-UP.md` with the
+documented-versus-folklore split called out there.

@@ -9,10 +9,8 @@ hunt, a renovation. The domain lives in the content; the machinery below is the 
 This document describes the pattern abstractly and uses this repo as the worked example, so you can copy
 the shape without copying the subject.
 
-**Honest scope:** this makes a team of agents consistent, honest and cumulative. It does not make them
-correct, and it does not train anything. The compounding is retrieval-based: every run starts from
-validated lessons instead of a blank page. Nothing here updates model weights, and any file that implies
-otherwise is a defect to fix on sight.
+**Scope:** this makes a team of agents consistent, honest and cumulative. It does not make them correct.
+Every run starts from validated lessons instead of a blank page (see `docs/LEARNINGS.md`).
 
 ---
 
@@ -23,12 +21,15 @@ otherwise is a defect to fix on sight.
 with sources), the non-negotiable constraints, the numeric thresholds, and the known failure modes. It is
 outside knowledge, clearly labelled as such, and it is explicitly outranked by part 2.
 
-**Here:** `docs/PLAYBOOK.md`. It carries the honest odds, product criteria, unit economics, kill and
-scale thresholds, the compliance floor, and a section on why the genre's public success stories are
-marketing rather than data. Constraints that must never bend live in their own file, `docs/BUDGET-RULES.md`.
+**Here:** `docs/PLAYBOOK.md`. Base rates, product criteria, unit economics, kill and scale thresholds, the
+compliance floor, and why the genre's public success stories are marketing rather than data. The rules that
+can never bend get their own headed section, stated once, cross-referenced everywhere else
+("Non-negotiable (account survival)"), with the money mechanics split out into `docs/BUDGET-RULES.md`.
 
 **Rules that make it work:** cite sources; mark vendor claims as vendor claims; state which numbers are
-starting rules to be recalibrated; keep it short enough that reading it every run is realistic.
+starting rules to be recalibrated; keep it short enough that reading it every run is realistic. Write in
+command voice: target, threshold, procedure. Prose that only restates how hard the domain is costs an agent
+reading time and changes no decision.
 
 ### 2. An accumulating learnings file with a real entry contract
 **The pattern.** The file that separates a team that gets smarter from one that just gets busier. It
@@ -199,8 +200,11 @@ job. If you find yourself building tooling for the tooling, stop and do one real
 
 | Pattern part | This repo |
 |---|---|
+| Target file, the number every run is measured against | `docs/MANDATE.md` ($1,000/day net by Day 30, with the backwards math) |
 | Constraint file | `docs/BUDGET-RULES.md` (the $100 out-of-pocket cap) |
+| Non-negotiables, stated once and cross-referenced | `docs/PLAYBOOK.md`, "Non-negotiable (account survival)" |
 | Shared brain | `docs/PLAYBOOK.md` |
+| Founder-controlled switch on a house protocol | `automation/` (`warmup skip` / `warmup enable`), documented in `docs/WARM-UP.md` |
 | Learnings with entry contract | `docs/LEARNINGS.md` |
 | Department briefs | `.claude/agents/*.md` (ten), rostered in `agents/HQ.md` |
 | Orchestrator with daily loop | `.claude/agents/challenge-lead.md` |

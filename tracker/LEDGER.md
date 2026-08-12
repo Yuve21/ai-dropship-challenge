@@ -10,6 +10,12 @@ evidence.** Every daily loop ends by appending there, or by stating plainly that
 learning.
 
 ## Standing tallies (update in place)
+Target: **$1,000/day net profit by Day 30** (`docs/MANDATE.md`). The first three lines are what
+`challenge-lead` opens every run with.
+- **Current daily net profit: $0.00**
+- **Gap to $1,000/day net: $1,000.00**
+- **Days remaining to Day 30: 30 (challenge not started)**
+- **Ad spend/day vs the ladder (`docs/30-DAY-PLAN.md`): $0.00, ladder not started (Day 6 launch)**
 - **Out-of-pocket spent (founder money): $0.00 / $100.00 cap**
 - **Revenue to date: $0.00**
 - **Reinvested (from revenue): $0.00**
@@ -20,9 +26,11 @@ learning.
 
 ## Warm-up status (update in place; see `docs/WARM-UP.md`, Challenge Warm-Up Protocol v1)
 Warm-up is time-based and free, so this block starts moving before a product is chosen. `growth-operator`
-owns it and reports the protocol track and day by name; `challenge-lead` will not authorise product
-content or a paid ramp while a gate here is unmet, but a blocked gate never ends the run
+owns it and reports the protocol track and day by name; while the gate is enabled `challenge-lead` will not
+authorise product content or a paid ramp until it is met, and a blocked gate never ends the run
 (`docs/NO-STALL.md`).
+- **Warm-up gate: ENABLED** (founder-controlled, `enabled` in `automation/state/warmup-state.json`;
+  `node cli.js warmup skip` turns it off and logs the decision here, `warmup enable` restores it).
 - **Track A (TikTok): STARTED. Protocol day: Day -7.** Account: `@dailypawfinds` ("Paw Finds"), created
   2026-08-11, on a real device/network per the founder. Bio: "pet + home finds, one at a time," no link.
   Profile picture: a designed paw-print mark (warm coral background, cream icon), not a real photo or a
@@ -177,6 +185,48 @@ the CLI, not a numbered card here, since it changes what it asks for every day.
 ## Session notes
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
+
+- **2026-08-12: docs density pass, warm-up became a founder-controlled switch, the mandate was propagated,
+  and two external evidence entries were added.** Nothing spent, out-of-pocket still $0.00, no account
+  touched, the GitHub workflow stays disabled.
+  **Density:** every `.md` in root, `docs/`, `agents/`, `.claude/agents/` and `tracker/` rewritten for
+  command voice. Duplicated facts collapsed to one canonical home plus cross-references. The four
+  account-survival rules now live in exactly one place, `docs/PLAYBOOK.md` "Non-negotiable (account
+  survival)", with 21 cross-references replacing the old restatements. `docs/PLAYBOOK.md` sections 2 and 10
+  merged (base rates plus source credibility), so its section numbers shifted and every pointer to them was
+  updated.
+  **Warm-up is now a switch, not a wall.** `automation/state/warmup-state.json` carries `enabled` (default
+  `true`), plus `node cli.js warmup skip` and `warmup enable`. When disabled, `challenge-lead` and
+  `content-engine` go straight to product content and CTA/link posts at 3 posts/day with no day-type check,
+  and the CLI writes a dated line here recording the founder's decision. Post caps and active holds still
+  apply either way, because those answer platform signals rather than the calendar. Verified by execution in
+  all three states (gate on refuses a `product` post on Day -6; gate off allows it; both toggles wrote the
+  ledger line, which was then reverted).
+  **Mandate propagated.** $1,000/day net by Day 30 is now in the `BOOTSTRAP.md` read-order and kickoff
+  prompt, `AGENTS.md`, `START-HERE.md`, `agents/HQ.md`, `docs/PLAYBOOK.md` and five agent briefs.
+  `docs/30-DAY-PLAN.md` was rewritten against it with an explicit daily ladder,
+  `spend(d) = $50 x 1.20^(d-6)` from a Day 6 launch, landing $3,975/day of spend and **$994/day net on Day
+  30**. Stated plainly rather than rounded up: the maximum safe step taken every single day still lands 0.6%
+  short, so organic has to supply the remainder. Creative floor raised from 5 net-new/week to **3/day
+  (21/week), target 5/day**, justified by the 5-8% winner rate: 21/week gives 1.05-1.68 expected winners/week
+  against a ladder that needs one fresh winner per week, where 5/week gave 0.25-0.4.
+  **Two new `External evidence` entries, both external, neither ours.** (1) Dropship.io, `HYPOTHESIS`,
+  unverified by us: one 7-day free trial timed to the week the bench is finalised, pull measured per-product
+  revenue for every bench candidate and its top competitors, date each figure, cancel. Cost $0, the single
+  named exception to the no-paid-spy-tools rule. (2) A logged-in pull of the public `@dropship` profile,
+  measured: 4.1M followers, pinned reel at 8.3M views / 16.2K comments / 490 shares, a four-word caption plus
+  ten hashtags, format a dashboard screen recording with a pen pointing at the screen. A second pull found the
+  same skeleton on a second outlier (reel `Db3qex1ugwX`, 1M views / 156 comments / 44 shares in ~24h, Meta Ads
+  Manager mid-setup, blue pen on the Daily budget field, green "DAILY BUDGET" overlay, six-word caption), so
+  it is now written up as a five-element recipe in `creative-director` rather than one observation. Their own
+  per-post spread is 26.6K to 8.3M, which corroborates the 5-8% winner-rate math rather than contradicting it.
+  **The sharper finding is the comment-rate asymmetry:** 0.2% of views on the pinned reel vs 0.016% on the
+  routine one, 12x, and distribution at the top of that account tracks comments rather than views. So
+  comment-bait is a lever separate from the format, and we have tested neither. Both stay `HYPOTHESIS` for our
+  niche (theirs is B2B software shown to aspiring dropshippers, ours is a consumer product: the mechanic
+  transfers, the subject does not). Test: 3 dashboard-and-pointer videos against 3 standard UGC videos in one
+  week, compared on hook rate and comment rate.
+  **Next:** the founder decides whether to keep the warm-up gate on. Track A is on Day -6 either way.
 
 - **2026-08-11, part 3: the founder set the real goal, two more research sweeps came back empty, and the
   bench is settled at 3.** The founder stated the challenge's actual target plainly: aim for a fully

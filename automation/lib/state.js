@@ -7,6 +7,10 @@ const STATE_DIR = path.join(__dirname, "..", "state");
 const STATE_FILE = path.join(STATE_DIR, "warmup-state.json");
 
 const DEFAULT_STATE = {
+  // Founder-controlled warm-up switch. true = run the Challenge Warm-Up Protocol v1 gate (default).
+  // false = the founder chose to skip warm-up: product content and CTA/link posts are allowed
+  // immediately. Toggled by `warmup enable` / `warmup skip`, never by an agent on its own.
+  enabled: true,
   account: {
     handle: null,
     startDate: null, // YYYY-MM-DD, the day Track A Day -7 began
