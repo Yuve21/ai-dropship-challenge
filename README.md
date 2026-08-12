@@ -33,7 +33,7 @@ Structure:
 - `docs/30-DAY-PLAN.md`: the sequence and the daily net-profit checkpoints.
 - `docs/SETUP-GUIDE.md` (**start here if nothing is open yet**): the ordered day-0 checklist.
 - `docs/BUDGET-RULES.md` · `docs/ACCOUNTS-AND-TOOLS.md` · `docs/AUTOMATION.md` · `automation/README.md`.
-- `agents/HQ.md` plus `.claude/agents/*.md`: the 10-agent team (Claude Code auto-loads; other seats paste
+- `agents/HQ.md` plus `.claude/agents/*.md`: the 14-agent team (Claude Code auto-loads; other seats paste
   the brief as a system prompt).
 - `tracker/LEDGER.md`: the running source of truth. Money, product tests, decisions, P&L.
 

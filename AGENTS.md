@@ -5,7 +5,7 @@ degradation ladder. This file is the short version, at the root, because Codex a
 `AGENTS.md` natively.
 
 This repo is the operating system for a live 30-day AI-dropshipping challenge: a $50-$100 out-of-pocket
-start, organic-first, ten department briefs sharing one brain and one accumulating memory. Model-agnostic:
+start, organic-first, fourteen department briefs sharing one brain and one accumulating memory. Model-agnostic:
 every brief is plain markdown and works as a system prompt in any seat.
 
 **The target: $1,000/day net profit by Day 30** (`docs/MANDATE.md`). Every run is measured against the gap

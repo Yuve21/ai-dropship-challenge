@@ -40,7 +40,50 @@ Each of these pairs with the same core body (problem: cats often under-drink or 
 
 ---
 
+## Hook variants, round 2 (added 2026-08-12, `hook-writer`)
+
+Ten more, per the hook-writer standing minimum of 10 new hooks per live product per run. Same pairing rule
+as round 1: swap the hook, freeze the body and CTA. Two of these (9 and 10) have already been promoted to
+full scripts, noted below; the rest are bank inventory for future runs.
+
+9. **"POV: you refill her water bowl every morning and by dinner it looks untouched."** Visual: close on a
+   full, still, untouched bowl. Promoted to a full script: `day4-script-pov-still-full.md` (family: Problem
+   in the Viewer's Own Words).
+10. **"The bowl or the fountain? We tested both for a week."** Visual: hard cut between the dry bowl and the
+    running fountain. Promoted to a full script: `day3-script-bowl-or-fountain-debate.md` (family:
+    Comment-Bait Debate).
+11. **"This is what 'my cat won't drink enough water' actually looks like fixed."** Visual: cat drinking
+    steadily from the fountain, water clearly moving.
+12. **Text-only hook, sound-off first: "she has an opinion about tap water vs bowl water and it's strong."**
+    Visual: cat sniffing the fountain water, then drinking, contrasted with walking past the old bowl.
+13. **"I used to refill this bowl three times a day for nothing."** Visual: hand refilling the old bowl,
+    cutting to the same bowl still full and untouched hours later.
+14. **"The one thing in my kitchen she actually checks on, unprompted."** Visual: cat walking into the
+    kitchen and going straight to the fountain, no cue from a person.
+15. **"Watch her decide in under two seconds."** Visual: cat approaching two water sources (or the fountain
+    alone) and choosing to drink almost immediately, no hesitation shown on screen.
+16. **"This is the only appliance in my house she's never tried to knock over."** Visual: cat brushing past
+    or sitting near the fountain without disturbing it, playing on the "cats knock things over" trope.
+17. **"If your cat licks the faucet, this is basically that, on a timer."** Visual: quick shot of a cat at a
+    bathroom sink (if available) or just described in text over the fountain running, no faucet claim beyond
+    the analogy.
+18. **"Filmed this the first time she found it. Didn't expect the reaction."** Visual: cat's first-ever
+    encounter with the running fountain, genuine unscripted reaction if captured on the actual first
+    exposure.
+
+**Comment-bait is layered separately from every hook above**, per the `docs/LEARNINGS.md` 2026-08-12
+finding that it is a distinct lever from the format or the hook itself. See the individual full scripts for
+the specific comment-bait line used with each; do not assume a hook implies a comment-bait treatment on its
+own.
+
+---
+
 ## Full script 1: "My cat wouldn't drink water until I got this." (13s)
+
+**Hook family: Result-First / "She Wouldn't Drink."** Companion scripts in the same family: Full Script 2
+below, and `day3-script-nobody-told-me.md`. Together these three form the standard-UGC control arm of the
+3-vs-3 Dashboard-and-Pointer A/B test (`creative/CONTENT-CALENDAR.md`), same body and CTA, hook varied per
+the test-unit rule.
 
 **Structure:** Hook -> Problem -> Demo -> Benefit -> Proof -> CTA, loop-friendly.
 
@@ -63,9 +106,20 @@ Each of these pairs with the same core body (problem: cats often under-drink or 
 6. Fountain parts under running tap water, reassembly.
 7. Back to shot 1 for the loop.
 
+**Comment-bait element (added 2026-08-12):** extend the pinned comment beyond the CTA line to add a poll:
+"comes apart in about two minutes to clean, it's in the pinned comment. also: bowl or fountain, comment
+which your cat would pick." Tests comment-bait on the account's original, already-proven-in-doctrine hook
+shape, for a fair read against the Dashboard-and-Pointer family, which carries comment-bait on every entry.
+
+**Cover-frame brief:** the opening close-up of the cat mid-drink, water visibly moving, high-contrast enough
+to read at thumbnail size.
+
 ---
 
 ## Full script 2: "This has been running in my kitchen for three weeks and I still catch her staring at it." (14s)
+
+**Hook family: Result-First / "She Wouldn't Drink."** Same family as Full Script 1 above and
+`day3-script-nobody-told-me.md`; body and CTA frozen across all three, hook varied.
 
 **Structure:** Hook -> Problem -> Demo -> Benefit -> Proof -> CTA, loop-friendly.
 
@@ -88,6 +142,14 @@ Each of these pairs with the same core body (problem: cats often under-drink or 
 5. Hand near motor, cat napping unbothered nearby.
 6. Disassembly and rinse under the tap, reassembly.
 7. Back to shot 1 for the loop.
+
+**Comment-bait element (added 2026-08-12):** extend the pinned comment: "cleans up in a couple minutes,
+it's linked in the pinned comment. also: comment 'still full' if your cat's bowl looks like this too."
+Matches the recognition-style prompt used on `day4-script-pov-still-full.md` so that prompt shape gets a
+second read.
+
+**Cover-frame brief:** the opening shot of the cat staring, fixated, at the running water, ears forward,
+water motion clearly visible even as a static thumbnail.
 
 ---
 

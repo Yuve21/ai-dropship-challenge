@@ -13,7 +13,7 @@ the gap and the single fastest lever to close it. Daily checkpoints: `docs/30-DA
 substitute. To stand this org up for a different venture:
 [`docs/REPLICATE-THIS-SETUP.md`](../docs/REPLICATE-THIS-SETUP.md).
 
-## The org chart (10 agents, by department)
+## The org chart (14 agents, by department)
 
 **Executive**
 - **challenge-lead**: runs the challenge. Opens with the gap to $1,000/day net, picks the day's decisive
@@ -28,6 +28,10 @@ substitute. To stand this org up for a different venture:
 **Finance**
 - **offer-economist**: the CFO. Contribution margin per order, break-even aMER and ROAS, the $100 cap,
   kill/scale math, the ledger P&L.
+- **cash-flow-modeller**: models cash, not profit. Owns the payout-lag gap, the float and reserve exposure.
+  Vetoes a scale step the P&L supports but the cash cannot.
+- **metrics-dashboard**: the one view. Spend, revenue, contribution margin, net, the gap to $1,000/day, and
+  which lever is furthest from target. Reconciles platform numbers against Shopify and the ledger.
 
 **Store**
 - **store-architect**: the Shopify build spec (conversion-first, near-zero fixed cost).
@@ -36,6 +40,8 @@ substitute. To stand this org up for a different venture:
 **Content**
 - **creative-director**: the #1 lever. UGC scripts, hook banks, shot lists, replicate-the-winner. Owns and
   reports the creative rate: floor 3 net-new/day, target 5.
+- **hook-writer**: owns the first 3 seconds. 10 new hooks per product per run against the hook bank; the
+  hook is the only variable per test; kills on hook rate under 20%.
 - **content-engine**: turns scripts into AI videos (Creatify/HeyGen + Runway/Kling + ElevenLabs) and
   auto-posts to TikTok via approved APIs; Canva MCP for covers and carousels. AIGC label applied, rate and
   spam limits respected.
@@ -43,6 +49,8 @@ substitute. To stand this org up for a different venture:
 **Growth**
 - **growth-operator**: organic posting plan, the daily numbers read, then the paid test and the scaling
   ladder once revenue funds it. Owns Meta and Google (Track E).
+- **seo-brief-writer**: free search demand. Owns the Merchant Center feed that Shopping and Performance Max
+  depend on, plus product-page SEO.
 
 **Risk and compliance**
 - **compliance-guard**: trademark/counterfeit hard-no, category bans, honest shipping (FTC MITOR), ad
@@ -126,11 +134,6 @@ It corrects nine things in our existing files (its section 14), recorded as entr
 under *External evidence (borrowed, NOT ours)*, fenced off from Live knowledge on purpose: they are other
 people's numbers, and the moment we measure our own on the same question, ours supersedes.
 
-- **hook-writer** (Content): owns the first 3 seconds. 10 new hooks/product/run against the hook bank; hook is the only variable per test; kills on hook rate under 20%.
-- **cash-flow-modeller** (Finance): models cash, not profit. Owns the payout-lag gap, the float, and reserve exposure. Vetoes a scale step the P&L supports but the cash cannot.
-- **metrics-dashboard** (Finance): the one view. Spend, revenue, CM, net, gap to $1,000/day, and which lever is furthest from target. Reconciles platform numbers against Shopify and the ledger.
-- **seo-brief-writer** (Growth): free search demand. Owns the Merchant Center feed that Shopping and PMax depend on, plus product-page SEO.
-
 ## The autonomy layer
 
 - **The daily loop, CLOUD.** `.github/workflows/challenge-loop.yml` runs one headless challenge-lead loop
@@ -147,7 +150,7 @@ people's numbers, and the moment we measure our own on the same question, ours s
 
 ## Portability: what a fresh seat inherits vs re-wires
 
-Any seat, not just Claude Code. A seat with no sub-agent support runs the ten briefs one at a time, losing
+Any seat, not just Claude Code. A seat with no sub-agent support runs the fourteen briefs one at a time, losing
 wall-clock time and nothing else. `BOOTSTRAP.md` holds the kickoff prompt, the seat table and the
 degradation ladder; `AGENTS.md` is what Codex reads natively.
 

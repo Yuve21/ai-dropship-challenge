@@ -1,7 +1,7 @@
 # BOOTSTRAP: run this challenge from any LLM seat
 
 This repo is an operating system for a 30-day AI-dropshipping challenge, and it is **model-agnostic**:
-rules, research, ledger and all ten department briefs are plain markdown. Claude Code, Codex/ChatGPT,
+rules, research, ledger and all fourteen department briefs are plain markdown. Claude Code, Codex/ChatGPT,
 Cursor, Gemini, Copilot, or a bare chat window with copy-paste all work. Seats differ in speed, not in what
 the challenge can do.
 
@@ -101,7 +101,7 @@ Start now. Tell me the gap to $1,000/day net, then today's one thing.
 
 ## Step 3: how agents work in your seat
 
-The ten briefs live in `.claude/agents/*.md`. Each has a small YAML frontmatter header (`name`,
+The fourteen briefs live in `.claude/agents/*.md`. Each has a small YAML frontmatter header (`name`,
 `description`, `tools`, `model`) that **only Claude Code reads**. Every other seat ignores the header and
 uses the body as a system prompt.
 
@@ -115,7 +115,7 @@ uses the body as a system prompt.
 | **Headless / scheduled** | `.github/workflows/challenge-loop.yml`, one loop per day. Ships disabled (step 1) | Enable it, set the auth secret, leave it alone |
 
 A seat without sub-agent support loses wall-clock time and nothing else. Say which role you are in as you
-switch, so the ledger entry still reads like ten departments reported.
+switch, so the ledger entry still reads like fourteen departments reported.
 
 ---
 
@@ -155,7 +155,7 @@ The one unacceptable output is an empty run.
 | `docs/SETUP-GUIDE.md` | Day-0 ordered checklist | Standing things up |
 | `docs/ACCOUNTS-AND-TOOLS.md`, `docs/AUTOMATION.md` | What the human opens; what tooling automates | Wiring the stack |
 | `agents/HQ.md` | The org chart and how to run each department | First session |
-| `.claude/agents/*.md` | The ten briefs | When you take that role |
+| `.claude/agents/*.md` | The fourteen briefs | When you take that role |
 | `automation/README.md` | The warm-up CLI and approved posting | Tracking warm-up, posting |
 | `docs/REPLICATE-THIS-SETUP.md` | Standing this pattern up for a different venture | Reusing the setup elsewhere |
 

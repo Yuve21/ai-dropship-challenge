@@ -473,7 +473,12 @@ own playbook. **Fenced off from Live knowledge on purpose:**
 
 # Live knowledge
 
-**Status: 1 learning as of 2026-08-10** (an operational research-tooling note, see *Anti-patterns*). The
+**Status: 4 learnings as of 2026-08-12**, all under *Anti-patterns*. Two are research-tooling notes (direct
+WebFetch is blocked by the three main research surfaces, 2026-08-10; TikTok-virality-first product research
+surfaces items already at big-box retail, 2026-08-11). Two are planning findings from 2026-08-12: supplier
+lead time rather than the warm-up calendar is what gates product content, and one thorough creative run does
+not clear the 3/day floor. All are n=1 and confidence **Low**, except the structural half of the lead-time
+entry, which is arithmetic on documented transit times rather than an inference and is **Medium**. The
 challenge has not started (`tracker/LEDGER.md`: out-of-pocket $0.00, no product live, no posts, no
 sales), so every other live section is deliberately blank. Live sections hold only what **we** observed
 with **our own** numbers. Do not seed them with internet dropshipping wisdom: that goes in
@@ -542,6 +547,57 @@ attention. Same evidence standard as anything else: a bad feeling is a hypothesi
   bot-blocked both change).
 - **Written by:** challenge-lead, from two product-scout runs, 2026-08-11.
 
+### [2026-08-12] Supplier lead time, not the warm-up calendar, is what actually gates the start of product content
+- **Claim:** this challenge's schedule was built around the warm-up calendar (Day -7 to Day 1) while treating the physical sample as a
+  side errand, and that is backwards. "Never advertise a product you have not held" is a hard gate in `docs/PLAYBOOK.md` section 4 and
+  in `challenge-lead`'s brief, and the sample's lead time is longer than the entire warm-up runway. **On any 30-day dropshipping
+  challenge sourced from overseas suppliers, the sample order is the earliest-needed long-lead item and belongs on day zero, ahead of
+  the domain and ahead of the store.**
+- **Evidence:** arithmetic against our own two documents, not an outside claim. `ops/sourcing-dossier.md` (2026-08-11) puts the
+  recommended primary fountain supplier at **12-20 business days**, and the single listing carrying a real posted delivery date at
+  **2026-08-16 to 08-21**. `tracker/LEDGER.md` records out-of-pocket $0.00, so no sample has been ordered as of 2026-08-12.
+  `docs/WARM-UP.md` Track A puts the product-in-frame post on **Day -1 = 2026-08-17** and product content from **Day 1 = 2026-08-18**.
+  Ordering on 2026-08-12, the fast option arrives somewhere between one day before and four days after Day -1, and the recommended
+  option arrives roughly **2026-08-28 to 2026-09-09, which is 10 days to 3 weeks after Day 1**. Estimated, not confirmed: both
+  shipping figures are supplier-page estimates, and one of the two is a general range rather than a listing-specific promise.
+- **Confidence:** Medium for the structural claim, which is arithmetic on documented lead times rather than an inference about
+  behaviour, and does not depend on our sample size. **Low** for the specific dates, n=1 product, one sourcing run, one night's
+  supplier data, and AliExpress bot-blocked deeper checks. Raised to High only by actually ordering and recording the delivered date.
+- **Falsified by:** a confirmed US-warehouse SKU for this product at an acceptable landed cost, which would collapse transit to 3-8
+  business days and dissolve the collision entirely. `ops/sourcing-dossier.md` already flags that CJ advertises NJ and CA warehouses
+  but that no specific cat-fountain SKU could be confirmed from outside the app, so this is a live and checkable possibility, not a
+  hypothetical.
+- **So we now:** (1) **the sample order is Founder Action #1 and today's one thing**, ahead of the domain, and the recommendation is to
+  order two suppliers at once (~$17) so the schedule is hedged rather than bet on one transit estimate. (2) **Every future venture run
+  from this repo costs long-lead physical items against the calendar on day zero**, before building any content schedule around dates
+  the goods cannot meet. (3) Day -1 and Day 1 content get re-planned against the real arrival date rather than the protocol's
+  ideal one, and that re-plan is owed the moment a tracking number exists. **We do not resolve this by filming a substitute unit or a
+  competitor's product**, which would be a fabrication of exactly the kind this repo refuses elsewhere.
+- **Expires:** no expiry (structural). The specific dates expire on arrival of the sample.
+- **Written by:** challenge-lead, 2026-08-12, from `ops/sourcing-dossier.md` against `docs/WARM-UP.md` Track A.
+
+### [2026-08-12] One thorough creative run does not clear a 3/day creative floor, so the floor needs a different production model
+- **Claim:** the 3 net-new creatives/day floor in `docs/MANDATE.md` cannot be met by one deep specialist run per day. A single
+  creative-director run producing full scripts (timed shot lists, overlays, captions, cover briefs, hook-family labels) tops out well
+  under a day's floor when it is also asked to build a named format test and retrofit the existing bank. **Either the unit of "a
+  creative" is smaller than a full script, or production has to be parallel and templated rather than one considered run per day.**
+- **Evidence:** one run, 2026-08-12, `tracker/LEDGER.md` session note. Output: **7 net-new scripts** (~495 lines) plus 10 hooks and a
+  183-line calendar. Against the floor counted from Challenge Day 1, that is **short 5 by Day 4 and short 14 by Day 7** (7 shipped vs
+  21 required), with Days 5-7 holding zero assets. Measured by file count and the calendar's own tally, not estimated. The floor
+  itself rests on the Motion 578,750-creative dataset in *External evidence* above, which is not in question here; what is in question
+  is our ability to feed it.
+- **Confidence:** Low. n=1 run, one seat, one product, and the run was also carrying two other jobs. A dedicated run doing nothing else
+  might clear it. This is a real observation about throughput, not yet a proven ceiling.
+- **Falsified by:** a single focused creative run shipping 15-21 usable scripts, or the arrival of the video pipeline (keys plus
+  upload-post) making the script the wrong unit to count in the first place.
+- **So we now:** count and report the shortfall out loud every run rather than quietly filling the calendar with weak filler to hit a
+  number, which is the failure mode the floor would otherwise cause. The next creative run owes **9 scripts minimum before
+  2026-08-22**. Flagged for a decision that is not ours to make silently: whether "3 net-new creatives/day" means 3 scripts, 3 filmed
+  variants of one script, or 3 posted videos. **Those are three very different workloads and `docs/MANDATE.md` does not currently
+  say which**, so the floor is unmeasurable until it is pinned down.
+- **Expires:** re-check when the video pipeline exists, since that changes the unit.
+- **Written by:** challenge-lead, 2026-08-12, from the creative-director run.
+
 ### [2026-08-10] Direct WebFetch against TikTok Creative Center, Meta Ad Library and Amazon Movers & Shakers returns no usable data
 - **Claim:** an agent calling WebFetch directly against these three research sources does not get real data back: TikTok Creative
   Center returns a client-rendered SPA shell with "No search results found," Meta Ad Library fails outright (socket hang-up), and
@@ -556,8 +612,9 @@ attention. Same evidence standard as anything else: a bad feeling is a hypothesi
 - **Falsified by:** a future run where direct WebFetch against any of these three sources returns real, parseable data.
 - **So we now:** default to WebSearch-mediated secondary sources for these three rather than spending budget on direct fetch
   attempts, and treat live ad-longevity data (Meta/TikTok Ad Library specifically) as something that needs a human logged into a
-  real browser session when it matters for a real spend decision. See Founder Action Card #9 in `tracker/LEDGER.md`, which exists
-  because of this gap.
+  real browser session when it matters for a real spend decision. See the founder action card "spend 10 min logged into Meta Ad
+  Library + TikTok Creative Center" in `tracker/LEDGER.md`, which exists because of this gap. Referenced by name rather than by rank,
+  because the cost-of-delay ranking is re-sorted every run.
 - **Expires:** re-check quarterly (platform/tooling behaviour, not a product or trend).
 - **Written by:** challenge-lead, from the 2026-08-10 product-scout run.
 

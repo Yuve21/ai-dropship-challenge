@@ -14,7 +14,8 @@ Target: **$1,000/day net profit by Day 30** (`docs/MANDATE.md`). The first three
 `challenge-lead` opens every run with.
 - **Current daily net profit: $0.00**
 - **Gap to $1,000/day net: $1,000.00**
-- **Days remaining to Day 30: 30 (challenge not started)**
+- **Days remaining to Day 30: 30 challenge days (Day 1 is 2026-08-18, Day 30 is 2026-09-16). Today is
+  warm-up Day -6, so the clock has not started.**
 - **Ad spend/day vs the ladder (`docs/30-DAY-PLAN.md`): $0.00, ladder not started (Day 6 launch)**
 - **Out-of-pocket spent (founder money): $0.00 / $100.00 cap**
 - **Revenue to date: $0.00**
@@ -31,19 +32,27 @@ authorise product content or a paid ramp until it is met, and a blocked gate nev
 (`docs/NO-STALL.md`).
 - **Warm-up gate: ENABLED** (founder-controlled, `enabled` in `automation/state/warmup-state.json`;
   `node cli.js warmup skip` turns it off and logs the decision here, `warmup enable` restores it).
-- **Track A (TikTok): STARTED. Protocol day: Day -7.** Account: `@dailypawfinds` ("Paw Finds"), created
+- **Track A (TikTok): STARTED. Protocol day: Day -6 (consume only) as of 2026-08-12.** Account: `@dailypawfinds` ("Paw Finds"), created
   2026-08-11, on a real device/network per the founder. Bio: "pet + home finds, one at a time," no link.
   Profile picture: a designed paw-print mark (warm coral background, cream icon), not a real photo or a
   fabricated face — see reasoning in the 2026-08-11 session note. Tracked going forward with
   `automation/` (`node cli.js warmup today`), state in `automation/state/warmup-state.json`. One account,
   one real device/network, as required.
 - **In-app human routine (~20 min/day during warm-up, 5-10 min/day forever after): started 2026-08-11.**
-  Day -7 routine (profile setup + ~20 min scroll, zero engagement) is the founder's task today. The
-  posting API cannot do this; only a human can.
+  Day -6 routine (2026-08-12) is consume-only: 20-30 min scrolling mostly in-niche, 10 likes, 3 saves, 5
+  follows of in-niche creators, 2 genuine comments in real sentences, 10 in-niche videos watched to
+  completion and 3 replayed. Zero posts today, and the CLI refuses one. Run `node automation/cli.js warmup
+  today` for the current day's routine rather than reading it from here. The posting API cannot do this
+  part; only a human can.
 - **Native non-promotional posts made: 0 of 3 (Days -4 to -2, not due yet). Product-in-frame post: 0 of 1
   (Day -1, not due yet).**
-- **Product/CTA content started: NO (gated until Track A reaches Day 1, ~2026-08-18 if the cadence holds
-  exactly as scheduled).**
+- **Product/CTA content started: NO.** Two independent gates, and the second one is new as of 2026-08-12:
+  (1) the warm-up gate, which clears when Track A reaches Day 1 on 2026-08-18; (2) **no physical sample
+  exists**, and "never advertise a product you have not held" is a standing gate in `docs/PLAYBOOK.md` and
+  `challenge-lead`'s brief. Gate 2 now binds later than gate 1: the sample has not been ordered, and the
+  best sourced delivery estimate is 2026-08-16 to 08-21 with the recommended-primary supplier at 12-20
+  business days. **The Day -1 product-in-frame post on 2026-08-17 and the Day 1 product videos cannot be
+  filmed on schedule.** Full reasoning and the options in the 2026-08-12 session note below.
 - **Per-post measurements being collected (views at 1h/24h/72h, watch time and completion, saves, shares,
   comments, profile taps, follower delta, "is the FYP serving the niche" y/n, any action block or
   warning): none yet, no posts exist.**
@@ -55,9 +64,20 @@ authorise product content or a paid ramp until it is met, and a blocked gate nev
 - **Track D (store and processor): Shopify Payments verification not started.** Pending documents are
   themselves a payout-hold trigger, so finish it the same day the store exists. Reserve notice: none.
   Payout schedule: n/a. Disputes: 0.
+- **Track E (Meta and Google ad accounts): NOT STARTED, and now one day late.** Track E's Day -7 step
+  (create Meta Business Manager + ad account and the Google Ads account, both at $0 spend) was added to
+  `docs/WARM-UP.md` and `docs/MANDATE.md` on 2026-08-12, after Day -7 had already passed, so it did not
+  exist as an action on the day it was due. Now Founder Action #4. Meta ad account: not created. Google Ads
+  account: not created. Google tag: not installed. Merchant Center: no feed. Campaigns built and paused: 0
+  of 2, though the full spec for both now exists in `ops/paid-readiness-dossier.md`, so building them is a
+  transcription job rather than a design job. Spend on both: $0, and the $150 collected-revenue trigger has
+  not been approached.
 - **Protocol v1 verdict written to `docs/LEARNINGS.md`: not due yet (due on protocol Day 1 and Day 7).**
-- **Learnings logged in `docs/LEARNINGS.md`: 3 entries (1 learning, 2 open hypotheses: Warm-Up Protocol
-  v1, and the no-stall procedures).**
+- **Learnings logged in `docs/LEARNINGS.md`: 4 learnings** (all *Anti-patterns*: direct WebFetch blocked by
+  the three main research surfaces; TikTok-virality-first research surfacing items already at big-box retail;
+  supplier lead time rather than the warm-up calendar gating product content; and one creative run not
+  clearing the 3/day floor), **2 open hypotheses** (Warm-Up Protocol v1, and the no-stall procedures),
+  **19 External evidence entries** (other people's numbers, never ours).
 
 ## Product bench (update in place; see `docs/NO-STALL.md` P1, and `docs/PLAYBOOK.md` section 3)
 Five ranked, pre-validated candidates at all times, so a killed product costs zero days. `product-scout`
@@ -142,21 +162,31 @@ ordering a sample.
 This block goes at the top of every daily readout. Each item is a Prepared Action Card: exact URL, exact
 steps, exact values to paste, cost, minutes, what it unblocks. The founder does one action and no research.
 
-**Track A Day -7 is DONE as of 2026-08-11** (`@dailypawfinds`, "Paw Finds") — removed from this table.
-**Today's one thing now, and every day going forward: run `node automation/cli.js warmup today`** and do
-whatever it says (today: ~20 min scrolling, zero engagement). That recurring daily task is tracked by
-the CLI, not a numbered card here, since it changes what it asks for every day.
+**Track A Day -7 is DONE as of 2026-08-11** (`@dailypawfinds`, "Paw Finds"), so it is off this table.
+
+Two things sit above the numbered list, and they are different in kind:
+- **The standing daily task, every day, warm-up or not: run `node automation/cli.js warmup today`** and do
+  whatever it prints. It is not a numbered card because what it asks for changes every day. On 2026-08-12 it
+  asks for consume-only engagement and refuses all posting.
+- **"Today's one thing" is the highest-ranked numbered card below**, which is the one-off action whose delay
+  costs the most. On 2026-08-12 that is **ordering the product sample**, which displaced the domain from the
+  top spot when this run found that sample lead time, not the warm-up calendar, is what actually gates the
+  start of product content.
+
+Both get done. The CLI routine takes ~25 minutes and the ranked card takes ~15.
 
 | Rank | Action | Cost of delay per day | Cost | Time | Unblocks |
 |---|---|---|---|---|---|
-| 1 | Buy the domain and publish SPF + DKIM + DMARC `p=none` the same day (Track C Day -7) | **1.0, compounding and unrecoverable** | ~$10-12 | ~15 min | Sending domain, real contact email, domain verification |
-| 2 | Enable the daily loop: `gh workflow enable challenge-loop` then `gh secret set CLAUDE_CODE_OAUTH_TOKEN` (dead end zero) | 1.0 while a seat is not being opened daily | $0 | ~3 min | Unattended daily progress. Until then an open seat is the loop |
-| 3 | Create the Shopify store ($1/mo promo, Basic) | 0.6 | ~$1 | ~10 min | Store build, pixel install, policy pages, checkout |
-| 4 | Finish payments verification to 100%, bank linked (Track D Day -7) | 0.9 once a store exists | $0 | ~20 min | Taking any money at all |
-| 5 | Create the free upload-post account (dashboard sign-up only; do NOT subscribe to the paid Basic tier yet, see automation/README.md) | 0.4, grows as Day 1 (~2026-08-18) approaches | $0 now, $24/mo when you do subscribe (closer to Day 1) | ~10 min | Lets `automation/`'s `post` command actually send once the paid tier + video assets both exist |
-| 6 | Create the DSers/CJ account and put a payment method on it | 0.2 until the first order | $0 now | ~15 min | Fulfilment (critical the moment an order exists) |
-| 7 | Paste AI-video / research API keys into `.env` (free tiers) | 0.3 | $0 | ~5 min each | Rendered video and scraped research; scripts ship regardless |
-| 8 | Spend 10 min logged into Meta Ad Library + TikTok Creative Center, search "cat water fountain," screenshot what you find | 0.2, de-risks the #1 bench candidate before more effort goes into it | $0 | ~10 min | Confirms or kills the one unverified leg of bench rank 1's demand evidence (today's agent research could not reach these sites directly: bot-blocking / client-rendered pages, see 2026-08-10 ledger note) |
+| 1 | **TODAY'S ONE THING, and it is new.** Order the cat water fountain sample from AliExpress. Order **both** Option A ($6.82, best economics) and Option C ($10.33, the only listing with a real delivery date) to hedge the schedule, ~$17 total | **1.0, compounding, and it has the longest tail on the board (12-20 business days)** | ~$17 for both, the first real out-of-pocket spend, well inside the $15-30 sample allowance | ~15 min | ALL product content. No sample means no Day -1 product-in-frame post and no Day 1 product video, because "never advertise a product you have not held" is a standing gate. See the collision logged in the 2026-08-12 session note: this already cannot arrive before Day -1 |
+| 2 | Buy the domain and publish SPF + DKIM + DMARC `p=none` the same day (Track C Day -7, now 5 days late) | **1.0, compounding and unrecoverable** | ~$10-12 | ~15 min | Sending domain, real contact email, domain verification. Domain age is calendar-driven: the 7-14 day aging window cannot be compressed later |
+| 3 | Enable the daily loop: `gh workflow enable challenge-loop --repo Yuve21/ai-dropship-challenge` (the secret is already set) | 1.0 while a seat is not being opened daily | $0 | ~1 min | Unattended daily progress. Until then an open seat is the loop |
+| 4 | **NEW, and already 1 day late.** Create the Meta Business Manager + ad account AND the Google Ads account, both at $0 spend (Track E Day -7) | 0.7, and it gates the whole paid ladder that the $1,000/day target is built on | $0 | ~20 min for both | Lets the prepared Meta and Google campaigns in `ops/paid-readiness-dossier.md` actually be built and left paused, so Day 6 is a button press instead of a setup day |
+| 5 | Create the Shopify store ($1/mo promo, Basic) | 0.6 | ~$1 | ~10 min | Store build, pixel install, policy pages, checkout. Everything downstream of revenue |
+| 6 | Finish payments verification to 100%, bank linked (Track D Day -7) | 0.9 once a store exists, so it inherits rank 4's timing | $0 | ~20 min | Taking any money at all. Pending documents are themselves a payout-hold trigger, so do it the same day the store exists |
+| 7 | Create the free upload-post account (dashboard sign-up only; do NOT subscribe to the paid Basic tier yet, see `automation/README.md`) | 0.4, grows as Day 1 (2026-08-18) approaches | $0 now, $24/mo when you do subscribe (closer to Day 1) | ~10 min | Lets `automation/`'s `post` command actually send once the paid tier + video assets both exist |
+| 8 | Paste AI-video / research API keys into `.env` (free tiers) | 0.3 | $0 | ~5 min each | Rendered video and scraped research; scripts ship regardless |
+| 9 | Spend 10 min logged into Meta Ad Library + TikTok Creative Center, search "cat water fountain," screenshot what you find | 0.2, de-risks the #1 bench candidate before more effort goes into it | $0 | ~10 min | Confirms or kills the one unverified leg of bench rank 1's demand evidence (agent research cannot reach these sites directly: bot-blocking / client-rendered pages, see the 2026-08-10 ledger note and the matching *Anti-patterns* entry) |
+| 10 | Create the DSers/CJ account and put a payment method on it | 0.2 until the first order, then critical | $0 now | ~15 min | Fulfilment (critical the moment an order exists) |
 
 ## Money log (line items)
 | Date | In/Out | Founder or Revenue | Amount | What | Running out-of-pocket |
@@ -180,11 +210,86 @@ the CLI, not a numbered card here, since it changes what it asks for every day.
 | 2026-08-11 | Full store build spec, 6 pages of store copy, 5 warm-up/Day-1 video scripts, a supplier sourcing dossier, and a compliance review of the whole bench all built ahead of need, none of it requiring the founder | store-architect, copywriter, creative-director, ops-support, compliance-guard (all via challenge-lead) | n/a — preparation, not a numbers call; see the 2026-08-11 "getting ready before setup" session note for the full file list |
 | 2026-08-11 | 4-in-1 interactive cat toy rejected (founder decision, after both gates passed it conditionally) | founder, informed by offer-economist + compliance-guard | Both passes were conditional on an unverified $5-9 landed-cost estimate; rejected regardless because it's already sold at Walmart/Chewy/Petco, which no economics or compliance pass fixes |
 | 2026-08-11 | Ranks 4-5 left open rather than force-filled; two full sweeps (~48 candidates combined) found zero clean candidates in tech/wellness or pet/home-kitchen | product-scout (two runs) | Every candidate with verifiable demand in both sweeps was already at Walmart, Target, Best Buy, Costco, Amazon Basics, Chewy, or Petco — full lists in the session note below |
+| 2026-08-12 | Product sample promoted to Founder Action #1, displacing the domain from "today's one thing". Recommended ordering supplier Options A and C together to hedge the schedule rather than betting on one | challenge-lead | Recommended primary supplier is 12-20 business days (lands ~2026-08-28 to 09-09) against a Day -1 product-in-frame post due 2026-08-17; the fast option's own posted estimate is 2026-08-16 to 08-21 |
+| 2026-08-12 | Bench rank 1's headline margin restated for paid planning: 60.8% contribution margin, not the bench table's 64.8% | offer-economist, via the paid dossier | The bench figure omits a returns line. Adding a modelled 4% returns reserve ($1.40) moves CM per order to $21.28 and break-even aMER to 1.64. Both numbers kept, with the difference named, rather than replacing one with the other |
+| 2026-08-12 | Paid Readiness Dossier (P7) built for Meta, Google and TikTok before any revenue exists, all campaigns specified paused | growth-operator | Max allowable CPA $17.02 at target aMER 2.06; every ad-level kill trigger reduces to "$25 spent, zero sales" across all three bench ranks |
 | - | Repo + team scaffolded; challenge not yet started | setup | - |
 
 ## Session notes
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
+
+- **2026-08-12, part 2: the paid rail got built, and the run found a scheduling collision that changes the
+  plan.** Two specialists ran in parallel, plus a doc-hygiene pass. **No money moved, out-of-pocket still
+  $0.00 / $100.00, no account touched, the GitHub workflow is still `disabled_manually` (verified, not
+  assumed), and nothing was posted.**
+
+  **The finding that matters most: the sample is the real critical path, and nobody had it on the board.**
+  Every Day 1 script needs the fountain on camera, the Day -1 product-in-frame post on 2026-08-17 needs it
+  too, and `docs/PLAYBOOK.md` plus `challenge-lead`'s own brief both hold "never advertise a product you
+  have not held" as a gate that does not bend. **No sample has been ordered.** `ops/sourcing-dossier.md`
+  puts the recommended primary supplier (Option A, $6.82) at **12-20 business days**, which lands roughly
+  2026-08-28 to 2026-09-09. The one listing with a real posted delivery date (Option C, $10.33) shows
+  **2026-08-16 to 08-21**. Day -1 is 2026-08-17 and Day 1 is 2026-08-18. **So even the fast option only
+  maybe makes Day -1, and the recommended option misses Day 1 by 10 days to 3 weeks.** This was not caused
+  by anything that happened today; it has been true since the bench was set, and no previous run costed the
+  lead time against the calendar. It is logged as a founder-facing collision rather than quietly absorbed,
+  because the fix costs real money and only the founder spends. **Ordering the sample is now Founder Action
+  #1 and today's one thing**, displacing the domain, with a recommendation to order Options A and C together
+  (~$17 total, inside the $15-30 sample allowance) so the schedule is hedged rather than bet on one supplier.
+  No order was placed by this seat.
+
+  **`growth-operator` + `offer-economist`: the Paid Readiness Dossier now exists**, `ops/paid-readiness-dossier.md`,
+  432 lines, implementing `docs/NO-STALL.md` P7 in full. This closes the largest hole between the repo and the
+  mandate: the $1,000/day target is arithmetically a $4,000/day ad-spend target, the ladder has zero slack,
+  and there was previously **no paid artifact of any kind in the repo**. Covers Meta (1 campaign, 1 broad ad
+  set, 4 launch concepts at $50/day, the 72h freeze, the settings that must not be touched), Google (Merchant
+  Center required attributes pulled live from support.google.com, Standard Shopping recommended over PMax
+  with reasoning), TikTok (platform floors, sequenced third), the Track E launch-order tie-break, the budget
+  step ladder, pixel state, a pre-flight checklist, and the pre-written learning-phase honesty sentence.
+  **Economics, recomputed at worst-case landed cost and independently re-verified by `challenge-lead` rather
+  than taken on trust:** fountain contribution margin **$21.28/order (60.8%)**, break-even aMER **1.64**,
+  target aMER **2.06**, max allowable CPA **$17.02**, break-even at ~2.35 orders/day against $50/day spend.
+  **It also caught a real discrepancy in our own bench:** the bench table's 64.8% margin omits a returns
+  line, and the dossier reconciles the two (60.8% with a modelled 4% returns reserve) instead of quoting the
+  flattering number. Every ad-level kill trigger on all three bench ranks collapses to the same rule, "$25
+  spent, zero sales", because the flat threshold binds before the 2x-contribution alternative in all three
+  cases. **Three things it could not verify are flagged in the file, not invented:** current Meta and TikTok
+  CPM in this niche (Ad Library and Creative Center still unreachable by direct fetch, consistent with the
+  standing *Anti-patterns* entry), the exact Google Ads conversion minimum for Target ROAS bidding, and a
+  single-source SEO-blog claim that Shopping campaigns require Local Inventory Ads from 2026-08-31, which if
+  true would force a Performance Max fallback and needs a human in the Merchant Center UI to settle.
+
+  **`creative-director` + `hook-writer`: `creative/CONTENT-CALENDAR.md`** (183 lines) maps 2026-08-12 through
+  2026-08-24 to protocol days with post type, count, asset filename, time, CTA-ladder rung and AIGC state per
+  slot, plus **7 net-new scripts** (~495 lines) and 10 round-2 hooks added to the hook bank. The
+  **Dashboard-and-Pointer A/B from the 2026-08-12 external-evidence entry is now actually runnable**: 3
+  dashboard-and-pointer scripts against 3 standard-UGC scripts inside Challenge Days 1-4, read on hook rate
+  and comment rate. The time-of-day confound (arm A always takes the first slot) is flagged in the file
+  rather than hidden, which means the test reads directional, not clean. Every Day 1+ script also carries a
+  labelled comment-bait element across 4 distinct prompt shapes, so the comment-rate lever from that same
+  entry gets tested separately from the format. **Reported shortfall, not smoothed over:** 7 scripts against
+  a 3/day floor is short 5 by Day 4 and short 14 by Day 7, and Days 5-7 have zero assets. The next
+  creative run owes 9 scripts minimum before 2026-08-22.
+
+  **Doc hygiene (Standing Work Queue item 12), fixing defects introduced by the commits pulled this morning.**
+  The commit that added four agent briefs updated no count anywhere: "ten briefs" was stale in 6 files, and
+  the four new briefs had been appended as an orphaned bullet list in the middle of an unrelated section of
+  `agents/HQ.md` instead of placed in the org chart. All corrected, org chart now reads 14 by department, and
+  `docs/OPERATOR-PLAYBOOK.md` section 11's "two gaps in our org" passage now records both gaps as closed by
+  those briefs, with the caveat that a staffed brief is not proven work. Also fixed: the warm-up block said
+  Day -7 when it was Day -6; the standing tallies said "30 (challenge not started)" with no real dates;
+  `docs/LEARNINGS.md` claimed 1 learning when it has 2, and this ledger claimed "3 entries" when the real
+  split is 2 learnings, 2 open hypotheses and 19 external-evidence entries; two cross-references pointed at
+  "Founder Action Card #9" which no longer existed after re-ranking, now referenced by name instead.
+  **Track E had no ledger presence and no founder card at all** despite the mandate making it a Day -7 item;
+  both added, with its lateness attributed to the doc landing after its own due date rather than to the founder.
+
+  **Verified rather than assumed:** `gh secret list` confirms `CLAUDE_CODE_OAUTH_TOKEN` present since
+  2026-08-11, and `gh workflow list --all` confirms `challenge-loop` is `disabled_manually`. That switch is
+  the founder's and was not flipped.
+  **Next:** order the sample today, then decide how Day -1 and Day 1 content changes given it cannot arrive
+  in time.
 
 - **2026-08-12: docs density pass, warm-up became a founder-controlled switch, the mandate was propagated,
   and two external evidence entries were added.** Nothing spent, out-of-pocket still $0.00, no account
@@ -402,8 +507,10 @@ unverified.)
   compensate). **Rank 5 is open**, owed on the next `product-scout` run. Neither rank 3 nor rank 4 has
   been through `offer-economist` yet.
   **What's still unverified and matters:** the fountain's strongest demand signal (ad-longevity) came
-  from a third-party ad-spy teaser page, not a live Meta/TikTok Ad Library pull — Founder Action Card #9
-  above asks for a 10-minute logged-in check to close that gap before more work goes into this candidate.
+  from a third-party ad-spy teaser page, not a live Meta/TikTok Ad Library pull. The founder action card
+  "spend 10 min logged into Meta Ad Library + TikTok Creative Center" above asks for a logged-in check to
+  close that gap before more work goes into this candidate (referenced by name, not rank: the ranking
+  changes every run).
   **No product went live. No sample was ordered. No money moved.** Out-of-pocket still $0.00. Warm-up
   still not started on any track; that remains the single highest-cost-of-delay item on the board and
   this run does not change that ranking, it just means the bench is ready the moment warm-up clears.

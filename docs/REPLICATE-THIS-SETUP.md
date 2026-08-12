@@ -64,7 +64,7 @@ parts 1 and 2, and closes with an explicit write-back duty: which section of the
 entries to, and at what moment. Keep them plain markdown so they are portable; any seat-specific header
 (Claude Code's YAML frontmatter, for instance) must be safely ignorable by every other seat.
 
-**Here:** ten briefs in `.claude/agents/`, grouped by department in `agents/HQ.md`: executive, research,
+**Here:** fourteen briefs in `.claude/agents/`, grouped by department in `agents/HQ.md`: executive, research,
 finance, store, content, growth, risk, ops. Rough sizing that has worked: 40 to 70 lines each. Long
 enough to encode judgement, short enough that a seat with no sub-agent support can hold several in
 context at once.

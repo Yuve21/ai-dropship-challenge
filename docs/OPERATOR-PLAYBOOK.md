@@ -1300,15 +1300,22 @@ paid-social agency roughly **20% of spend under $50k/month**, sliding to 10-12% 
 of spend at 10% is $5k/month, $60k a year, an entry-level salary**. One credible operator's real
 threshold: a **Demand Manager at $15-20M revenue**, delaying it "cost millions in stockouts."
 
-**What this means for `agents/HQ.md`, `HYPOTHESIS`:** our 10-agent org already maps onto the roles
+**What this means for `agents/HQ.md`, `HYPOTHESIS`:** our 14-agent org already maps onto the roles
 operators hire (support to `ops-support`, media buying to `growth-operator`, creative to
 `creative-director` and `content-engine`, sourcing to `product-scout` and `ops-support`, finance to
-`offer-economist`). Two gaps, both wired in by section 12:
+`offer-economist`). This section originally named two gaps. **Both were closed on 2026-08-12**, when four
+briefs were added:
 
-1. **Nobody owns contribution margin per order and break-even aMER as a standing daily number.**
-   `offer-economist` owns break-even ROAS, the same arithmetic one abstraction lower.
-2. **Nobody owns creative throughput as a rate.** `creative-director` owns quality and hooks,
-   `content-engine` owns production. Neither is accountable for "3 net-new creatives shipped today."
+1. ~~Nobody owns contribution margin per order and break-even aMER as a standing daily number.~~
+   **CLOSED:** `metrics-dashboard` owns the one view (spend, revenue, contribution margin, net, and the gap
+   to $1,000/day), and `cash-flow-modeller` owns the cash side that a margin number hides. `offer-economist`
+   still owns break-even ROAS, the same arithmetic one abstraction lower.
+2. ~~Nobody owns creative throughput as a rate.~~ **CLOSED:** `creative-director` now explicitly owns and
+   reports the rate (floor 3 net-new/day, target 5), and `hook-writer` owns the first 3 seconds as a
+   separate testable variable. `content-engine` still owns production.
+
+Closing a gap on an org chart is not the same as the work happening. These four have briefs and have not yet
+produced anything, so treat them as staffed, not proven.
 
 Automate-versus-hire split: **automate anything rule-based and high-frequency** (review requests,
 abandoned-cart, order status, reporting); **keep judgment-heavy, low-frequency, high-stakes work human**
