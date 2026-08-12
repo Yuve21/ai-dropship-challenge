@@ -46,13 +46,19 @@ authorise product content or a paid ramp until it is met, and a blocked gate nev
   part; only a human can.
 - **Native non-promotional posts made: 0 of 3 (Days -4 to -2, not due yet). Product-in-frame post: 0 of 1
   (Day -1, not due yet).**
-- **Product/CTA content started: NO.** Two independent gates, and the second one is new as of 2026-08-12:
-  (1) the warm-up gate, which clears when Track A reaches Day 1 on 2026-08-18; (2) **no physical sample
-  exists**, and "never advertise a product you have not held" is a standing gate in `docs/PLAYBOOK.md` and
-  `challenge-lead`'s brief. Gate 2 now binds later than gate 1: the sample has not been ordered, and the
-  best sourced delivery estimate is 2026-08-16 to 08-21 with the recommended-primary supplier at 12-20
-  business days. **The Day -1 product-in-frame post on 2026-08-17 and the Day 1 product videos cannot be
-  filmed on schedule.** Full reasoning and the options in the 2026-08-12 session note below.
+- **Product/CTA content started: NO. One gate remains, and it is the warm-up gate, clearing on 2026-08-18.**
+  The sample gate was **waived by founder decision on 2026-08-12** (see the decision log and session note):
+  no sample will be ordered, and the challenge starts without one. The standing "sample held" rule in
+  `docs/PLAYBOOK.md` section 4 and `challenge-lead`'s brief is therefore **suspended for this product, by the
+  founder, knowingly**. It is not deleted from the docs, because it remains the right default for the next
+  product and the next venture.
+  **What this costs, recorded so the day-30 readout can be honest:** no authentic phone-filmed UGC is
+  possible, so content shifts to generated video, supplier-provided assets and static image + text. Our own
+  *External evidence* puts UGC's winner rate at 7.56% and product-image-plus-text at 8.75%, so the format
+  shift is not automatically worse on hit rate, but we lose real cat-behaviour footage, which is what
+  `creative-director` said the fountain's best beats depend on. We also cannot make any experience-based
+  claim, and nobody sees the product before a customer does. The no-sample plan lives in
+  `creative/NO-SAMPLE-PLAN.md`.
 - **Per-post measurements being collected (views at 1h/24h/72h, watch time and completion, saves, shares,
   comments, profile taps, follower delta, "is the FYP serving the niche" y/n, any action block or
   warning): none yet, no posts exist.**
@@ -67,7 +73,7 @@ authorise product content or a paid ramp until it is met, and a blocked gate nev
 - **Track E (Meta and Google ad accounts): NOT STARTED, and now one day late.** Track E's Day -7 step
   (create Meta Business Manager + ad account and the Google Ads account, both at $0 spend) was added to
   `docs/WARM-UP.md` and `docs/MANDATE.md` on 2026-08-12, after Day -7 had already passed, so it did not
-  exist as an action on the day it was due. Now Founder Action #4. Meta ad account: not created. Google Ads
+  exist as an action on the day it was due. Now Founder Action #9. Meta ad account: not created. Google Ads
   account: not created. Google tag: not installed. Merchant Center: no feed. Campaigns built and paused: 0
   of 2, though the full spec for both now exists in `ops/paid-readiness-dossier.md`, so building them is a
   transcription job rather than a design job. Spend on both: $0, and the $150 collected-revenue trigger has
@@ -169,24 +175,29 @@ Two things sit above the numbered list, and they are different in kind:
   whatever it prints. It is not a numbered card because what it asks for changes every day. On 2026-08-12 it
   asks for consume-only engagement and refuses all posting.
 - **"Today's one thing" is the highest-ranked numbered card below**, which is the one-off action whose delay
-  costs the most. On 2026-08-12 that is **ordering the product sample**, which displaced the domain from the
-  top spot when this run found that sample lead time, not the warm-up calendar, is what actually gates the
-  start of product content.
+  costs the most. On 2026-08-12 that is **the domain**. It briefly lost the top spot to the product sample
+  earlier the same day, then took it back when the founder decided not to order a sample at all.
 
 Both get done. The CLI routine takes ~25 minutes and the ranked card takes ~15.
 
+**Ranking shifted on 2026-08-12 by the no-sample decision.** With no sample to wait for and no phone footage
+possible, three cards went up: **AI-video API keys 0.3 to 0.8** (generated video is now the only content
+source, not an upgrade to it), **the Ad Library check 0.2 to 0.4** (competitor ad evidence is now the only
+remaining external check on this product before money goes in), and **the supplier account 0.2 to 0.4** (it
+is now the first point at which anyone sees the actual product). Track E dropped to last: it cannot bind
+before revenue exists.
+
 | Rank | Action | Cost of delay per day | Cost | Time | Unblocks |
 |---|---|---|---|---|---|
-| 1 | **TODAY'S ONE THING, and it is new.** Order the cat water fountain sample from AliExpress. Order **both** Option A ($6.82, best economics) and Option C ($10.33, the only listing with a real delivery date) to hedge the schedule, ~$17 total | **1.0, compounding, and it has the longest tail on the board (12-20 business days)** | ~$17 for both, the first real out-of-pocket spend, well inside the $15-30 sample allowance | ~15 min | ALL product content. No sample means no Day -1 product-in-frame post and no Day 1 product video, because "never advertise a product you have not held" is a standing gate. See the collision logged in the 2026-08-12 session note: this already cannot arrive before Day -1 |
-| 2 | Buy the domain and publish SPF + DKIM + DMARC `p=none` the same day (Track C Day -7, now 5 days late) | **1.0, compounding and unrecoverable** | ~$10-12 | ~15 min | Sending domain, real contact email, domain verification. Domain age is calendar-driven: the 7-14 day aging window cannot be compressed later |
-| 3 | Enable the daily loop: `gh workflow enable challenge-loop --repo Yuve21/ai-dropship-challenge` (the secret is already set) | 1.0 while a seat is not being opened daily | $0 | ~1 min | Unattended daily progress. Until then an open seat is the loop |
-| 4 | **NEW, and already 1 day late.** Create the Meta Business Manager + ad account AND the Google Ads account, both at $0 spend (Track E Day -7) | 0.7, and it gates the whole paid ladder that the $1,000/day target is built on | $0 | ~20 min for both | Lets the prepared Meta and Google campaigns in `ops/paid-readiness-dossier.md` actually be built and left paused, so Day 6 is a button press instead of a setup day |
-| 5 | Create the Shopify store ($1/mo promo, Basic) | 0.6 | ~$1 | ~10 min | Store build, pixel install, policy pages, checkout. Everything downstream of revenue |
-| 6 | Finish payments verification to 100%, bank linked (Track D Day -7) | 0.9 once a store exists, so it inherits rank 4's timing | $0 | ~20 min | Taking any money at all. Pending documents are themselves a payout-hold trigger, so do it the same day the store exists |
-| 7 | Create the free upload-post account (dashboard sign-up only; do NOT subscribe to the paid Basic tier yet, see `automation/README.md`) | 0.4, grows as Day 1 (2026-08-18) approaches | $0 now, $24/mo when you do subscribe (closer to Day 1) | ~10 min | Lets `automation/`'s `post` command actually send once the paid tier + video assets both exist |
-| 8 | Paste AI-video / research API keys into `.env` (free tiers) | 0.3 | $0 | ~5 min each | Rendered video and scraped research; scripts ship regardless |
-| 9 | Spend 10 min logged into Meta Ad Library + TikTok Creative Center, search "cat water fountain," screenshot what you find | 0.2, de-risks the #1 bench candidate before more effort goes into it | $0 | ~10 min | Confirms or kills the one unverified leg of bench rank 1's demand evidence (agent research cannot reach these sites directly: bot-blocking / client-rendered pages, see the 2026-08-10 ledger note and the matching *Anti-patterns* entry) |
-| 10 | Create the DSers/CJ account and put a payment method on it | 0.2 until the first order, then critical | $0 now | ~15 min | Fulfilment (critical the moment an order exists) |
+| 1 | **TODAY'S ONE THING.** Buy the domain and publish SPF + DKIM + DMARC `p=none` the same day (Track C Day -7, now 5 days late) | **1.0, compounding and unrecoverable** | ~$10-12 | ~15 min | Sending domain, real contact email, domain verification. Domain age is calendar-driven: the 7-14 day aging window cannot be compressed later |
+| 2 | Create the Shopify store ($1/mo promo, Basic). Paired with #1, this is the whole store standup | 0.9, raised from 0.6 on 2026-08-12: with no sample to wait for, the store is now the only thing between here and a sellable page | ~$1 | ~10 min | Store build, pixel install, policy pages, checkout. `store/BUILD-SPEC.md` and all 6 copy files are already written and waiting to be pasted |
+| 3 | **RAISED on 2026-08-12, from rank 8.** Paste the AI-video API keys into `.env` (free tiers) | **0.8, up from 0.3.** With no sample, there is no phone footage, so generated and supplier-sourced video is now the ONLY content source. This moved from "improves a layer" to "is the layer" | $0 | ~5 min each | The entire Day 1 content plan. Without keys there is nothing to post at all, where previously scripts could still be filmed by hand |
+| 4 | Enable the daily loop: `gh workflow enable challenge-loop --repo Yuve21/ai-dropship-challenge` (the secret is already set) | 1.0 while a seat is not being opened daily, but discounted while the founder is opening seats by hand | $0 | ~1 min | Unattended daily progress. Until then an open seat is the loop |
+| 5 | Finish payments verification to 100%, bank linked (Track D Day -7) | 0.9 once a store exists, so it inherits rank 2's timing | $0 | ~20 min | Taking any money at all. Pending documents are themselves a payout-hold trigger, so do it the same day the store exists |
+| 6 | Create the free upload-post account (dashboard sign-up only; do NOT subscribe to the paid Basic tier yet, see `automation/README.md`) | 0.5, raised from 0.4: with generated video as the only content source, the posting rail matters sooner | $0 now, $24/mo when you do subscribe (closer to Day 1) | ~10 min | Lets `automation/`'s `post` command actually send once the paid tier + video assets both exist |
+| 7 | Spend 10 min logged into Meta Ad Library + TikTok Creative Center, search "cat water fountain," screenshot what you find | 0.4, raised from 0.2 on 2026-08-12: with no sample to inspect, competitor ad evidence is now the ONLY remaining external check on this product before real money goes into it | $0 | ~10 min | Confirms or kills the one unverified leg of bench rank 1's demand evidence (agent research cannot reach these sites directly: bot-blocking / client-rendered pages, see the 2026-08-10 ledger note and the matching *Anti-patterns* entry) |
+| 8 | Create the DSers/CJ account and put a payment method on it | 0.4, raised from 0.2: with no sample ordered, this account is now the first time anyone sees the actual product, and it is also the only way to check for a faster US-warehouse SKU | $0 now | ~15 min | Fulfilment, which becomes critical the moment an order exists |
+| 9 | Create the Meta Business Manager + ad account AND the Google Ads account, both at $0 spend (Track E Day -7, 1 day late) | 0.7 in principle, but it cannot bind before revenue exists, so it sits below the revenue path | $0 | ~20 min for both | Lets the prepared Meta and Google campaigns in `ops/paid-readiness-dossier.md` actually be built and left paused, so Day 6 is a button press instead of a setup day |
 
 ## Money log (line items)
 | Date | In/Out | Founder or Revenue | Amount | What | Running out-of-pocket |
@@ -210,7 +221,10 @@ Both get done. The CLI routine takes ~25 minutes and the ranked card takes ~15.
 | 2026-08-11 | Full store build spec, 6 pages of store copy, 5 warm-up/Day-1 video scripts, a supplier sourcing dossier, and a compliance review of the whole bench all built ahead of need, none of it requiring the founder | store-architect, copywriter, creative-director, ops-support, compliance-guard (all via challenge-lead) | n/a — preparation, not a numbers call; see the 2026-08-11 "getting ready before setup" session note for the full file list |
 | 2026-08-11 | 4-in-1 interactive cat toy rejected (founder decision, after both gates passed it conditionally) | founder, informed by offer-economist + compliance-guard | Both passes were conditional on an unverified $5-9 landed-cost estimate; rejected regardless because it's already sold at Walmart/Chewy/Petco, which no economics or compliance pass fixes |
 | 2026-08-11 | Ranks 4-5 left open rather than force-filled; two full sweeps (~48 candidates combined) found zero clean candidates in tech/wellness or pet/home-kitchen | product-scout (two runs) | Every candidate with verifiable demand in both sweeps was already at Walmart, Target, Best Buy, Costco, Amazon Basics, Chewy, or Petco — full lists in the session note below |
-| 2026-08-12 | Product sample promoted to Founder Action #1, displacing the domain from "today's one thing". Recommended ordering supplier Options A and C together to hedge the schedule rather than betting on one | challenge-lead | Recommended primary supplier is 12-20 business days (lands ~2026-08-28 to 09-09) against a Day -1 product-in-frame post due 2026-08-17; the fast option's own posted estimate is 2026-08-16 to 08-21 |
+| 2026-08-12 | **No sample will be ordered. The "sample held" gate is waived for this product by founder decision, and the challenge starts without one.** Founder's stated reasoning: this is a rush challenge and the specialist agents have already cleared the product. `challenge-lead` recorded one correction rather than arguing: the agents had already passed everything they are capable of judging (economics, compliance), and no agent can validate a physical object it has not held, so that gate cannot be satisfied by further review. Decision stands as the founder's call on their own risk | founder, recorded by challenge-lead | Not a numbers call. The measurable consequence: zero authentic UGC footage available, so content shifts to generated video, supplier assets and static image + text. Our own evidence puts UGC winner rate at 7.56% vs 8.75% for product image + text, so the format shift is not automatically worse, but real cat-behaviour footage is lost |
+| 2026-08-12 | Sample order was briefly promoted to Founder Action #1, then removed entirely by the decision above. Domain returns to "today's one thing" | challenge-lead | Recommended primary supplier is 12-20 business days (lands ~2026-08-28 to 09-09) against a Day -1 product-in-frame post due 2026-08-17; the fast option's own posted estimate was 2026-08-16 to 08-21 |
+| 2026-08-12 | No-sample creative strategy set: film the PROBLEM (own cat, own bowl, own tap) rather than the product, for 12 of 18 Day 1-7 slots. AI video capped at 3 slots, abstract water only, no generated product/cat/person, AIGC-labelled. Two static ad specs created, the repo's first | creative-director + content-engine + compliance-guard | Static formats out-hit video on winner rate (text-only 11.60%, product image + text 8.75%, UGC 7.56%, high-production video 6.87%), a finding logged 2026-08-10 and unused until now: the repo held 12 video scripts and 0 statics |
+| 2026-08-12 | Warm-up post gate changed from an equality check to a promotional-intensity ranking, so a less promotional post than the day allows is permitted | challenge-lead | The Day -1 native substitute would have been refused by our own CLI. Verified in 4 cases including exit code 1 on the refusal path |
 | 2026-08-12 | Bench rank 1's headline margin restated for paid planning: 60.8% contribution margin, not the bench table's 64.8% | offer-economist, via the paid dossier | The bench figure omits a returns line. Adding a modelled 4% returns reserve ($1.40) moves CM per order to $21.28 and break-even aMER to 1.64. Both numbers kept, with the difference named, rather than replacing one with the other |
 | 2026-08-12 | Paid Readiness Dossier (P7) built for Meta, Google and TikTok before any revenue exists, all campaigns specified paused | growth-operator | Max allowable CPA $17.02 at target aMER 2.06; every ad-level kill trigger reduces to "$25 spent, zero sales" across all three bench ranks |
 | - | Repo + team scaffolded; challenge not yet started | setup | - |
@@ -218,6 +232,56 @@ Both get done. The CLI routine takes ~25 minutes and the ranked card takes ~15.
 ## Session notes
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
+
+- **2026-08-12, part 3: the founder waived the sample gate, and the creative plan was rebuilt around having
+  no product.** **No money moved. Out-of-pocket still $0.00 / $100.00.** Nothing posted, workflow still
+  disabled.
+  **The decision.** Told the founder the sample was the critical path and today's one thing. They declined to
+  order one, on the reasoning that this is a rush challenge and the specialist agents had already cleared the
+  product. Recorded one correction rather than arguing the point: the agents had already passed everything
+  they are *capable* of judging (economics 60.8% CM, compliance cleared), and **no agent can validate a
+  physical object it has not held**, so that particular gate cannot be satisfied by more review. The call is
+  the founder's on their own risk and it stands. The "sample held" rule stays in `docs/PLAYBOOK.md` and
+  `challenge-lead`'s brief, **suspended for this product rather than deleted**, because it remains the right
+  default next time.
+  **`creative/NO-SAMPLE-PLAN.md` (353 lines) plus 10 new script/spec files (~891 lines), 28 distinct creative
+  variants.** The plan's central finding is better than the brief that commissioned it. The obvious answer
+  was "switch to AI video"; the actual answer is **film the PROBLEM, not the product**: the founder's own cat,
+  own bowl, own tap. That is still authentic phone-filmed UGC, it needs zero assets we do not have, it never
+  shows the fountain, and it fills 12 of the 18 Day 1-7 slots. AI video is capped at 3 slots, back half of the
+  week only, AIGC-labelled, and constrained to abstract moving water with **no generated product, cat or
+  person**. Two filming sessions and one voice memo produce nine of the eighteen posts.
+  **The finding that had been sitting unused in `docs/LEARNINGS.md` since 2026-08-10:** static formats beat
+  video on winner hit rate (text-only **11.60%**, product image + text **8.75%**, UGC **7.56%**, high-production
+  video **6.87%**). The repo had **12 video scripts and zero statics**. Two static ad specs now exist, and
+  text-only is the one format in the entire plan that needs nothing we lack.
+  **The honest delta, both directions.** Paid is **not** degraded: the no-sample decision removes the two
+  lowest-hit-rate formats and leaves the two highest. Organic is where it costs, and **there is no honest
+  number for it**: no published organic winner rate exists and we have zero of our own, so the loss is stated
+  structurally instead, as losing **Demo and Proof, 2 of the 6 beats** in the playbook's hook structure, on
+  every post for the whole week. The 5-8% winner math is Meta paid data and must not be applied to organic.
+  The Dashboard-and-Pointer A/B is **deferred, not cancelled** (its arm A is unfilmable without the product);
+  the comment-bait test survives intact, and a new free experiment appears: 15 real-footage slots against 3
+  generated.
+  **Two live documents were amended rather than left to contradict the new plan:** `creative/CONTENT-CALENDAR.md`
+  carries a dated SUPERSEDED-IN-PART header (Days -6 to -2 still stand; Day -1 and Days 1-7 now point at the
+  no-sample plan), and `creative/scripts/day1-hook-bank.md` had "the motor is quiet" and "it's easy to clean"
+  sitting under *Allowed, and true*. With no unit held those are the **listing's** claims, not ours, so they
+  are now attribution-only until a unit exists.
+  **One real code bug found and fixed.** `automation/lib/protocol.js` hard-codes Day -1 as `product-in-frame`,
+  and `cli.js` tested post type with `!==`, so the Day -1 native substitute would have been **refused by our
+  own tooling**. The gate's purpose is to stop the cadence being jumped *forward*, so posting something less
+  promotional than the day allows is always safe. Replaced the equality check with a promotional-intensity
+  ranking (`native` 0 < `product-in-frame` 1 < `product` 2): a request above the day's allowance is refused as
+  before, a request below it is allowed and prints a note, and an unknown type is now rejected explicitly
+  instead of silently failing the equality test. **Verified by execution in all four cases** (native on a
+  product-in-frame day allowed with the note; `product` on that day refused with exit code 1; a bogus type
+  refused; real state file backed up, simulated, and restored clean).
+  **Also flagged, not yet done:** `ops/sourcing-dossier.md` never recorded what imagery or video the supplier
+  listings actually carry, because item pages hit a login wall. Nobody has ever looked. That is a 5-minute
+  check inside the supplier account and it gates the one supplier-media slot and one static spec.
+  **Next:** domain and store, then the API keys, which are now rank 3 because generated video went from an
+  upgrade to the only content source.
 
 - **2026-08-12, part 2: the paid rail got built, and the run found a scheduling collision that changes the
   plan.** Two specialists ran in parallel, plus a doc-hygiene pass. **No money moved, out-of-pocket still

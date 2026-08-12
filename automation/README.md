@@ -49,10 +49,17 @@ node cli.js post --video ./clip.mp4 --title "caption here" --type native --profi
 
 `--type` is `native`, `product-in-frame` or `product` (see `lib/protocol.js`, transcribed from
 `docs/WARM-UP.md`). The command refuses if:
-- the gate is on and today's protocol day does not allow that type,
+- the gate is on and today's protocol day allows a **less** promotional type than the one you asked for,
+- the type is not one of the three valid names,
 - you are at today's post cap,
 - a hold is active (`warmup hold`), or
 - the gate is on and warm-up has not been started (`warmup start`).
+
+**Posting something less promotional than the day allows is permitted** (changed 2026-08-12). The three
+types are ranked `native` < `product-in-frame` < `product`, and the gate only blocks moving *faster* than
+the protocol, never slower. A `native` post on a `product-in-frame` day is allowed and prints a note, since
+it shows the algorithm strictly less selling, not more. Before this change the check was an equality test,
+which would have refused the Day -1 native substitute in `creative/NO-SAMPLE-PLAN.md`.
 
 `--dry-run` prints exactly what would be sent, no API call, no paid plan needed.
 

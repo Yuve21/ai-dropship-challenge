@@ -21,6 +21,11 @@ import { postToTikTok } from "./lib/uploadPost.js";
 // The steady-state entry (Day 4 onward): what applies when the founder has switched warm-up off.
 const STEADY_STATE = TIMELINE[TIMELINE.length - 1];
 
+// Post types ordered by how promotional they are. The warm-up gate exists to stop the cadence being
+// jumped FORWARD, so posting something less promotional than the day allows is always safe: a native
+// post on a product-in-frame day shows the algorithm strictly less selling, never more.
+const POST_TYPE_RANK = { native: 0, "product-in-frame": 1, product: 2 };
+
 loadEnv();
 
 const [, , cmd, ...rest] = process.argv;
@@ -240,12 +245,29 @@ async function cmdPost() {
       process.exit(1);
     }
 
-    if (entry.postType !== type) {
+    const allowedRank = POST_TYPE_RANK[entry.postType];
+    const requestedRank = POST_TYPE_RANK[type];
+
+    if (requestedRank === undefined) {
       console.error(
-        `Today (${entry.label}) allows "${entry.postType}" posts, not "${type}". Not posting - this ` +
-          "gate exists specifically so an automated run can't accidentally jump the warm-up cadence."
+        `Unknown post type "${type}". Valid types: ${Object.keys(POST_TYPE_RANK).join(", ")}.`
       );
       process.exit(1);
+    }
+
+    if (requestedRank > allowedRank) {
+      console.error(
+        `Today (${entry.label}) allows "${entry.postType}" posts at most, not "${type}". Not posting - ` +
+          "this gate exists specifically so an automated run can't accidentally jump the warm-up cadence."
+      );
+      process.exit(1);
+    }
+
+    if (requestedRank < allowedRank) {
+      console.log(
+        `Note: today allows "${entry.postType}" but you are posting "${type}", which is less ` +
+          "promotional. Allowed: the gate only blocks moving faster than the protocol, never slower."
+      );
     }
   }
 

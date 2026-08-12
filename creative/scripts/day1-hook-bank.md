@@ -6,10 +6,12 @@ Product: cat water fountain, ABS/plastic housing, pump-circulated, quiet motor, 
 
 ## Claims that are allowed and claims that are banned
 
+**AMENDMENT, 2026-08-12 (`compliance-guard`, via `creative/NO-SAMPLE-PLAN.md`):** the founder decided not to order a sample, so **nobody has held this unit**. Two of the three claims below were written on the assumption that a sample would be inspected before any of these scripts filmed. Until a unit is in hand and checked, the quiet claim and the easy-clean claim are **the supplier listing's claims, not ours**, and may only be stated with that attribution ("the listing says the pump is quiet"), never as our own experience. The moving-water observation is unaffected: it is about cats, not about this product. Restore the unattributed versions the day a unit arrives and is confirmed, and date that restoration here.
+
 **Allowed, and true:**
 - Cats are commonly drawn to moving water over still water. This is a widely accepted behavioral observation, not a medical claim.
-- The motor is quiet.
-- It's easy to clean / comes apart for cleaning.
+- ~~The motor is quiet.~~ **Attributed only, until a unit is held:** the listing describes a quiet pump.
+- ~~It's easy to clean / comes apart for cleaning.~~ **Attributed only, until a unit is held:** the listing describes tool-free disassembly for cleaning.
 
 **Banned in every script, no exceptions:**
 - Any claim that this prevents, treats, reduces risk of, or relates to UTIs, kidney disease, kidney failure, or any other medical condition. This category of claim is extremely common in this product's marketing everywhere else. It does not appear anywhere in this account's content.

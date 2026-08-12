@@ -567,12 +567,17 @@ attention. Same evidence standard as anything else: a bad feeling is a hypothesi
   business days and dissolve the collision entirely. `ops/sourcing-dossier.md` already flags that CJ advertises NJ and CA warehouses
   but that no specific cat-fountain SKU could be confirmed from outside the app, so this is a live and checkable possibility, not a
   hypothetical.
-- **So we now:** (1) **the sample order is Founder Action #1 and today's one thing**, ahead of the domain, and the recommendation is to
-  order two suppliers at once (~$17) so the schedule is hedged rather than bet on one transit estimate. (2) **Every future venture run
-  from this repo costs long-lead physical items against the calendar on day zero**, before building any content schedule around dates
-  the goods cannot meet. (3) Day -1 and Day 1 content get re-planned against the real arrival date rather than the protocol's
-  ideal one, and that re-plan is owed the moment a tracking number exists. **We do not resolve this by filming a substitute unit or a
-  competitor's product**, which would be a fabrication of exactly the kind this repo refuses elsewhere.
+- **So we now:** **Every future venture run from this repo costs long-lead physical items against the calendar on day zero**, before
+  building any content schedule around dates the goods cannot meet. That is the durable, transferable half of this entry and it is
+  unaffected by what follows. **We do not resolve a missing sample by filming a substitute unit or a competitor's product and
+  implying it is ours**, which would be a fabrication of the kind this repo refuses elsewhere.
+- **AMENDED the same day, 2026-08-12, by founder decision:** the founder chose **not to order a sample at all** rather than absorb the
+  delay, so the recommendation this entry originally carried (order two suppliers at once, ~$17, and re-plan Day -1 around the arrival
+  date) **was overtaken within hours of being written and is struck**. The finding above is unchanged and was not wrong; the response
+  to it changed, and the founder owns that call. **The open question this leaves, which only real data can close: does a store that
+  never holds its product perform materially worse on conversion, return rate and dispute rate than one that does?** We now have an
+  n=1 natural experiment running whether we wanted one or not, and it should be read at day 30. Recorded here rather than in
+  *Anti-patterns* framing, because we have no evidence yet that it is one.
 - **Expires:** no expiry (structural). The specific dates expire on arrival of the sample.
 - **Written by:** challenge-lead, 2026-08-12, from `ops/sourcing-dossier.md` against `docs/WARM-UP.md` Track A.
 

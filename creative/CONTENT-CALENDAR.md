@@ -1,5 +1,13 @@
 # Content Calendar: Protocol Day -6 through Challenge Day 7
 
+> **SUPERSEDED IN PART, 2026-08-12: `creative/NO-SAMPLE-PLAN.md` replaces the Day -1 and Challenge Day 1-7
+> rows below.** The founder decided not to order a physical sample and to start on schedule
+> (`tracker/LEDGER.md`). Every product slot in this file assumes a fountain on camera, so those slots
+> cannot run. The Day -6 to Day -2 native rows are unaffected and still stand as written. The nine
+> product-dependent scripts stay in the bank untouched: they are correct for the day a unit lands, and the
+> Dashboard-and-Pointer A/B test described at the bottom of this file is deferred to that week rather than
+> cancelled. Read the no-sample plan for what actually posts on Days 1-7.
+
 Account: @dailypawfinds ("Paw Finds"). Product: cat water fountain, bench rank 1, $34.99. Built by
 `creative-director` (with `hook-writer`), 2026-08-12, against `docs/WARM-UP.md` Track A, `docs/MANDATE.md`'s
 3/day creative floor, and the 2026-08-12 `docs/LEARNINGS.md` entries on Dashboard-and-Pointer and the
