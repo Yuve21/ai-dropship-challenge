@@ -233,6 +233,52 @@ before revenue exists.
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
 
+- **2026-08-12, part 4: build-everything-ahead-of-setup run. Partially completed, stopped by a session
+  limit, and the gap is named rather than papered over.** **No money moved. Out-of-pocket still $0.00 /
+  $100.00.** Nothing posted, workflow still disabled.
+  **The ask:** build everything that does not require the founder, so that the moment they buy a domain and
+  a Shopify plan, standing the whole thing up is transcription with no thinking.
+  **Four specialists were dispatched in parallel. All four hit an API session limit mid-run** (resets
+  21:50 America/New_York). Two had already written complete files before dying; two had read their context
+  and written nothing. This is logged as a tooling interruption, not a research finding, and **no partial
+  file was passed off as finished**: each was checked for truncation before being kept.
+  **Landed and verified complete:**
+  - `ops/cs-templates.md` (723 lines, `ops-support`): the customer-service macro set, including the case
+    that matters most here, a customer asking a product question we cannot answer from experience. It also
+    deliberately declines to write two templates it was not asked for, a review-solicitation macro and an
+    apology-with-discount-code macro, on the grounds that a discount on a store with no proven margin
+    history is a decision rather than a macro. Correct call.
+  - `store/copy/email-flow-welcome.md` (271 lines, `copywriter` + `compliance-guard`): the welcome flow,
+    2 emails, and it **found a real defect nobody had noticed**: `store/BUILD-SPEC.md` never specced a
+    subscribe surface, so the flow had no entry point. It also flagged the checkout-consent trap, where a
+    naive welcome automation greets a paying customer with an introduction to the product they just bought,
+    and wrote the exit condition that prevents it.
+  **Written directly by `challenge-lead` after the agents died, rather than leaving the ask half-done:**
+  - `ops/dns-records.md`: the verbatim SPF and DMARC strings for purchase day, per `docs/NO-STALL.md` P3.
+    The useful finding is stated at the top: **only two of the three records can be published on purchase
+    day.** DKIM CNAMEs are generated per store by Shopify and do not exist until the store does, so this
+    is two short visits, not one. Also covers the two silent-failure modes that break this most often, a
+    duplicate SPF record and the 10-lookup limit, plus the DMARC alignment check that can pass SPF and
+    still fail DMARC.
+  - `store/copy/email-flow-abandoned-checkout.md`: the higher-revenue flow, 3 emails at 1h / 24h / 72h,
+    **with no discount code in any of them** and the reasoning written down: a discount arriving an hour
+    after abandonment teaches buyers to abandon, and our real objection is trust and shipping time, which a
+    code does not answer. States the documented 1.72-3.33% recovery band up front so the flow is not judged
+    against vendor fiction, and says plainly that early numbers are n=1 anecdotes that must not become
+    learnings.
+  - `creative/static-ads/` : **the first finished creative assets in this repo.** `render.js` renders the
+    three text-only static ad headline variants to real 1080x1080 PNGs via headless Chrome, the same
+    no-dependency technique used for the TikTok avatar, so it needs no image-generation API key. Rendered
+    and visually verified, not assumed. The shop name is parameterised and marked UNCONFIRMED, since the
+    store name has not been decided; re-run with `--shop` when it is. Static ad 2 stays unrendered on
+    purpose: it needs a supplier product photograph nobody has obtained.
+  **Still outstanding from this ask, and owed by the next run:** `store/LAUNCH-RUNBOOK.md` (the ordered
+  standup sequence), `ops/pixel-and-tag-spec.md`, `ops/merchant-center-feed.md` and `ops/product-page-seo.md`
+  (`seo-brief-writer` has still never run), `ops/fulfilment-runbook.md`, `store/copy/email-transactional.md`,
+  and the no-sample compliance audit of the product page and five policy pages. That audit is the highest
+  priority of the remainder, because those pages were written on 2026-08-11 assuming a sample would be held.
+  **Next:** the audit and the launch runbook, then the store standup sequence.
+
 - **2026-08-12, part 3: the founder waived the sample gate, and the creative plan was rebuilt around having
   no product.** **No money moved. Out-of-pocket still $0.00 / $100.00.** Nothing posted, workflow still
   disabled.
