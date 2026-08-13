@@ -233,6 +233,46 @@ before revenue exists.
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
 
+- **2026-08-12, part 6: the launch runbook exists, and it caught three stale facts on the way.**
+  **No money moved. Out-of-pocket still $0.00 / $100.00.** Artifacts: `store/LAUNCH-RUNBOOK.md` (910
+  lines), `ops/pixel-and-tag-spec.md` (363 lines), `store/copy/email-transactional.md`.
+  **The runbook is 56 numbered steps in 11 phases: 9h45m hands-on, $12 to $16 total**, which is the entire
+  standup cost. That leaves roughly $84 to $88 of the cap, of which $30 to $50 is the fulfilment float.
+  **Only Phase 1 spends money.** Everything else is configuration. Two calendar waits are called out
+  separately from hands-on time because they cannot be compressed: DNS propagation up to 48h, and the 7 to
+  14 day domain aging window.
+  **15 steps flagged irreversible or clock-starting**, the compounding one being the domain purchase, and
+  **7 safe stopping points** identified, with an explicit note that **Phase 3 is the exception and must be
+  done in one sitting**: pending verification documents are themselves a payout-hold trigger, so a
+  half-finished Track D is worse than an untouched one. 21 admin paths carry a `[VERIFY IN UI]` flag rather
+  than being asserted, because Shopify moves these screens between releases.
+  **Three stale facts found, which is the real value of making something merge four documents:**
+  (1) **`store/BUILD-SPEC.md` section 6's checkout path is out of date**, and worse, Shopify's published
+  style options may not support the per-section payment-field border that spec calls for on Basic. That
+  border came from the Baymard finding that visual encapsulation unique to the card fields raises trust, so
+  it is not a cosmetic detail. Flagged as must-settle-in-UI rather than quietly kept.
+  (2) **Buying the domain inside Shopify auto-configures DKIM, SPF and DMARC**, which collapses most of
+  Phase 2 and most of `ops/dns-records.md`, written earlier the same day. Written up as an explicit Branch
+  A / Branch B rather than discarding either path. The manual file is still correct for a third-party
+  registrar and is cited, not restated.
+  (3) **A Google tagging-migration deadline lands on 2026-08-26**, 14 days out, for non-Plus merchants.
+  Expected to be a non-event for a store that does not exist yet, flagged to confirm rather than assumed.
+  Also noted: Shopify Email now appears as **Shopify Messaging**, and Meta renamed Pixel Helper to **Ads
+  Data Advisor** in August 2026.
+  **One dangling reference closed by `challenge-lead` directly:** both email flow files cited
+  `store/copy/email-transactional.md`, which did not exist. Now written. It does **not** block launch, since
+  Shopify sends order and shipping confirmations from built-in templates regardless; what it does is
+  correct the default wording, which never states our delivery reality. Both emails carry the 7 to 20
+  business day window, the "if you have not heard in 5 business days, reply" line that pre-empts the most
+  common support ticket, and the two honest notes about long-route tracking behaviour that cause most of
+  the rest. **No upsell, no cross-sell, no discount code and no review request in either**, because
+  promotional content is what reclassifies a transactional email as a commercial one.
+  **Honest scope note the runbook states itself:** its final pre-flight is the **store-live** gate, not the
+  paid-launch gate, and it defers to `ops/paid-readiness-dossier.md` section 10 where the two touch. The
+  first ad dollar is deliberately **not** in this runbook.
+  **Still owed:** `ops/merchant-center-feed.md` and `ops/product-page-seo.md` (`seo-brief-writer` has still
+  never run), and `ops/fulfilment-runbook.md`.
+
 - **2026-08-12, part 5: the no-sample copy audit found a factual contradiction, not just soft claims.**
   **No money moved. Out-of-pocket still $0.00 / $100.00.** Artifact:
   `compliance/no-sample-copy-audit-2026-08-12.md`, plus a substantially rewritten
