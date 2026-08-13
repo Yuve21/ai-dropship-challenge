@@ -79,10 +79,10 @@ authorise product content or a paid ramp until it is met, and a blocked gate nev
   transcription job rather than a design job. Spend on both: $0, and the $150 collected-revenue trigger has
   not been approached.
 - **Protocol v1 verdict written to `docs/LEARNINGS.md`: not due yet (due on protocol Day 1 and Day 7).**
-- **Learnings logged in `docs/LEARNINGS.md`: 4 learnings** (all *Anti-patterns*: direct WebFetch blocked by
+- **Learnings logged in `docs/LEARNINGS.md`: 5 learnings** (all *Anti-patterns*: direct WebFetch blocked by
   the three main research surfaces; TikTok-virality-first research surfacing items already at big-box retail;
   supplier lead time rather than the warm-up calendar gating product content; and one creative run not
-  clearing the 3/day floor), **2 open hypotheses** (Warm-Up Protocol v1, and the no-stall procedures),
+  clearing the 3/day floor; and confirm what the founder can physically access before designing around it), **2 open hypotheses** (Warm-Up Protocol v1, and the no-stall procedures),
   **19 External evidence entries** (other people's numbers, never ours).
 
 ## Product bench (update in place; see `docs/NO-STALL.md` P1, and `docs/PLAYBOOK.md` section 3)
@@ -90,6 +90,17 @@ Five ranked, pre-validated candidates at all times, so a killed product costs ze
 owns it: re-score the whole bench weekly, promote rank 1 in the same run a product is killed, backfill
 rank 5 from that run's sweep, drop any candidate that has sat here 30 days without fresh evidence. Only
 one product is live at a time.
+
+**Third qualification gate, added 2026-08-13: the production-capability check.** Alongside
+`offer-economist`'s margin gate and `compliance-guard`'s review, every candidate is now scored on whether
+the founder can actually **obtain it, film it, and film the problem it solves**, and whether either
+requires an animal, person, location or equipment they do not have. **A candidate that clears economics
+and compliance but cannot be filmed is not qualified**, because on an organic-first strategy the content
+is the entire acquisition mechanism. Added after two plan rebuilds in two days traced to the same
+unverified premise (`docs/LEARNINGS.md`, 2026-08-13). Current scores: **rank 1 fountain FAILS the
+film-the-product and film-the-problem legs** (no sample, no cat) and is live anyway by founder decision;
+**rank 3 lens kit PASSES both** (its problem is filmable on a bare phone); rank 2 eye mask passes the
+problem leg and fails the product leg.
 
 **Status: 3 of 5 CONFIRMED (ranks 1-3, all through `offer-economist`'s worst-case gate). Ranks 4-5 are
 OPEN by decision, not by default** — see "2026-08-11, ranks 4-5 left open on purpose" below for why.
@@ -221,6 +232,8 @@ before revenue exists.
 | 2026-08-11 | Full store build spec, 6 pages of store copy, 5 warm-up/Day-1 video scripts, a supplier sourcing dossier, and a compliance review of the whole bench all built ahead of need, none of it requiring the founder | store-architect, copywriter, creative-director, ops-support, compliance-guard (all via challenge-lead) | n/a — preparation, not a numbers call; see the 2026-08-11 "getting ready before setup" session note for the full file list |
 | 2026-08-11 | 4-in-1 interactive cat toy rejected (founder decision, after both gates passed it conditionally) | founder, informed by offer-economist + compliance-guard | Both passes were conditional on an unverified $5-9 landed-cost estimate; rejected regardless because it's already sold at Walmart/Chewy/Petco, which no economics or compliance pass fixes |
 | 2026-08-11 | Ranks 4-5 left open rather than force-filled; two full sweeps (~48 candidates combined) found zero clean candidates in tech/wellness or pet/home-kitchen | product-scout (two runs) | Every candidate with verifiable demand in both sweeps was already at Walmart, Target, Best Buy, Costco, Amazon Basics, Chewy, or Petco — full lists in the session note below |
+| 2026-08-13 | **Founder has no cat and no access to one.** Presented four options (pivot to bench rank 3, stay on the fountain with no live footage, reverse the no-sample call for one unit, or re-run product research filtered by physical access). **Founder chose: stay on the cat water fountain and on `@dailypawfinds`, with no live footage.** Creative spine becomes text cards, licensed stock with attribution, screen recordings and capped AIGC b-roll, reframed around the account's existing "finds" curation positioning | founder, recorded by challenge-lead | Invalidated 3 native warm-up scripts, the Day -1 substitute, and 12 of 18 Day 1-7 slots, with the Day -4 post due the next day. Bench rank 3 would have scored highest on filmability (its problem is filmable on a bare phone) and on economics (71.1% / 4.00x), but the founder kept the fountain |
+| 2026-08-13 | Production-capability check added to bench qualification, alongside the margin gate and compliance review: can the founder obtain it, film it, and film the problem it solves, and does either require an animal, person, location or equipment they lack | challenge-lead | Two plan rebuilds in two days from the same unverified-premise root cause. A candidate that clears economics and compliance but cannot be filmed is not qualified on an organic-first strategy |
 | 2026-08-12 | **No sample will be ordered. The "sample held" gate is waived for this product by founder decision, and the challenge starts without one.** Founder's stated reasoning: this is a rush challenge and the specialist agents have already cleared the product. `challenge-lead` recorded one correction rather than arguing: the agents had already passed everything they are capable of judging (economics, compliance), and no agent can validate a physical object it has not held, so that gate cannot be satisfied by further review. Decision stands as the founder's call on their own risk | founder, recorded by challenge-lead | Not a numbers call. The measurable consequence: zero authentic UGC footage available, so content shifts to generated video, supplier assets and static image + text. Our own evidence puts UGC winner rate at 7.56% vs 8.75% for product image + text, so the format shift is not automatically worse, but real cat-behaviour footage is lost |
 | 2026-08-12 | Sample order was briefly promoted to Founder Action #1, then removed entirely by the decision above. Domain returns to "today's one thing" | challenge-lead | Recommended primary supplier is 12-20 business days (lands ~2026-08-28 to 09-09) against a Day -1 product-in-frame post due 2026-08-17; the fast option's own posted estimate was 2026-08-16 to 08-21 |
 | 2026-08-12 | No-sample creative strategy set: film the PROBLEM (own cat, own bowl, own tap) rather than the product, for 12 of 18 Day 1-7 slots. AI video capped at 3 slots, abstract water only, no generated product/cat/person, AIGC-labelled. Two static ad specs created, the repo's first | creative-director + content-engine + compliance-guard | Static formats out-hit video on winner rate (text-only 11.60%, product image + text 8.75%, UGC 7.56%, high-production video 6.87%), a finding logged 2026-08-10 and unused until now: the repo held 12 video scripts and 0 statics |
@@ -232,6 +245,40 @@ before revenue exists.
 ## Session notes
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
+
+- **2026-08-13: the founder has no cat. The content plan had been resting on an unchecked assumption since
+  the bench was set.** **No money moved. Out-of-pocket still $0.00 / $100.00.**
+  **Track A is on schedule and that part is genuinely fine.** Founder confirmed the account is created and
+  the Day -7 and Day -6 in-app routines are done. Today, 2026-08-13, is Day -5, consume only. Warm-up has
+  not slipped a day.
+  **The finding.** Asked directly, before building anything further, whether a filmable cat actually
+  exists. **It does not: not their own, not borrowed, not once.** Nobody had ever asked. Every native
+  warm-up script (Days -4, -3, -2), the Day -1 substitute, and **12 of the 18 Day 1-7 slots** in
+  `creative/NO-SAMPLE-PLAN.md` were built on "film the founder's own cat, bowl and tap." All of it is
+  unfilmable, and **the Day -4 post was due tomorrow.**
+  **Why this compounded rather than merely adding.** The no-sample decision of 2026-08-12 was survivable
+  precisely because the fallback was "film the PROBLEM instead of the product", and that fallback needed a
+  cat. Losing the cat removes the mitigation for the earlier decision, not just a nice-to-have. With no
+  product and no animal there is nothing physical left to film for a cat-fountain store. **This is the
+  clearest case so far of a plan being built on a premise nobody verified**, and the transferable lesson is
+  cheap: confirm what the founder can physically access, film and reach **before** designing around it, not
+  after two rounds of scripts.
+  **Four options were put to the founder** (pivot to bench rank 3, the phone lens clip kit, whose problem is
+  filmable on a bare phone and whose economics are the best on the bench at 71.1% / 4.00x; stay on the
+  fountain with no live footage; reverse the no-sample call for one unit; or pause and re-run product
+  research filtered by what the founder can actually access). **Founder chose: stay on the fountain and on
+  `@dailypawfinds`, with no live footage.** Recorded as theirs.
+  **The reframe that keeps this coherent:** the account bio is already "pet + home finds, one at a time",
+  which is a **curation and discovery** account, not a personal-pet account. A finds account carries no
+  obligation to own a pet, so text cards, curation formats and voiceover over licensed footage fit the
+  existing positioning natively rather than reading as a workaround. That is now the creative spine.
+  **Allowed going forward:** text-on-screen cards (primary, and the highest documented winner hit rate we
+  have evidence for), properly licensed free stock cat footage **with source URL and license recorded per
+  clip and never first-person ownership language over it**, screen recordings of things that genuinely
+  exist, the founder's own hands, voice, home and non-cat objects, and capped AIGC-labelled abstract
+  b-roll. **Explicitly banned: generating a cat.** With no real cat footage of our own, that is the exact
+  trap, and the existing ban on generated product, cat or person stands.
+  **Next:** rebuild Day -4 first, it is due 2026-08-14, then -3, -2, -1, then Days 1-7.
 
 - **2026-08-12, part 6: the launch runbook exists, and it caught three stale facts on the way.**
   **No money moved. Out-of-pocket still $0.00 / $100.00.** Artifacts: `store/LAUNCH-RUNBOOK.md` (910

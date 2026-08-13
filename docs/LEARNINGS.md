@@ -473,12 +473,15 @@ own playbook. **Fenced off from Live knowledge on purpose:**
 
 # Live knowledge
 
-**Status: 4 learnings as of 2026-08-12**, all under *Anti-patterns*. Two are research-tooling notes (direct
+**Status: 5 learnings as of 2026-08-13**, all under *Anti-patterns*. Two are research-tooling notes (direct
 WebFetch is blocked by the three main research surfaces, 2026-08-10; TikTok-virality-first product research
 surfaces items already at big-box retail, 2026-08-11). Two are planning findings from 2026-08-12: supplier
 lead time rather than the warm-up calendar is what gates product content, and one thorough creative run does
-not clear the 3/day floor. All are n=1 and confidence **Low**, except the structural half of the lead-time
-entry, which is arithmetic on documented transit times rather than an inference and is **Medium**. The
+not clear the 3/day floor. The fifth, 2026-08-13, is the process finding those two are both instances of:
+**confirm what the founder can physically access before designing around it.** Most are n=1 and confidence
+**Low**. Two are **Medium**: the structural half of the lead-time entry, which is arithmetic on documented
+transit times rather than an inference, and the production-capability entry, which is n=2 with a shared
+mechanism. The
 challenge has not started (`tracker/LEDGER.md`: out-of-pocket $0.00, no product live, no posts, no
 sales), so every other live section is deliberately blank. Live sections hold only what **we** observed
 with **our own** numbers. Do not seed them with internet dropshipping wisdom: that goes in
@@ -546,6 +549,34 @@ attention. Same evidence standard as anything else: a bad feeling is a hypothesi
 - **Expires:** re-check quarterly (research-tooling/market-timing finding, not structural: retail buying cycles and what's
   bot-blocked both change).
 - **Written by:** challenge-lead, from two product-scout runs, 2026-08-11.
+
+### [2026-08-13] Confirm what the founder can physically access before designing anything around it
+- **Claim:** creative planning in this repo has twice designed around a physical capability nobody verified, and both times the plan
+  had to be rebuilt. **The production-capability check (what can the founder physically hold, film, access and reach) belongs at the
+  same stage as the economics and compliance gates, before scripts are written, not after.** A product's unit economics and its
+  filmability are independent constraints, and we were checking only the first.
+- **Evidence:** two instances in two days, both from `tracker/LEDGER.md`. (1) 2026-08-12: the sample's 12-20 business day lead time was
+  never costed against the content calendar, so the Day -1 and Day 1 posts were scheduled for a product that could not arrive. (2)
+  2026-08-13: **the founder has no cat and no access to one**, discovered by finally asking. That invalidated all three native warm-up
+  scripts, the Day -1 substitute, and 12 of the 18 Day 1-7 slots in `creative/NO-SAMPLE-PLAN.md`, with the Day -4 post due the next
+  day. Measured by file count, not estimated. n=2 failures, same root cause, inside one product's planning cycle.
+- **Confidence:** Medium. n=2 is small, but both instances are unambiguous, they share one mechanism, and the second one occurred
+  *while writing the mitigation for the first*, which is the part that makes it a pattern rather than two mistakes. Raised to High if a
+  third instance appears, though the whole point of this entry is that there should not be one.
+- **Falsified by:** a future planning cycle where the production-capability check is run up front and the plan still has to be rebuilt
+  for a physical-access reason, which would mean the check is not the right instrument.
+- **So we now:** run a **production-capability check as part of bench qualification**, alongside `offer-economist`'s margin gate and
+  `compliance-guard`'s review, and record it in the bench table. Minimum questions: can the founder obtain the product, and by when;
+  can they film the product; can they film the **problem** the product solves, which is the fallback the no-sample path depends on;
+  and does filming either require an animal, a person, a location or equipment they do not have. **A candidate that clears economics
+  and compliance but cannot be filmed is not qualified**, because on an organic-first strategy the content is the entire acquisition
+  mechanism. Bench rank 3, the phone lens clip kit, would have scored highest on this check, since its problem is filmable on a bare
+  phone, and nobody noticed because the check did not exist.
+- **The cheaper meta-lesson:** the question "do you have a cat" costs one sentence and was never asked across four planning sessions,
+  two full creative runs and roughly twenty script files. Ask the boring logistical questions early, out loud, before the interesting
+  strategic ones.
+- **Expires:** no expiry (structural, a process finding rather than a product or channel one).
+- **Written by:** challenge-lead, 2026-08-13.
 
 ### [2026-08-12] Supplier lead time, not the warm-up calendar, is what actually gates the start of product content
 - **Claim:** this challenge's schedule was built around the warm-up calendar (Day -7 to Day 1) while treating the physical sample as a
