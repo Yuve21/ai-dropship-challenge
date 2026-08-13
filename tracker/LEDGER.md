@@ -278,7 +278,48 @@ unverified.)
   exist, the founder's own hands, voice, home and non-cat objects, and capped AIGC-labelled abstract
   b-roll. **Explicitly banned: generating a cat.** With no real cat footage of our own, that is the exact
   trap, and the existing ban on generated product, cat or person stands.
-  **Next:** rebuild Day -4 first, it is due 2026-08-14, then -3, -2, -1, then Days 1-7.
+  **Rebuild completed the same day. Six files changed, ~1,300 lines.** Day -4, -3, -2 and the Day -1
+  substitute rewritten in place with dated amendment notes; `creative/NO-SAMPLE-PLAN.md` amended with a new
+  section 8 rather than rewritten; `creative/CONTENT-CALENDAR.md` carries a second dated supersede note with
+  all 11 rows repointed. Zero em dashes across all six.
+  **The Day -4 solve is the one worth recording, because it is not a workaround.** Five locked-off shots of
+  ordinary spots in the founder's own home (sun patch, highest shelf, cardboard box, whatever they are
+  currently using, clean laundry), ranked by text cards as the five places a cat picks in a room, **with no
+  cat in it and none implied**. The absence is the format: the viewer is asked to picture their own cat in
+  each empty spot, which is why the list works at all. One phone, one room, ten minutes, zero external
+  dependencies, and deliberately no stock lane so the first post cannot be blocked by a licence check.
+  **Stock licensing handled properly rather than assumed.** Pexels and Pixabay licences were fetched and
+  read on 2026-08-13, not recalled, and recorded verbatim. Pixabay's own licence forbids "using content in a
+  misleading or deceptive way", which is the licence itself prohibiting exactly what narrating a stock cat
+  as ours would be. **No specific clips were chosen**, on the correct reasoning that picking clip URLs
+  nobody can open would fabricate the very evidence the rule exists to produce. Each stock-dependent script
+  instead carries a clip log (slot, URL, ID, contributor, licence, date verified, verified by) with a hard
+  rule that a blank row does not get posted, plus a no-stock fallback so the slot cannot be blocked.
+  **Three loose ends closed by `challenge-lead` directly after the rebuild:**
+  (1) `creative/scripts/day2-script-textcard-bowl-audit.md` still spoke in a first-person cat-owner voice in
+  four places ("my cat", "she was not being fussy", "the bowl she uses least"). Every one was a fabricated
+  household observation. Re-voiced to general cat-owner knowledge, with item 3 downgraded from a stated fact
+  to "the usual advice is", since food-bowl proximity is widely repeated advice rather than something we
+  measured. The file's own title had always said "Cat Owners", only the card copy had drifted.
+  (2) Three now-unfilmable scripts (`day1-script-faucet-test.md`, `day1-script-still-bowl-pov.md`,
+  `day2-script-voiceover-why-moving-water.md`) were sitting in the bank unmarked. Each now carries a
+  **RETIRED, DO NOT FILM** header explaining why, kept rather than deleted because they become filmable
+  instantly if a cat ever exists, with an explicit warning not to re-voice them around stock footage since
+  their beats depend on a specific animal doing a specific thing.
+  (3) The Day -1 script flagged the `protocol.js` post-type collision as unresolved. **It was already fixed
+  on 2026-08-12** by the promotional-intensity ranking, before that script was written, so the warning was
+  stale. Corrected in place with the verification detail.
+  **The honest cost, stated structurally because no organic winner rate exists to state it numerically.**
+  The playbook's structure is Hook, Problem, Demo, Benefit, Proof, CTA. No sample already removed **Demo and
+  Proof**. No cat removes **Problem as something visible**, which was the filmed beat. We are down to Hook,
+  an asserted Problem, and a claim-free CTA, meaning **the viewer must already agree with the premise for
+  the video to work.** The real fragility is concentration: 9 of 18 slots rest on three concepts from the
+  same room, same voice, same argument, and those three are also the fallback for most of the other nine.
+  Measured honestly that is about **four genuinely different concepts against the 3-5 both platforms ask
+  for.** Unchanged and still healthy: the paid static bank never needed a cat, and the comment-bait lever
+  test survives whole across all four prompt shapes.
+  **The Dashboard-and-Pointer A/B is now deferred a second time and lacks both arms, not one.**
+  **Next:** film and post Day -4 on 2026-08-14, by hand from the phone.
 
 - **2026-08-12, part 6: the launch runbook exists, and it caught three stale facts on the way.**
   **No money moved. Out-of-pocket still $0.00 / $100.00.** Artifacts: `store/LAUNCH-RUNBOOK.md` (910

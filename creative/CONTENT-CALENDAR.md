@@ -1,5 +1,16 @@
 # Content Calendar: Protocol Day -6 through Challenge Day 7
 
+> **SUPERSEDED FURTHER, 2026-08-13: the founder has no cat and no access to one.** Every remaining row that
+> pointed at a script requiring a cat on camera has been repointed or marked. The three native scripts
+> (`day--4-native.md`, `day--3-native.md`, `day--2-native.md`) have been **rewritten in place** to be
+> filmable with a phone, no animal and no product, so the filenames in the table below are unchanged but
+> **their concepts and titles are not**, and the table has been updated to match. The Day -1 row now points
+> at the substitute rather than the product-in-frame script. The Challenge Day 1-7 rows were already
+> superseded by `creative/NO-SAMPLE-PLAN.md`; that file's **section 8** now carries the actual slate, since
+> its original Day 1-7 plan also assumed a cat. **No row in this file now points at a script that cannot be
+> filmed.** The Dashboard-and-Pointer A/B test at the bottom is deferred a second time, for a second reason,
+> noted there.
+
 > **SUPERSEDED IN PART, 2026-08-12: `creative/NO-SAMPLE-PLAN.md` replaces the Day -1 and Challenge Day 1-7
 > rows below.** The founder decided not to order a physical sample and to start on schedule
 > (`tracker/LEDGER.md`). Every product slot in this file assumes a fountain on camera, so those slots
@@ -35,10 +46,11 @@ directly by Day 1). Stated plainly rather than padded to a round number.
   slot in this calendar uses **Rung 1 (pinned comment)** because the account will have close to zero
   followers through this whole window; no slot claims TikTok Shop eligibility (Rung 2), which is not
   connected as of 2026-08-12.
-- **AIGC label state** is "not applicable" everywhere in this calendar because every script recommends real
-  phone-filmed UGC, not AI-generated video (per each script's Format recommendation section). If AI-
-  generated B-roll is ever substituted in, TikTok's AIGC disclosure label becomes required before that post
-  ships, and this column must be updated to say so for that specific post.
+- **AIGC label state** was "not applicable" everywhere in the original version of this calendar. **As of
+  2026-08-13 that is no longer true:** the three generated abstract-water slots on Days 5, 6 and 7 carry a
+  **required** AIGC label, and the column says so per row. Licensed stock footage of a real cat is real
+  footage and needs no label. The rule the column enforces: passing `--no-aigc` on genuinely generated
+  content is a violation, and forgetting it on real footage is an inaccuracy. Get both right.
 - Native/non-promotional days (-4 to -1) carry **no CTA and no AIGC concern by protocol rule**: no product
   is pitched, so there is nothing to route anyone to.
 
@@ -50,17 +62,17 @@ directly by Day 1). Stated plainly rather than padded to a round number.
 |---|---|---|---|---|---|---|---|
 | 2026-08-12 | Protocol Day -6 | **CONSUME ONLY.** No posting. 20-30 min in-app: 10 likes, 3 saves, 5 follows, 2 real comments, 10 videos watched to completion, 3 replayed. | 0 | n/a | none | n/a | n/a |
 | 2026-08-13 | Protocol Day -5 | **CONSUME ONLY.** Same routine as Day -6. | 0 | n/a | none | n/a | n/a |
-| 2026-08-14 | Protocol Day -4 | 1 native, non-promotional. No product, no link, no CTA, no pitch. | 1 | 7:00 PM | `day--4-native.md` ("She's decided I'm not allowed to get up") | n/a, no CTA allowed | n/a, real footage |
-| 2026-08-15 | Protocol Day -3 | 1 native, non-promotional. Same 2-hour window as Day -4. | 1 | 7:00 PM | `day--3-native.md` ("The one entryway fix...") | n/a, no CTA allowed | n/a, real footage |
-| 2026-08-16 | Protocol Day -2 | 1 native, non-promotional (3rd native total). | 1 | 7:00 PM | `day--2-native.md` ("Why your cat kneads the blanket like that") | n/a, no CTA allowed | n/a, real footage |
-| 2026-08-17 | Protocol Day -1 | 1 product-in-frame, still no pitch/CTA/link. Last unpromotional post. **Depends on the sample having arrived and been running long enough to be "just a thing on the counter."** | 1 | 7:00 PM | `day--1-product-in-frame.md` ("Ignoring me for the toy again") | n/a, no CTA allowed | n/a, real footage |
-| 2026-08-18 | **Challenge Day 1** | Full product content + CTA allowed. 2 posts/day. | 2 | 11:00 AM, 7:00 PM | 11 AM: `day1-script-dashboard-pump-on.md` (D&P-1). 7 PM: `day1-hook-bank.md`, Full Script 1, "My cat wouldn't drink water until I got this." | Rung 1 (pinned comment), both slots | n/a, real footage, both slots |
-| 2026-08-19 | Challenge Day 2 | 2 posts/day. | 2 | 11:00 AM, 7:00 PM | 11 AM: `day2-script-dashboard-first-sip.md` (D&P-2). 7 PM: `day1-hook-bank.md`, Full Script 2, "three weeks...still staring at it." | Rung 1, both slots | n/a, both slots |
-| 2026-08-20 | Challenge Day 3 | 2 posts/day. | 2 | 11:00 AM, 7:00 PM | 11 AM: `day3-script-nobody-told-me.md` (Result-First #3). 7 PM: `day3-script-bowl-or-fountain-debate.md` (Comment-Bait Debate) | Rung 1, both slots | n/a, both slots |
-| 2026-08-21 | Challenge Day 4 | **3 posts/day, hold here.** | 3 | 11:00 AM, 2:00 PM, 7:00 PM | 11 AM: `day4-script-dashboard-quiet-check.md` (D&P-3). 2 PM: `day4-script-pov-still-full.md`. 7 PM: `day4-script-silent-comparison.md` | Rung 1, all three | n/a, all three |
-| 2026-08-22 | Challenge Day 5 | 3 posts/day. | 3 | 11:00 AM, 2:00 PM, 7:00 PM | **NOT YET SCRIPTED.** 0 of 3 assets exist. | n/a | n/a |
-| 2026-08-23 | Challenge Day 6 | 3 posts/day. | 3 | 11:00 AM, 2:00 PM, 7:00 PM | **NOT YET SCRIPTED.** 0 of 3 assets exist. | n/a | n/a |
-| 2026-08-24 | Challenge Day 7 | 3 posts/day. | 3 | 11:00 AM, 2:00 PM, 7:00 PM | **NOT YET SCRIPTED.** 0 of 3 assets exist. | n/a | n/a |
+| 2026-08-14 | Protocol Day -4 | 1 native, non-promotional. No product, no link, no CTA, no pitch. | 1 | 7:00 PM | `day--4-native.md` ("Five spots a cat picks in a room like this"). **Rewritten 2026-08-13.** No animal, no product: five locked-off shots of ordinary spots in the founder's own home plus text cards | n/a, no CTA allowed | n/a, real footage |
+| 2026-08-15 | Protocol Day -3 | 1 native, non-promotional. Same 2-hour window as Day -4. | 1 | 7:00 PM | `day--3-native.md` ("Your mat is in the wrong place"). **Rewritten 2026-08-13.** Own doorway, own mat, own hands, second-person voice, no pet in frame | n/a, no CTA allowed | n/a, real footage |
+| 2026-08-16 | Protocol Day -2 | 1 native, non-promotional (3rd native total). | 1 | 7:00 PM | `day--2-native.md` ("Why they knead the blanket like that"). **Rewritten 2026-08-13.** Concept kept, footage now **properly licensed free stock**, clip log and licence terms in the file. Zero-stock fallback specified | n/a, no CTA allowed | n/a, licensed stock is real footage, not generated |
+| 2026-08-17 | Protocol Day -1 | 1 native, non-promotional. **Substituted twice:** the product-in-frame post needs a sample that was never ordered, and its first substitute needed a cat. | 1 | 7:00 PM | `day--1-native-substitute.md` ("What a bowl of water looks like after a day"). **Rewritten 2026-08-13.** Own bowl, own tap, own hands, no animal. `day--1-product-in-frame.md` stays in the bank, unfilmable | n/a, no CTA allowed | n/a, real footage |
+| 2026-08-18 | **Challenge Day 1** | Full product content + CTA allowed. 2 posts/day. | 2 | 11:00 AM, 7:00 PM | **See `creative/NO-SAMPLE-PLAN.md` section 8.4.** 11 AM: C1 "Still Water, Moving Water" hook 1. 7 PM: C2 "Three Things People Get Wrong" hook 1. The rows this file originally carried (`day1-script-dashboard-pump-on.md`, `day1-hook-bank.md` Full Script 1) need both a sample and a cat | Rung 1 (pinned comment), conditional on the store being live | n/a, real footage, both slots |
+| 2026-08-19 | Challenge Day 2 | 2 posts/day. | 2 | 11:00 AM, 7:00 PM | **See `NO-SAMPLE-PLAN.md` section 8.4.** 11 AM: C3 "Why They Go For The Tap" hook 1 (licensed stock). 7 PM: C1 hook 2 | Rung 1, both slots | n/a, both slots |
+| 2026-08-20 | Challenge Day 3 | 2 posts/day. | 2 | 11:00 AM, 7:00 PM | **See `NO-SAMPLE-PLAN.md` section 8.4.** 11 AM: C4 `day3-script-what-we-picked-and-why.md` hook 1, gated on the store being live. 7 PM: C7 "The Shop That Has Not Got Its Own Product Yet" hook 1 | Rung 1, both slots | n/a, both slots |
+| 2026-08-21 | Challenge Day 4 | **3 posts/day, hold here.** | 3 | 11:00 AM, 2:00 PM, 7:00 PM | **See `NO-SAMPLE-PLAN.md` section 8.4.** C1 hook 3, C2 hook 2, C3 hook 2 | Rung 1, all three | n/a, all three |
+| 2026-08-22 | Challenge Day 5 | 3 posts/day. | 3 | 11:00 AM, 2:00 PM, 7:00 PM | **See `NO-SAMPLE-PLAN.md` section 8.4.** C7 hook 2, C5 `day4-script-listing-walkthrough.md` (gated on supplier permission), C6 `day5-script-ai-broll-moving-water.md` hook 1 | Rung 1, all three | **AIGC required on the 7 PM generated slot** |
+| 2026-08-23 | Challenge Day 6 | 3 posts/day. | 3 | 11:00 AM, 2:00 PM, 7:00 PM | **See `NO-SAMPLE-PLAN.md` section 8.4.** C2 hook 3, C3 hook 3, C6 hook 2 | Rung 1, all three | **AIGC required on the 7 PM generated slot** |
+| 2026-08-24 | Challenge Day 7 | 3 posts/day. | 3 | 11:00 AM, 2:00 PM, 7:00 PM | **See `NO-SAMPLE-PLAN.md` section 8.4.** C4 hook 2, C7 hook 3, C6 hook 3 | Rung 1, all three | **AIGC required on the 7 PM generated slot** |
 
 Post-time rationale: 11 AM and 7 PM are the two Day 1-3 slots (late-morning and evening scroll windows);
 2 PM is added as the middle slot from Day 4 once posting rises to 3/day. These are our own scheduling
@@ -70,6 +82,13 @@ real per-post view data exists and this file should be updated to match, not lef
 ---
 
 ## Where the bank is short, stated honestly
+
+> **UPDATE 2026-08-13.** The Day 5-7 gap this section names is now filled, by
+> `creative/NO-SAMPLE-PLAN.md` section 8.4, which schedules all eighteen Day 1-7 slots against seven
+> concepts. The counting below is left as written because the shortfall arithmetic against the 3/day floor
+> is still the honest picture and the unit of "a creative" is still undefined
+> (`docs/LEARNINGS.md` 2026-08-12). What changed is that the empty rows are no longer empty, not that the
+> floor is met.
 
 This run wrote **7 net-new scripts**, enough to fill every post-slot from Challenge Day 1 through Day 4 (9
 slots total: 2+2+2+3), reusing 2 already-existing assets (the two full scripts already sitting in
@@ -110,6 +129,16 @@ hooks 9 and 10 became `day4-script-pov-still-full.md` and `day3-script-bowl-or-f
 ---
 
 ## The Dashboard-and-Pointer vs Standard-UGC A/B test, set up to actually run
+
+> **DEFERRED A SECOND TIME, 2026-08-13, and the reason changed.** The first deferral (2026-08-12) was
+> because **arm A** needs the fountain doing its trick in one continuous shot and no sample was ordered. The
+> no-cat constraint now takes out **arm B** as well: "standard UGC" in this niche means an animal on camera,
+> and all three arm-B scripts are cat-dependent. So the test is short of both arms, not one, and it runs the
+> week after a unit lands **in a household that can film a cat**, which is a condition this account does not
+> currently meet. **The mechanic is still being practised**: `NO-SAMPLE-PLAN.md` section 8's C1 (one
+> continuous unedited tap shot with a finger pointing at the moving surface) and C4 (screen recording of our
+> own store page with a real hand pointing) both use the one-take-plus-pointer skeleton. What is deferred is
+> the controlled comparison, not the format.
 
 Per `docs/LEARNINGS.md` (2026-08-12): *"The test that settles both: 3 dashboard-and-pointer videos against 3
 standard UGC-style videos in the same week, compared on hook rate and comment rate."* Here is that test,
@@ -171,6 +200,12 @@ Dashboard-and-Pointer format verdict, since the two levers are explicitly meant 
 ---
 
 ## Full asset and hook-family index, Challenge Day 1-4
+
+> **HISTORICAL AS OF 2026-08-13.** Every file in the table below needs either a held sample, a cat on
+> camera, or both, so none of it is schedulable now. It is kept readable because these are correct scripts
+> for a household with the product and an animal, and because the hook-family taxonomy it establishes is
+> still what the replacement concepts are classified against. **The live index for Challenge Days 1-7 is
+> `creative/NO-SAMPLE-PLAN.md` section 8.4.**
 
 | File | Hook family | Slot | Comment-bait shape |
 |---|---|---|---|

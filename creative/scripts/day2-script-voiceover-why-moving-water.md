@@ -1,5 +1,13 @@
 # Day 2 Script: "Why She Won't Drink From The Bowl" (Problem Voiceover, no product on camera)
 
+> **RETIRED 2026-08-13, NOT SCHEDULED, DO NOT FILM.** This script requires a live cat, a cat at a tap, or a
+> cat's untouched bowl. **The founder has no cat and no access to one** (`tracker/LEDGER.md`, 2026-08-13),
+> so it cannot be produced. It is kept rather than deleted because the concept and hook structure are sound
+> and become filmable immediately if a filmable cat ever exists. **It has been removed from
+> `creative/CONTENT-CALENDAR.md` and replaced there.** Do not pick this up from the bank without first
+> checking the calendar, and do not re-voice it around stock footage: the beats depend on a specific animal
+> doing a specific thing, which licensed stock cannot supply and which we may not narrate in first person.
+
 Account: @dailypawfinds
 Protocol: Challenge Warm-Up Protocol v1, Track A, Day 2 (2026-08-19). Product content and CTA allowed.
 Product being sold: cat water fountain, $34.99. **Not on camera. Named once, at the end, with no claim

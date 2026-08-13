@@ -1,5 +1,16 @@
 # The No-Sample Creative Plan: starting Challenge Day 1 with zero product on hand
 
+> **AMENDED 2026-08-13: a second founder constraint landed and it invalidates most of section 3.** The
+> founder has **no cat and no access to one**, not their own and not borrowed. This plan's entire Day 1-7
+> schedule was built on "film the founder's own cat, bowl and tap", which was rank 1 in the format table
+> below and carried **12 of 18 slots**. Those slots are unfilmable. **Read section 8 at the bottom of this
+> file for what actually posts on Days 1-7.** Sections 1 to 7 stay in place unamended and are still correct
+> about the sample: everything they say about not claiming experience with a product nobody has held is
+> unchanged and binding. What section 8 replaces is only the assumption that a real cat could be filmed.
+> The product and the account do not change: still the cat water fountain, still `@dailypawfinds`, whose
+> bio is "pet + home finds, one at a time", **a curation and discovery account rather than a personal-pet
+> account**, which is the positioning section 8 builds on.
+
 Written 2026-08-12 by `creative-director`, with `content-engine` and `compliance-guard`, dispatched by
 `challenge-lead`. **Supersedes the Challenge Day 1-7 half of `creative/CONTENT-CALENDAR.md`**, whose every
 product slot assumes a fountain on camera.
@@ -351,3 +362,236 @@ a nice object. That is a real consolation, not a spin, and it is worth logging a
    that this plan lowers that card's urgency from where the ledger currently has it: generated video is now
    three back-half slots with text-card fallbacks, not "the only content source," because the founder's own
    cat and sink turned out to be the content source.
+
+---
+
+# 8. AMENDMENT, 2026-08-13: the no-cat constraint, and the Day 1-7 slate that replaces section 3
+
+Written 2026-08-13 by `creative-director`, adopting `content-engine` and `compliance-guard`, dispatched by
+`challenge-lead`. **This section supersedes section 3's slot table and the "Ranking A" order in section 2.**
+It does not touch sections 1, 5, 6 or 7, which are about the sample and are unaffected.
+
+## 8.1 What changed and what it costs, in one paragraph
+
+The founder has no cat and no access to one. Section 2's Ranking A put **"real footage of the PROBLEM: our
+own cat, our own bowl, our own tap"** at rank 1 with "assets we lack: **none**", and section 3 spent **12 of
+18 slots** on it plus a further 3 on a first-person voiceover about "her". All 15 are gone. Rank 1 in that
+table is now **unavailable, not merely expensive**, and the ranking below is what remains. The product and
+the account are unchanged by founder decision, and this section does not reopen either.
+
+**The reframe that makes the rest coherent, and it is not a workaround.** `@dailypawfinds` is "pet + home
+finds, one at a time". That is a **curation and discovery account**, and a finds account has no obligation
+to own a pet. Text cards, list formats, "here is what I found and why" formats, screen recordings and
+explainers over licensed footage all fit that bio natively rather than reading as substitutes for something
+missing. The account was never positioned as one person's cat diary, so it does not have to become one.
+Every voice in this slate is second or third person: **"your cat", "a lot of cats", "they"**, never "my cat"
+and never "she".
+
+## 8.2 The revised format ranking (replaces Ranking A in section 2)
+
+| # | Format | What it needs | Verdict |
+|---|---|---|---|
+| 1 | **Text-on-screen cards** | A phone and a text editor. Nothing else | **Primary. 6 of 18 slots** plus the standing fallback for every gated slot. Highest documented winner hit rate of any format we have evidence for (text-only 11.60%, `docs/LEARNINGS.md` 2026-08-10), with the caveat repeated below that this is Meta paid data |
+| 2 | **Real footage of objects, hands and rooms we own** (tap, bowl, glass, kitchen, the founder's own hands and voice) | Phone, ~10 min per session | **4 of 18 slots.** Still authentic phone footage, still our own house, just without an animal in it. This is the closest surviving thing to rank 1 |
+| 3 | **Screen recordings of things that genuinely exist**: our own store page, publicly visible listings | Store live (Founder Action #2) | **3 of 18 slots.** The Dashboard-and-Pointer recipe survives here whole. Audience-mismatch risk unchanged and still capped at one every two days |
+| 4 | **Properly licensed free stock cat footage** | A licence check per clip, ~15 min | **3 of 18 slots, capped at one per day.** Never a hero slot two days running, never with ownership language over it. Protocol in `creative/scripts/day--2-native.md` |
+| 5 | **Generated abstract B-roll, AIGC-labelled** | API keys (Founder Action #3) | **3 of 18 slots**, unchanged from section 3. Abstract water, texture and motion only |
+| 6 | **AI-generated cat** | n/a | **Banned outright, and this is the trap.** Section 2 already banned generated product, cat and person. With no real cat footage of our own, generating one is the single most tempting fabrication available to this account, and it is the one that would end it |
+
+**The organic-versus-paid caveat, restated because this slate leans harder on text than any previous
+version.** The 11.60% figure is Meta **paid** winner hit rate. Our own brief records 300+ scheduled image
+posts producing nothing on organic. **These are videos with text in them, posted at video cadence, not image
+posts**, which is the distinction that keeps them legitimate on TikTok. Do not read a win here as validating
+the paid finding, or a loss as refuting it.
+
+## 8.3 The seven concepts in the replacement slate
+
+Four are new, one is a re-voicing, two carry over untouched. Each carries three hooks, body and CTA frozen,
+per the test-unit rule.
+
+**C1. "Still Water, Moving Water"** (new, real footage, own kitchen). **Replaces "The Faucet Test"**.
+Direct continuation of the Day -1 post (`creative/scripts/day--1-native-substitute.md`), which is
+deliberate: the account will have shown the still bowl the day before. Spine, 12s: macro on a bowl of water
+left standing 24h, flat and motionless (0-2s, "this has been sitting since yesterday") | hand tips it, the
+surface film slides as a sheet (2-4s, "it sets like that in a day") | cut to the same bowl under a running
+tap, water broken up and moving, **one continuous unedited shot with a finger pointing at the moving
+surface**, which is the physical analogue of the Dashboard-and-Pointer mechanic (4-8s, "same water") | tap
+off, surface goes flat and stops (8-10s, "and it stops") | loop to the opening macro (10-12s, "a lot of cats
+will pick the moving one"). Hooks: (1) "this has been sitting since yesterday" (2) "this is the whole reason
+the fountain exists, filmed with a tap" (3) open on the running tap, cut to the still bowl at 1.5s: "one of
+these is interesting to a cat and one is not." Comment-bait: **closed poll**, "comment TAP or BOWL, where
+does yours actually drink." Zero assets missing.
+
+**C2. "Three Things People Get Wrong About Cats and Water"** (re-voiced, text cards).
+`creative/scripts/day2-script-textcard-bowl-audit.md` **exists and its structure is sound, but its voice is
+now false**: the hook card reads "three things I got wrong about **my cat** and water" and item 3 is written
+as our own household observation. **Re-voice before it posts**: hook becomes "three things people get wrong
+about cats and water", item 3 becomes "the bowl next to the food bowl is usually the one they use least",
+and the item-3 instruction about "if the founder has not actually observed it" is void because the founder
+cannot observe it. The list items are then general statements about cats, which is what a finds account is
+entitled to say. Comment-bait unchanged: **open-ended**. Zero assets missing.
+
+**C3. "Why They Go For The Tap"** (new, licensed stock plus text). **Replaces "Why She Won't Drink"** as the
+slot that shows an actual cat. Spine, 13s: licensed clip of a cat drinking from a running tap (0-2s, "if
+your cat does this, it is not fussiness") | hold or cut to a second licensed clip (2-5s) | text carries the
+explanation (5-9s, "moving water is just what a lot of cats go for. it is a known cat thing") | text turn
+(9-11s, "a bowl that has been sitting since morning is the least interesting water in the house") | loop
+(11-13s). Hooks: (1) "if your cat does this, it is not fussiness" (2) "there is a reason they wait at the
+sink" (3) sound-off text open over the wider clip: "the bowl is full. they are at the sink. again."
+Comment-bait: **match-my-experience**, "comment TAP if yours does this." **Every clip goes in the clip log
+with its source URL, ID, contributor, licence and verification date before it enters an edit**
+(`creative/scripts/day--2-native.md` carries the protocol and the verified licence text for Pexels and
+Pixabay). **No ownership language over any frame.** If a comment asks whether that is our cat, the reply is
+"no, that is licensed stock, we run a finds account."
+
+**C4. "What We Picked And Why"** (carries over untouched).
+`creative/scripts/day3-script-what-we-picked-and-why.md`. Screen recording of our own live product page with
+a real hand pointing, full Dashboard-and-Pointer recipe. **No cat, no product in hand, so the no-cat
+constraint does not touch it.** Still gated on the store being live. Comment-bait: **open-ended**.
+
+**C5. "Reading The Listing Out Loud"** (carries over untouched, still gated).
+`creative/scripts/day4-script-listing-walkthrough.md`. Supplier listing media plus **written permission**,
+neither obtained. Unaffected by the no-cat constraint, still blocked on the same two gates it always was.
+Comment-bait: **closed poll**. Fallback if permission does not arrive: C2 hook 3.
+
+**C6. "Moving Water"** (carries over, one line hardened).
+`creative/scripts/day5-script-ai-broll-moving-water.md`. Abstract generated water, AIGC-labelled, no product,
+no animal, no person. **Its rule 2 currently reads "never generate a cat that reads as our cat" and
+justifies it by the account's first-person voice. That justification is now obsolete and the rule is
+stronger without it: never generate a cat, full stop, for any purpose, in any voice.** Comment-bait:
+**single-emoji**.
+
+**C7. "The Shop That Has Not Got Its Own Product Yet"** (new, own voice over own-home B-roll). **Replaces
+the "Why She Won't Drink" voiceover slot.** The founder's own voice, plainly, over footage of their own
+kitchen, their own hands, and a laptop showing the store page: what we sell, what we know about it, what we
+have not verified, and the honest shipping window. Spine, 14s: hands filling a bowl at the tap (0-3s, voice:
+"we sell one thing, a cat water fountain") | close on the still surface (3-6s, "we have not held it. it has
+not arrived and nothing on this account is a review") | laptop or phone showing the product page (6-10s,
+"the listing says the pump is quiet. I have not heard it, so I am not going to tell you it is") | hands
+turning the tap off (10-14s, "7 to 20 business days, and when it lands it goes on camera either way").
+Hooks: (1) "we sell one thing and we have never touched it" (2) "here is what I actually know about the
+thing I am selling" (3) sound-off text open: "an honest list of what I have not verified." Comment-bait:
+**match-my-experience**, "comment if you have waited on something from overseas too." This is the single
+most defensible video in the slate: **every word is checkable, none of it needs a cat, a product or a
+photo**, and it converts the account's biggest weakness into its stated position. Uses the section 6
+phrasings verbatim, which were written for exactly this.
+
+## 8.4 The replacement Day 1-7 slate (replaces the 18-row table in section 3)
+
+Cadence unchanged: 2 posts/day Days 1-3, 3/day from Day 4. Times unchanged. 18 slots.
+
+| # | Date | Day | Time | Concept, hook | Format | Assets missing | AIGC | Comment-bait | Fallback |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | 08-18 | **Day 1** | 11:00 | **C1** Still/Moving, hook 1 | Own footage | none | `--no-aigc` | Closed poll | none needed |
+| 2 | 08-18 | Day 1 | 19:00 | **C2** Three Things, hook 1 | Text cards | none | `--no-aigc` | Open-ended | none needed |
+| 3 | 08-19 | **Day 2** | 11:00 | **C3** Why The Tap, hook 1 | Licensed stock | clip licence check | `--no-aigc` | Match-my-experience | C2 hook 2 |
+| 4 | 08-19 | Day 2 | 19:00 | **C1** hook 2 | Own footage | none | `--no-aigc` | Closed poll | none needed |
+| 5 | 08-20 | **Day 3** | 11:00 | **C4** What We Picked, hook 1 | Screen recording | store live | `--no-aigc` | Open-ended | C2 hook 2 |
+| 6 | 08-20 | Day 3 | 19:00 | **C7** Honest List, hook 1 | Own voice, own B-roll | none | `--no-aigc` | Match-my-experience | none needed |
+| 7 | 08-21 | **Day 4** | 11:00 | **C1** hook 3 | Own footage | none | `--no-aigc` | Closed poll | none needed |
+| 8 | 08-21 | Day 4 | 14:00 | **C2** hook 2 | Text cards | none | `--no-aigc` | Open-ended | none needed |
+| 9 | 08-21 | Day 4 | 19:00 | **C3** hook 2 | Licensed stock | clip licence check | `--no-aigc` | Match-my-experience | C2 hook 3 |
+| 10 | 08-22 | **Day 5** | 11:00 | **C7** hook 2 | Own voice | none | `--no-aigc` | Match-my-experience | none needed |
+| 11 | 08-22 | Day 5 | 14:00 | **C5** Listing walkthrough | Supplier media | media unchecked, permission unasked | `--no-aigc` | Closed poll | C2 hook 3 |
+| 12 | 08-22 | Day 5 | 19:00 | **C6** Moving Water, hook 1 | Generated B-roll | API keys | **AIGC REQUIRED** | Single-emoji | C7 hook 3 |
+| 13 | 08-23 | **Day 6** | 11:00 | **C2** hook 3 | Text cards | none | `--no-aigc` | Open-ended | none needed |
+| 14 | 08-23 | Day 6 | 14:00 | **C3** hook 3 | Licensed stock | clip licence check | `--no-aigc` | Match-my-experience | C1 hook 1 re-cut |
+| 15 | 08-23 | Day 6 | 19:00 | **C6** hook 2 | Generated B-roll | API keys | **AIGC REQUIRED** | Single-emoji | C7 hook 3 |
+| 16 | 08-24 | **Day 7** | 11:00 | **C4** hook 2 | Screen recording | store live | `--no-aigc` | Open-ended | C2 hook 1 re-cut |
+| 17 | 08-24 | Day 7 | 14:00 | **C7** hook 3 | Own voice | none | `--no-aigc` | Match-my-experience | none needed |
+| 18 | 08-24 | Day 7 | 19:00 | **C6** hook 3 | Generated B-roll | API keys | **AIGC REQUIRED** | Single-emoji | C2 hook 2 re-cut |
+
+**How the week balances, and what is deliberate:**
+- **Day 1 has zero gated slots.** Both openers need only a phone, a bowl and a tap. The launch cannot be
+  blocked by a licence check, a store deploy or an API key.
+- **Nine of eighteen slots need nothing we do not have today**: C1 x3, C2 x3, C7 x3. The other nine need a
+  licence check (3), the store live (2), supplier permission (1) or API keys (3), and every one of those has
+  a fallback drawn from the first nine.
+- **Every gated slot names its fallback in the same row**, and the fallback is always a text-card or own-voice
+  variant, because those need nothing. No slot in this week can go empty.
+- **Family caps hold.** Licensed stock: one per day maximum, Days 2, 4 and 6, never two in a day. Generated:
+  one per day, back half only. Honest Shop (store page plus supplier listing): Days 3, 5 and 7, one every two
+  days, per the unchanged audience-mismatch reasoning in section 2.
+- **All four comment-bait shapes still get read**, which matters because section 7 called that the more
+  valuable of the two levers: closed poll x4 slots, open-ended x5, match-my-experience x6, single-emoji x3.
+- **Production load:** one 20-minute kitchen session covers C1's three hooks and C7's B-roll; one 15-minute
+  Canva session covers C2's three cards; one 15-minute licence-and-download session covers C3. That is
+  **roughly 50 minutes of founder time for ten of the eighteen slots.**
+
+## 8.5 Existing files: what is now unfilmable, what needs re-voicing, what stands
+
+| File | Status after 2026-08-13 | Action |
+|---|---|---|
+| `day1-script-faucet-test.md` | **Unfilmable.** Requires our own cat at a running tap | Leave in the bank untouched. It is a correct script for a household with a cat, and this is not one. Superseded in the slate by **C1** |
+| `day1-script-still-bowl-pov.md` | **Unfilmable.** "she has walked past it maybe forty times", and its compliance note says the assertion is about "our own bowl and our own cat" | Leave untouched. Superseded by **C1** |
+| `day2-script-voiceover-why-moving-water.md` | **Unfilmable as written.** Reuses Day 1 cat B-roll and carries "she is not being dramatic" as burned-in text | Leave untouched. Superseded by **C7**, which keeps the own-voice format and drops the animal |
+| `day2-script-textcard-bowl-audit.md` | **Filmable, voice is false.** "three things I got wrong about **my cat** and water" | **Re-voice before it posts**, per C2 above. This is the only Day 1-7 file that needs an edit rather than a replacement |
+| `day3-script-what-we-picked-and-why.md` | **Stands unchanged** | Use as written (C4) |
+| `day4-script-listing-walkthrough.md` | **Stands unchanged**, still gated on media and permission | Use as written (C5) |
+| `day5-script-ai-broll-moving-water.md` | **Stands**, with rule 2 hardened per C6 | Use as written, tighten rule 2 |
+| `static-ad-1-text-only-still-bowl.md`, `static-ad-2-product-image-honest-spec.md` | **Stand unchanged.** No animal, no footage | The paid bank is untouched by this constraint |
+| The nine sample-dependent scripts listed in section 1 | **Still unfilmable, now for two reasons instead of one** | Unchanged. Do not delete |
+
+**The Dashboard-and-Pointer A/B test is deferred a second time**, and the reason has changed: it was
+deferred because arm A needs the product doing its trick, and it is now additionally short of arm B, since
+"standard UGC" in this niche means an animal on camera. **What survives is the mechanic**: C1's continuous
+tap shot and C4's screen recording both use the one-take-plus-pointer skeleton, so the format is still being
+practised even though the test is not being run.
+
+## 8.6 What this costs, structurally, with no invented number
+
+Section 7 said the organic cost of the no-sample decision had no number and stated it structurally. The same
+discipline applies here, and it has to be stronger, because the loss is bigger.
+
+**There is no organic winner rate in our evidence, ours or anyone's.** The 5-8% figure is Meta **paid** data
+and applying it to TikTok organic posts is the exact misuse `docs/LEARNINGS.md` fences external evidence off
+to prevent. We have **zero posts**, so we have no baseline of our own either. Any percentage attached to
+this loss would be invented, and the previous plan's habit of reaching for one is the thing this section is
+written to avoid. So, structurally:
+
+- **The playbook's creative structure is Hook, Problem, Demo, Benefit, Proof, CTA.** The no-sample decision
+  already removed **Demo and Proof**. The no-cat constraint removes most of what was left of **Problem as
+  something visible**: the still bowl, the ignored water, the cat at the tap were the problem beat, filmed.
+  What remains is Problem **as an assertion in text or voice**, which the viewer must already agree with for
+  the video to work. **We are now down to Hook, an asserted Problem, and a claim-free CTA.**
+- **The single strongest asset class in this niche is a live animal doing a small real thing in the first
+  two seconds**, and we no longer have any way to produce one. Licensed stock provides the image but not the
+  authenticity: it is footage the audience may have seen elsewhere, it cannot be narrated in the first
+  person, and whether the recommendation system discounts it is **undocumented and stays labelled
+  `HYPOTHESIS`**.
+- **Format concentration is the real fragility.** Section 3 ran 7 concepts across 18 slots. This slate runs 7
+  concepts too, but **9 of 18 slots sit on three concepts (C1, C2, C7) that all come from the same room, the
+  same voice and the same argument**, and those three are also the fallback for most of the other nine, so a
+  bad week for that argument is a bad week for the whole slate. If that argument does not land, three concepts fail together, not one.
+  Meta's and TikTok's own guidance asks for 3-5 **genuinely different** concepts; measured honestly, this
+  slate has about **four genuinely different ones** (own-object footage, text cards, licensed-footage
+  explainer, screen recording) with generated B-roll as a thin fifth.
+- **What is unchanged, and it is not nothing.** The **paid static bank is completely untouched** by this
+  constraint: text-only and product-image-plus-text statics never needed a cat, and they remain the two
+  highest documented winner-hit-rate formats we have. The **comment-bait lever test survives whole**, all
+  four shapes, and it was already the more valuable of the two levers by the source evidence. And **C7 is
+  genuinely better than what it replaced**: an account that says plainly what it has not verified is a
+  position, not a deficiency, and it is the only version of this account that could not have been written
+  with a cat in the house.
+
+**Proposed ledger line, verbatim:**
+
+> Days 1-7 organic content ran under two stacked constraints by founder decision: no product sample and no
+> access to a cat. No post that week could carry a product demo, an experience-based claim, or first-person
+> footage of an animal. Hook and hold rates from that week measure text, own-object footage and licensed-
+> footage explainers only, and are not comparable like-for-like with either post-arrival content or with any
+> account that films its own pet. The paid static bank built under the same constraints is not degraded by
+> either of them.
+
+## 8.7 What this amendment needs from the founder, ranked
+
+1. **One 20-minute kitchen session: a bowl of water left standing overnight, a tap, your own hands, your own
+   voice.** $0. Unblocks C1 (3 slots), C7 (3 slots) and the Day -1 post. **Nothing else in this slate matters
+   if this does not happen**, and unlike the previous version of this list, it needs no animal to cooperate.
+2. **One 15-minute Canva session** for C2's cards. Unblocks 3 slots plus every gated slot's fallback.
+3. **One 15-minute licensed-clip session**: find two or three cat clips on Pexels or Pixabay, paste each
+   clip's page URL, ID, contributor and licence into the clip log in `creative/scripts/day--2-native.md`,
+   and do the same for C3's clips. Unblocks the Day -2 native and 3 Day 1-7 slots.
+4. **The store live** (Founder Action #2). Unblocks every CTA plus slots 5 and 16.
+5. **Supplier media permission** (Founder Action #8). Unblocks slot 11 and static spec 2. Unchanged.
+6. **AI-video API keys** (Founder Action #3). Unblocks slots 12, 15 and 18 only, all with fallbacks.
