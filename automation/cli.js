@@ -17,6 +17,7 @@ import { loadEnv } from "./lib/loadEnv.js";
 import { HOLD_CONDITIONS, TIMELINE, calendarOffset, entryForOffset } from "./lib/protocol.js";
 import { loadState, saveState, statePath, todayISO } from "./lib/state.js";
 import { postToTikTok } from "./lib/uploadPost.js";
+import { generateVideoFromImage } from "./lib/higgsfield.js";
 
 // The steady-state entry (Day 4 onward): what applies when the founder has switched warm-up off.
 const STEADY_STATE = TIMELINE[TIMELINE.length - 1];
@@ -70,6 +71,17 @@ challenge CLI - warm-up tracker + approved TikTok posting
       refuses if --type isn't what today's protocol day allows. Always refuses
       if you're over today's post cap or a hold is active. --dry-run builds the
       request and prints it without sending.
+
+  node cli.js video --image <public image url> --prompt "<motion prompt>" [--model dop-turbo] [--dry-run]
+      Generate an AI b-roll clip through Higgsfield's image-to-video API.
+      SPENDS FOUNDER MONEY: Higgsfield is paid (~$15/mo cheapest tier, top-ups
+      ~$5 per 100 credits, 15-25 credits a video, checked 2026-08-13), so every
+      call is real spend against the $100 cap. Nothing is bought for you.
+      REFUSES to generate cats, pets, people or the product, before it looks at
+      your key, per the standing decisions in creative/NO-SAMPLE-PLAN.md.
+      Sanctioned use is abstract b-roll only: water, light, texture, motion.
+      Anything it produces is AI and must carry TikTok's AIGC label when posted.
+      --dry-run prints the exact request and spends nothing.
 
 State lives in automation/state/warmup-state.json (committed to git, like the ledger - it's
 operational state, not a secret). API keys go in automation/.env (gitignored), copy .env.example.
@@ -311,6 +323,53 @@ async function cmdPost() {
   }
 }
 
+async function cmdVideo() {
+  const imageUrl = flag("image");
+  const prompt = flag("prompt");
+  const model = flag("model", "dop-turbo");
+  const dryRun = boolFlag("dry-run");
+
+  if (!imageUrl || !prompt) {
+    console.error(
+      'Need both --image <public image url> and --prompt "<motion prompt>".\n' +
+        "Higgsfield's documented video path is image-to-video: it animates a source image. Their SDK\n" +
+        "does not document a text-to-video endpoint, so this CLI does not pretend to have one."
+    );
+    process.exit(1);
+  }
+
+  let result;
+  try {
+    result = await generateVideoFromImage({
+      keyId: process.env.HF_API_KEY,
+      keySecret: process.env.HF_API_SECRET,
+      prompt,
+      imageUrl,
+      model,
+      dryRun,
+      log: (m) => console.log(`  ${m}`),
+    });
+  } catch (err) {
+    console.error(err.message);
+    process.exit(1);
+  }
+
+  if (result.dryRun) {
+    console.log("DRY RUN, nothing sent, no credits spent.\n");
+    console.log(JSON.stringify(result.wouldSend, null, 2));
+    console.log(`\n${result.note}`);
+    return;
+  }
+
+  console.log(`\nDone. request_id=${result.requestId}, status=${result.status}`);
+  console.log(`Video URL: ${result.videoUrl || "(not found in the response, raw payload below)"}`);
+  if (!result.videoUrl) console.log(JSON.stringify(result.raw, null, 2));
+  console.log(
+    "\nThis clip is AI-generated. When it posts, it MUST carry TikTok's AIGC label: the `post`\n" +
+      "command sets that by default, so do NOT pass --no-aigc for this file."
+  );
+}
+
 switch (cmd) {
   case "warmup": {
     const sub = rest[0];
@@ -323,6 +382,9 @@ switch (cmd) {
   }
   case "post":
     await cmdPost();
+    break;
+  case "video":
+    await cmdVideo();
     break;
   case undefined:
   case "help":

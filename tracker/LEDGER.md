@@ -246,6 +246,41 @@ before revenue exists.
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
 
+- **2026-08-13, part 2: Higgsfield connector built, tested, and deliberately not funded.**
+  **No money moved. Out-of-pocket still $0.00 / $100.00.** Artifacts: `automation/lib/higgsfield.js`,
+  a new `node cli.js video` command, `.env.example` keys, plus `automation/README.md` and
+  `docs/AUTOMATION.md` entries.
+  **Verified against their own sources rather than assumed**, since this is a paid API and a wrong guess
+  costs credits: base `https://platform.higgsfield.ai`, endpoint `/v1/image2video/dop`, polling at
+  `/requests/{request_id}/status`, result at `jobs[0].results.raw.url`. **The important correction: auth
+  is a TWO-part credential** sent as `Authorization: Key <KEY_ID>:<KEY_SECRET>`, not the bearer token a
+  first search result claimed. Checked against docs.higgsfield.ai and their official Node SDK.
+  **Built zero-dependency with raw `fetch`**, matching the rest of `automation/`, rather than adding
+  `@higgsfield/client` as an npm dependency.
+  **Two things stated as unverified rather than papered over.** (1) Their SDK documents text-to-image and
+  image-to-video only, **no text-to-video endpoint**, so this implements image-to-video and does not invent
+  a path that may not exist. That matters here: image-to-video needs a source image, and we have no product
+  photo. (2) The raw REST body envelope is ambiguous. The SDK nests params under `input`; the one raw
+  example in their docs posts them at the top level. The file sends the SDK shape, names the ambiguity in
+  its own header comment, and a 400/422 handler tells the next person to flip `BODY_ENVELOPE` before
+  suspecting the key.
+  **The gate that matters: it refuses banned subjects in code, before it checks the API key**, so a
+  refusal never depends on having paid first. Cats, pets, people and the product are all blocked, which
+  encodes the 2026-08-12 no-sample and 2026-08-13 no-cat decisions into the tool rather than leaving them
+  as documentation. Sanctioned use is abstract b-roll only: water, light, texture, motion. Output always
+  carries the AIGC label. **Tested by execution on all five paths**: cat, person and product prompts each
+  refused with exit code 1; an allowed abstract prompt produced a correct dry-run request; a real call
+  with no keys refused before any network I/O. Existing `warmup` and `post` commands regression-checked.
+  **Never run against the live API, and that is deliberate.** Higgsfield is paid: **~$15/mo cheapest tier,
+  ~$5 per 100 credits, 15-25 credits per basic video** (checked 2026-08-13, their pricing has been
+  restructured repeatedly). **No key exists, no plan is bought, and none will be without founder
+  approval**, per the standing no-spend-without-approval rule.
+  **The honest economics, flagged not buried:** $15/mo is **15% of the entire $100 cap** for roughly 8-13
+  basic videos, and the sanctioned use is only the 3 abstract-b-roll slots in
+  `creative/NO-SAMPLE-PLAN.md`. The connector is ready if the founder wants it; on current usage it is
+  poor value against the cap, and the text-card lane it would supplement costs $0 and has the better
+  documented winner rate.
+
 - **2026-08-13: the founder has no cat. The content plan had been resting on an unchecked assumption since
   the bench was set.** **No money moved. Out-of-pocket still $0.00 / $100.00.**
   **Track A is on schedule and that part is genuinely fine.** Founder confirmed the account is created and

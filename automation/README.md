@@ -63,6 +63,38 @@ which would have refused the Day -1 native substitute in `creative/NO-SAMPLE-PLA
 
 `--dry-run` prints exactly what would be sent, no API call, no paid plan needed.
 
+## `video`: Higgsfield AI b-roll (added 2026-08-13)
+
+```
+node cli.js video --image <public image url> --prompt "<motion prompt>" [--model dop-turbo] [--dry-run]
+```
+
+Generates a clip through Higgsfield's image-to-video API and polls until it finishes.
+
+**It spends founder money.** Higgsfield is paid: roughly **$15/mo** on the cheapest tier, top-ups around
+**$5 per 100 credits**, and **15-25 credits per basic video** (checked 2026-08-13; their pricing has been
+restructured repeatedly, so verify before buying). That is real spend against the $100 cap and needs
+approval like any other. `--dry-run` needs no key and spends nothing.
+
+**It refuses banned subjects in code, before it looks at your key**, so the refusal does not depend on
+having paid first. It will not generate **cats, pets, people, or the product**. Those are standing
+decisions, not preferences: we have no cat (2026-08-13) and no sample (2026-08-12), and generating either
+to stand in for something we do not have is the fabrication line the whole repo holds. Sanctioned use is
+**abstract b-roll only**: water, light, texture, motion.
+
+**Everything it produces is AI and must carry TikTok's AIGC label.** `post` sets that by default, so never
+pass `--no-aigc` for a generated clip.
+
+Auth is a **two-part credential** sent as `Authorization: Key <KEY_ID>:<KEY_SECRET>`, not a bearer token.
+Both halves go in `.env` as `HF_API_KEY` and `HF_API_SECRET`.
+
+**Honest status:** built and tested end to end against every refusal path (banned subject, missing key,
+dry-run request shape), but **never run against the live API**, because no key exists and no plan is
+bought. The one thing that could still be wrong is the request envelope: the official SDK nests params
+under `input` and this sends that, while the one raw example in their docs posts params at the top level.
+If the first real call returns 400 or 422, flip `BODY_ENVELOPE` in `automation/lib/higgsfield.js` before
+assuming the key is bad. That uncertainty is flagged in the file itself rather than hidden.
+
 **Cost (verified 2026-08-10, corrects an older `docs/SETUP-GUIDE.md` claim):** upload-post.com TikTok
 posting is Basic tier and up, **$24/mo minimum**, not free. Subscribe a day or two before posting
 actually starts, not on Day -7, so it does not sit idle against the $100 cap.
