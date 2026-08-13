@@ -1,6 +1,6 @@
 # Privacy Policy
 
-*Paste this into the Shopify "Privacy Policy" page once the store exists. Replace every [PLACEHOLDER] before publishing. This is written to be honest and specific to how a small Shopify dropshipping store actually operates (Shopify as platform, a supplier that ships orders, standard analytics/ad tools). It is not a substitute for a lawyer's review, especially if you plan to sell outside the U.S. or collect anything beyond standard checkout data — flag that as an open item, don't skip it.*
+*Paste this into the Shopify "Privacy Policy" page once the store exists. Replace every [PLACEHOLDER] before publishing. This is written to be honest and specific to how a small Shopify dropshipping store actually operates (Shopify as platform, a supplier that ships orders, standard analytics/ad tools). It is not a substitute for a lawyer's review, especially if you plan to sell outside the U.S. or collect anything beyond standard checkout data. Flag that as an open item, don't skip it.*
 
 ---
 
@@ -55,7 +55,7 @@ We keep order and account information for as long as needed to fulfill orders, h
 - **Access and correction:** You can request a copy of the personal information we hold about you, or ask us to correct it, by emailing us.
 - **Deletion:** You can request that we delete your personal information, subject to legal recordkeeping requirements (for example, tax records).
 - **Marketing opt-out:** You can unsubscribe from marketing emails at any time using the link in any email, or by contacting us.
-- **[PLACEHOLDER: if selling to EU/UK residents, add a GDPR section covering legal basis for processing and the right to lodge a complaint with a supervisory authority. If selling to California residents, confirm CCPA/CPRA applicability based on revenue/volume thresholds and add the required disclosures. Do not skip this if either applies — flag for legal review.]**
+- **[PLACEHOLDER: if selling to EU/UK residents, add a GDPR section covering legal basis for processing and the right to lodge a complaint with a supervisory authority. If selling to California residents, confirm CCPA/CPRA applicability based on revenue/volume thresholds and add the required disclosures. Do not skip this if either applies, flag for legal review.]**
 
 ## Children's Privacy
 

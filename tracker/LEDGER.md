@@ -233,6 +233,41 @@ before revenue exists.
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
 
+- **2026-08-12, part 5: the no-sample copy audit found a factual contradiction, not just soft claims.**
+  **No money moved. Out-of-pocket still $0.00 / $100.00.** Artifact:
+  `compliance/no-sample-copy-audit-2026-08-12.md`, plus a substantially rewritten
+  `store/copy/product-cat-water-fountain.md`.
+  **The finding that mattered most was not a tone problem.** The product page said "Ships from **our
+  warehouse partner**." `store/copy/policy-shipping.md` said items "ship directly from fulfillment centers
+  **rather than a local warehouse**." **Two live pages of the same store contradicting each other on a
+  material fact, and the product page was the wrong one:** there is no warehouse and no warehouse partner.
+  A customer comparing the two pages would have caught it, and "our warehouse" is the exact impression a
+  dropshipped store must not create. It is also the kind of line that converts an ordinary late-delivery
+  complaint into a "not as described" dispute, which is the outcome our own docs care most about avoiding
+  on a new processor account. Corrected to match the shipping policy.
+  **Seven claims re-sourced from our voice to the supplier's.** The worst was a single bullet, "**Genuinely
+  quiet.** Designed to run in the background without the whirring or buzzing you get from cheaper pumps.
+  Fine for bedrooms and quiet apartments", which stacks three first-hand assertions: "genuinely" claims
+  verification, the comparison implies we have heard several units, and "fine for bedrooms" is a
+  recommendation from experience. We have heard none of them. Also cut: a timed "back together in under a
+  minute" cleaning claim for an operation nobody has performed, and a title reading "for Cats Who Won't
+  Drink Enough", which framed the product against a hydration deficit and drifted toward the health framing
+  the rest of the page avoids.
+  **Nothing about the offer got weaker, it got honest about provenance.** Everything the supplier publishes
+  can still be said, with attribution. The standard, stated once and now enforced repo-wide: **attribution,
+  not confession.**
+  **The five policy pages needed no claim changes and that is worth recording rather than glossing.**
+  Whoever wrote them on 2026-08-11 was already disciplined about not over-promising; the entire yield of
+  this audit was concentrated in the product page, which is exactly where selling pressure lives. Two em
+  dashes were fixed in `policy-privacy.md` for house style. The reviews slot was strengthened with an
+  explicit ban on borrowing the supplier listing's 4.9 stars and 4,000+ sold count, which are the
+  supplier's numbers for orders we did not fulfil.
+  **Standing rule established:** any copy written before 2026-08-12 predates the no-sample decision and
+  must be read with that in mind. Copy written after it is authored under the constraint, so an
+  experience-based claim appearing in new copy is a defect in that writing run, not a leftover.
+  **Still open, unchanged by this audit:** `ops/sourcing-dossier.md` has no record of what imagery the
+  listings carry, which gates the product photo, static ad 2 and the Merchant Center `image_link`.
+
 - **2026-08-12, part 4: build-everything-ahead-of-setup run. Partially completed, stopped by a session
   limit, and the gap is named rather than papered over.** **No money moved. Out-of-pocket still $0.00 /
   $100.00.** Nothing posted, workflow still disabled.
