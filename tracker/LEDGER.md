@@ -246,6 +246,36 @@ before revenue exists.
 (Newest on top. Each entry: what was done, what was decided, money moved, what's next, and anything
 unverified.)
 
+- **2026-08-13, part 3: ElevenLabs narration wired, and it surfaced a licensing trap worth more than the
+  connector.** **No money moved. Out-of-pocket still $0.00 / $100.00.** Artifacts:
+  `automation/lib/elevenlabs.js`, a new `node cli.js voice` command, `.env.example`, `automation/README.md`
+  and `docs/AUTOMATION.md`.
+  **The finding, and it would have bitten us quietly: ElevenLabs' free tier is personal, NON-COMMERCIAL
+  use and requires attribution to ElevenLabs** (checked 2026-08-13 against their pricing). Everything this
+  challenge produces is commercial marketing for a store, so **free-tier audio may not be used in it at
+  all.** Commercial rights start on their paid plans. This is the kind of thing that is fine right up until
+  it is not, and it sits directly against `docs/PLAYBOOK.md`'s platform-legitimate-use rule. Nothing had
+  been generated, so nothing has to be unwound.
+  **Encoded as a gate rather than a doc note.** The CLI refuses a real run without `--commercial-confirmed`,
+  and **that check runs before the API-key check on purpose**: holding a key proves nothing about which
+  tier it belongs to, and the failure mode here is legal rather than technical.
+  **The cheaper answer, recommended over the thing that was asked for: TikTok's own built-in
+  text-to-speech.** Free, native to the platform, familiar to viewers, no API key, no subscription, no
+  ffmpeg, applied inside the TikTok or CapCut editor. For a 13-second text-card video it does the same job
+  at $0. ElevenLabs is worth paying for when voice quality is specifically the point, which on warm-up
+  text-card posts it is not.
+  **Deliberately does not assemble video.** `ffmpeg` is not installed on this machine (verified), so
+  rather than requiring a system install, the command writes an MP3 and the founder drops it into CapCut
+  alongside the transparent cards in `creative/cards/`. Phone-side assembly needs no ffmpeg and takes
+  minutes. **That is a real simplification, not a workaround:** it removes a dependency from the critical
+  path entirely.
+  **Verified API shape:** `POST https://api.elevenlabs.io/v1/text-to-speech/{voice_id}`, auth header
+  `xi-api-key` (**not** a bearer token), body `{ text, model_id }` with `eleven_multilingual_v2` the
+  default, `output_format` as a query parameter, and the response body is the audio bytes rather than JSON.
+  **Tested by execution on five paths**: refusal without commercial confirmation, refusal on missing key
+  once confirmed, correct dry-run request, empty text, and over-length text. Never run live, since no key
+  and no paid plan exist. Existing `warmup`, `post` and `video` commands regression-checked.
+
 - **2026-08-13, part 2: Higgsfield connector built, tested, and deliberately not funded.**
   **No money moved. Out-of-pocket still $0.00 / $100.00.** Artifacts: `automation/lib/higgsfield.js`,
   a new `node cli.js video` command, `.env.example` keys, plus `automation/README.md` and

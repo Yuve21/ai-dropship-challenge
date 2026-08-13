@@ -95,6 +95,38 @@ under `input` and this sends that, while the one raw example in their docs posts
 If the first real call returns 400 or 422, flip `BODY_ENVELOPE` in `automation/lib/higgsfield.js` before
 assuming the key is bad. That uncertainty is flagged in the file itself rather than hidden.
 
+## `voice`: ElevenLabs narration (added 2026-08-13)
+
+```
+node cli.js voice --text "<line to speak>" --out <path.mp3> [--voice <id>] [--dry-run] [--commercial-confirmed]
+```
+
+Writes an MP3. **It does not assemble video.** That is deliberate: ffmpeg is not installed on this machine,
+so instead of muxing here, the file is meant to be dropped into CapCut alongside the transparent cards in
+`creative/cards/`. Phone-side assembly needs no ffmpeg and takes a couple of minutes.
+
+**The licence gate, and it is the reason this command has one.** ElevenLabs' **free tier is personal,
+non-commercial use and requires attribution to ElevenLabs** (checked 2026-08-13). Everything this challenge
+produces is commercial marketing for a store, so **free-tier audio may not be used in it at all.**
+Commercial rights start on their paid plans. The CLI therefore refuses a real run unless you pass
+`--commercial-confirmed`, which is you asserting a paid plan exists. That gate runs **before** the API-key
+check on purpose: possessing a key proves nothing about which tier it belongs to, and the failure mode here
+is legal rather than technical.
+
+**The free alternative, which is usually the better call.** TikTok's own built-in text-to-speech is free,
+native to the platform, familiar to viewers, needs no API key, no subscription and no ffmpeg, and is applied
+inside the TikTok or CapCut editor. For a 13-second text-card video it does the same job at $0. Reach for
+ElevenLabs when voice quality is specifically the point, not as the default.
+
+A synthetic voice means **TikTok's AIGC label applies** to the finished video. `post` sets it by default, so
+do not pass `--no-aigc`.
+
+Auth is the `xi-api-key` header, not a bearer token. Key goes in `.env` as `ELEVENLABS_KEY`.
+
+**Honest status:** built and tested against every refusal path (missing licence confirmation, missing key,
+empty text, over-length text, dry-run request shape), but **never run against the live API**, because no key
+exists and no paid plan is bought.
+
 **Cost (verified 2026-08-10, corrects an older `docs/SETUP-GUIDE.md` claim):** upload-post.com TikTok
 posting is Basic tier and up, **$24/mo minimum**, not free. Subscribe a day or two before posting
 actually starts, not on Day -7, so it does not sit idle against the $100 cap.

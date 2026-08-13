@@ -18,6 +18,7 @@ import { HOLD_CONDITIONS, TIMELINE, calendarOffset, entryForOffset } from "./lib
 import { loadState, saveState, statePath, todayISO } from "./lib/state.js";
 import { postToTikTok } from "./lib/uploadPost.js";
 import { generateVideoFromImage } from "./lib/higgsfield.js";
+import { generateNarration } from "./lib/elevenlabs.js";
 
 // The steady-state entry (Day 4 onward): what applies when the founder has switched warm-up off.
 const STEADY_STATE = TIMELINE[TIMELINE.length - 1];
@@ -82,6 +83,19 @@ challenge CLI - warm-up tracker + approved TikTok posting
       Sanctioned use is abstract b-roll only: water, light, texture, motion.
       Anything it produces is AI and must carry TikTok's AIGC label when posted.
       --dry-run prints the exact request and spends nothing.
+
+  node cli.js voice --text "<line to speak>" --out <path.mp3> [--voice <id>] [--dry-run] [--commercial-confirmed]
+      Generate narration audio through ElevenLabs. Writes an MP3 only; it does
+      NOT assemble video. Drop the file into CapCut with the cards in
+      creative/cards/, which needs no ffmpeg on this machine.
+      LICENCE GATE: ElevenLabs' FREE tier is personal, NON-COMMERCIAL and needs
+      attribution. This store's content is commercial, so free-tier audio may
+      not be used in it. A real run requires --commercial-confirmed, which is
+      you asserting a PAID plan is in place. Refuses without it.
+      FREE ALTERNATIVE, usually the better default: TikTok's built-in
+      text-to-speech. Free, native, no key, no subscription, applied in the
+      TikTok or CapCut editor. For short text-card videos it does the same job.
+      A synthetic voice means the AIGC label applies when posting.
 
 State lives in automation/state/warmup-state.json (committed to git, like the ledger - it's
 operational state, not a secret). API keys go in automation/.env (gitignored), copy .env.example.
@@ -370,6 +384,54 @@ async function cmdVideo() {
   );
 }
 
+async function cmdVoice() {
+  const text = flag("text");
+  const out = flag("out");
+  const voiceId = flag("voice");
+  const dryRun = boolFlag("dry-run");
+  const commercialConfirmed = boolFlag("commercial-confirmed");
+
+  if (!text || !out) {
+    console.error(
+      'Need --text "<line to speak>" and --out <path.mp3>.\n' +
+        "This writes an audio file only. It does not assemble video: drop the MP3 into CapCut\n" +
+        "alongside the cards in creative/cards/, which needs no ffmpeg on this machine."
+    );
+    process.exit(1);
+  }
+
+  let result;
+  try {
+    result = await generateNarration({
+      apiKey: process.env.ELEVENLABS_KEY,
+      text,
+      outPath: out,
+      ...(voiceId ? { voiceId } : {}),
+      commercialConfirmed,
+      dryRun,
+    });
+  } catch (err) {
+    console.error(err.message);
+    process.exit(1);
+  }
+
+  if (result.dryRun) {
+    console.log("DRY RUN, nothing sent.\n");
+    console.log(JSON.stringify(result.wouldSend, null, 2));
+    console.log(`\nWould write: ${result.outPath}`);
+    console.log(`\n${result.note}`);
+    return;
+  }
+
+  console.log(
+    `Wrote ${result.outPath} (${result.bytes} bytes, ${result.characters} chars, voice ${result.voiceId}).`
+  );
+  console.log(
+    "\nThis is a synthetic voice. If the finished video uses it, TikTok's AIGC label applies:\n" +
+      "the `post` command sets that by default, so do not pass --no-aigc."
+  );
+}
+
 switch (cmd) {
   case "warmup": {
     const sub = rest[0];
@@ -385,6 +447,9 @@ switch (cmd) {
     break;
   case "video":
     await cmdVideo();
+    break;
+  case "voice":
+    await cmdVoice();
     break;
   case undefined:
   case "help":
